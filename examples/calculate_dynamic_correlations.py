@@ -9,6 +9,8 @@ In this example, we calculate dynamic correlations
 """
 # Code source: Lucy Owen
 # License: MIT
+import sys
+sys.path.append('/app')
 
 # load timecorr and other packages
 import timecorr as tc
