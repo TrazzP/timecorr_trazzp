@@ -124,11 +124,7 @@ def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
     elif stacked_x.shape[0] < model_params['n_components']:
             warnings.warn('The number of rows in your data is less than ndims.'
                           ' The data will be reduced to the number of rows.')
-    if model_name == 'TSNE' and 'perplexity' in model_params:
-        if stacked_x.shape[0] < model_params['perplexity']:
-            warnings.warn(f'Perplexity is greater than number of samples ({stacked_x.shape[0]}). Adjusting.')
-            model_params['perplexity'] = stacked_x.shape[0] - 1
-    
+            
     # initialize model
     model = model(**model_params)
 
