@@ -6,7 +6,7 @@ from scipy.special import gamma
 from scipy.linalg import toeplitz
 from scipy.optimize import minimize
 from scipy.stats import ttest_1samp as ttest
-import hypertools as hyp
+from .braintools import brain_format, brain_reduce
 import pandas as pd
 import warnings
 from matplotlib import pyplot as plt
@@ -55,7 +55,7 @@ def t_weights(T, params=t_params):
 
     c1 = np.divide(
         gamma((params["df"] + 1) / 2),
-        np.sqrt(params["df"] * np.math.pi) * gamma(params["df"] / 2),
+        np.sqrt(params["df"] * np.pi) * gamma(params["df"] / 2),
     )
     c2 = np.divide(-params["df"] + 1, 2)
 
@@ -70,7 +70,7 @@ def mexican_hat_weights(T, params=mexican_hat_params):
     absdiffs = toeplitz(np.arange(T))
     sqdiffs = toeplitz(np.arange(T) ** 2)
 
-    a = np.divide(2, np.sqrt(3 * params["sigma"]) * np.power(np.math.pi, 0.25))
+    a = np.divide(2, np.sqrt(3 * params["sigma"]) * np.power(np.pi, 0.25))
     b = 1 - np.power(np.divide(absdiffs, params["sigma"]), 2)
     c = np.exp(-np.divide(sqdiffs, 2 * np.power(params["sigma"], 2)))
 
@@ -89,7 +89,7 @@ def format_data(data):
         x[np.isnan(x)] = 0
         return x
     
-    x = hyp.tools.format_data(
+    x = brain_format.format_data(
         data,
         ppca=False,
     )
@@ -294,8 +294,8 @@ def reduce(corrs, rfun=None):
     :param corrs: a matrix of vectorized correlation matrices (output of mat2vec), or a list
                   of such matrices
 
-    :param rfun: function to use for dimensionality reduction.  All hypertools and
-        scikit-learn functions are supported: PCA, IncrementalPCA, SparsePCA,
+    :param rfun: function to use for dimensionality reduction.  All scikit-learn 
+        functions are supported: PCA, IncrementalPCA, SparsePCA,
         MiniBatchSparsePCA, KernelPCA, FastICA, FactorAnalysis, TruncatedSVD,
         DictionaryLearning, MiniBatchDictionaryLearning, TSNE, Isomap,
         SpectralEmbedding, LocallyLinearEmbedding, MDS, and UMAP.
@@ -356,7 +356,7 @@ def reduce(corrs, rfun=None):
         )
 
     else:
-        red_corrs = hyp.reduce(corrs, reduce=rfun, ndims=V)
+        red_corrs = brain_reduce.reduce(corrs, reduce=rfun, ndims=V)
 
         D = np.shape(red_corrs)[-1]
 
@@ -1304,7 +1304,7 @@ def pca_decoder(
         len(np.unique(list(map(lambda x: x.shape[1], data)))) == 1
     ), "all data matrices must have the same number of features"
 
-    pca_data = np.asarray(hyp.reduce(list(data), ndims=dims))
+    pca_data = np.asarray(brain_reduce.reduce(list(data), ndims=dims))
 
     group_assignments = get_xval_assignments(len(pca_data), nfolds)
     results_pd = pd.DataFrame()
