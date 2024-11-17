@@ -9,7 +9,8 @@ In this example, we simulate data
 """
 # Code source: Lucy Owen
 # License: MIT
-
+import sys
+sys.path.append('/app')
 # load timecorr
 import timecorr as tc
 import seaborn as sns

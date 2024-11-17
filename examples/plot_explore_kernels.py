@@ -11,6 +11,9 @@ In this example, we plot the kernel options provided.
 # License: MIT
 
 # load
+import sys
+sys.path.append('/app')
+
 import timecorr as tc
 import numpy as np
 from matplotlib import pyplot as plt
