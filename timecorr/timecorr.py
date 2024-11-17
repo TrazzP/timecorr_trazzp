@@ -81,7 +81,7 @@ def timecorr(data, weights_function=gaussian_weights,
 
     rfun: function to use for dimensionality reduction.
 
-        All hypertools and scikit-learn functions are supported: PCA, IncrementalPCA, SparsePCA,
+        All scikit-learn functions are supported: PCA, IncrementalPCA, SparsePCA,
         MiniBatchSparsePCA, KernelPCA, FastICA, FactorAnalysis, TruncatedSVD,
         DictionaryLearning, MiniBatchDictionaryLearning, TSNE, Isomap,
         SpectralEmbedding, LocallyLinearEmbedding, MDS, and UMAP.
