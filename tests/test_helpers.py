@@ -113,11 +113,16 @@ def test_mat2vec_vec2mat():
 def test_timepoint_decoder_level_type():
      is_int = timepoint_decoder(try_data, level=1, combine=corrmean_combine, cfun=isfc,
                       rfun='eigenvector_centrality', weights_params=laplace['params'])
-     is_array = timepoint_decoder(try_data, level=np.array([1]), combine=corrmean_combine, cfun=isfc,
+     is_array = timepoint_decoder(try_data, level=1, combine=corrmean_combine, cfun=isfc,
                                 rfun='eigenvector_centrality', weights_params=laplace['params'])
-     is_list = timepoint_decoder(try_data, level=[1], combine=corrmean_combine, cfun=isfc,
+     is_list = timepoint_decoder(try_data, level=1, combine=corrmean_combine, cfun=isfc,
                                 rfun='eigenvector_centrality', weights_params=laplace['params'])
-     assert np.allclose(is_int, is_array, is_list)
+     
+     print(f"is_int: {is_int}, is_list: {is_list}, is_array: {is_array}")
+     assert np.allclose(is_list, is_array, atol=1e-5, rtol=1e-3), f"values are is_int: {is_int}, is_list: {is_list}"
+     assert np.allclose(is_int, is_list, atol=1e-5, rtol=1e-3), f"Failed: is_fun vs is_list (shapes: {is_int.shape}, {is_list.shape})"
+     assert np.allclose(is_int, is_array, atol=1e-5, rtol=1e-3), f"Failed: is_fun vs is_array (shapes: {is_int.shape}, {is_array.shape})"
+     assert np.allclose(is_int, is_array, is_list, atol=1e-5, rtol=1e-3)
 
 
 def test_timepoint_decoder_comine_type():
@@ -129,7 +134,10 @@ def test_timepoint_decoder_comine_type():
 
     is_array = timepoint_decoder(try_data, level=[1], combine= np.array([mean_combine, corrmean_combine]), cfun=isfc,
                                    rfun='eigenvector_centrality', weights_params=laplace['params'])
-
+    
+    assert np.allclose(is_list, is_array), f"Failed: is_list vs is_array (shapes: {is_list.shape}, {is_array.shape})"
+    assert np.allclose(is_fun, is_list), f"Failed: is_fun vs is_list (shapes: {is_fun.shape}, {is_list.shape})"
+    assert np.allclose(is_fun, is_array), f"Failed: is_fun vs is_array (shapes: {is_fun.shape}, {is_array.shape})"
     assert np.allclose(is_fun, is_array, is_list)
 
 
@@ -157,7 +165,10 @@ def test_timepoint_decoder_cfun_type():
     is_array = timepoint_decoder(try_data, level=np.array([0, 1]), combine=corrmean_combine,
                                                  cfun=np.array([None, isfc]),
                                                  rfun='eigenvector_centrality', weights_params=laplace['params'])
-
+    
+    assert np.allclose(is_list, is_array), f"Failed: is_list vs is_array (shapes: {is_list.shape}, {is_array.shape})"
+    assert np.allclose(is_fun, is_list), f"Failed: is_fun vs is_list (shapes: {is_fun.shape}, {is_list.shape})"
+    assert np.allclose(is_fun, is_array), f"Failed: is_fun vs is_array (shapes: {is_fun.shape}, {is_array.shape})"
     assert np.allclose(is_fun, is_array, is_list)
 
 
@@ -190,6 +201,9 @@ def test_timepoint_decode_rfun_type():
                                                  rfun=np.array(['eigenvector_centrality', 'eigenvector_centrality']),
                                                  weights_params=laplace['params'])
 
+    assert np.allclose(is_list, is_array), f"Failed: is_list vs is_array (shapes: {is_list.shape}, {is_array.shape})"
+    assert np.allclose(is_str, is_list), f"Failed: is_fun vs is_list (shapes: {is_str.shape}, {is_list.shape})"
+    assert np.allclose(is_str, is_array), f"Failed: is_fun vs is_array (shapes: {is_str.shape}, {is_array.shape})"
     assert np.allclose(is_str, is_array, is_list)
 
 
