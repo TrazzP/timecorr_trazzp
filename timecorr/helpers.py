@@ -322,7 +322,7 @@ def reduce(corrs, rfun=None):
 
         _has_networkx = True
         graph_measures = {
-            "eigenvector_centrality": lambda x: nx.eigenvector_centrality_numpy(nx.from_numpy_array(x)),
+            "eigenvector_centrality": lambda x: nx.eigenvector_centrality(nx.from_numpy_array(x), tol=1e-8),
             "pagerank_centrality": lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
             "strength": lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight='weight')]),
     }
@@ -537,6 +537,7 @@ def timepoint_decoder(
                     level=v,
                     rfun=rfun,
                 )
+            #Necessary to run cdist function below.
             def convert_to_array(data):
                 """Helper function to convert data to a 2D numpy array."""
                 if isinstance(data[0], dict):
