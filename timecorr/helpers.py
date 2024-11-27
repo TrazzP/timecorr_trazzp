@@ -318,19 +318,16 @@ def reduce(corrs, rfun=None):
     """
 
     try:
-        import brainconn as bc
+        import networkx as nx
 
-        _has_brainconn = True
+        _has_networkx = True
         graph_measures = {
-            "eigenvector_centrality": bc.centrality.eigenvector_centrality_und,
-            "pagerank_centrality": lambda x: bc.centrality.pagerank_centrality(
-                x, d=0.85
-            ),
-            "strength": bc.degree.strengths_und,
-        }
+            "eigenvector_centrality": lambda x: nx.eigenvector_centrality_numpy(nx.from_numpy_array(x)),
+            "pagerank_centrality": lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
+            "strength": lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight='weight')]),
+    }
     except ImportError:
-        _has_brainconn = False
-
+        _has_networkx = False
         graph_measures = {
             "eigenvector_centrality": None,
             "pagerank_centrality": None,
@@ -347,12 +344,12 @@ def reduce(corrs, rfun=None):
     else:
         V = get_V(corrs.shape[1])
 
-    if _has_brainconn and rfun in graph_measures.keys():
+    if _has_networkx and rfun in graph_measures.keys():
         return apply_by_row(corrs, graph_measures[rfun])
 
-    elif not _has_brainconn and rfun in graph_measures.keys():
+    elif not _has_networkx and rfun in graph_measures.keys():
         raise ImportError(
-            'brainconn is not installed. Please install "git+https://github.com/FIU-Neuro/brainconn#egg=brainconn"'
+            'networkx is not installed.'
         )
 
     else:
@@ -428,6 +425,7 @@ def timepoint_decoder(
                 the decoded and actual window numbers, expressed as a percentage
                 of the total number of windows
     """
+    assert all(d.shape == data[0].shape for d in data), "All input matrices must have the same shape."
 
     assert (
         len(np.unique(list(map(lambda x: x.shape[0], data)))) == 1
@@ -493,9 +491,9 @@ def timepoint_decoder(
         "parameter lengths need to be the same as level if input is "
         "type np.ndarray or list"
     )
-
+    
     results_pd = pd.DataFrame()
-
+    
     corrs = 0
     for i in range(0, nfolds):
 
@@ -539,13 +537,32 @@ def timepoint_decoder(
                     level=v,
                     rfun=rfun,
                 )
+            def convert_to_array(data):
+                """Helper function to convert data to a 2D numpy array."""
+                if isinstance(data[0], dict):
+                    # Convert list of dictionaries to 2D numpy array of values
+                    return np.array([list(x.values()) for x in data])
+                elif isinstance(data[0], np.ndarray):
+                    # If already a numpy array, ensure it is 2D
+                    return np.array(data)
+                else:
+                    # Handle other cases, assuming numeric values
+                    return np.array(data).reshape(-1, 1)
+
+            # Convert both in_smooth and out_smooth
+            in_smooth = convert_to_array(in_smooth)
+            out_smooth = convert_to_array(out_smooth)
+
+            # Check the shape to ensure it's 2D
+            assert in_smooth.ndim == 2, f"in_smooth is not 2D, its shape is {in_smooth.shape}"
+            assert out_smooth.ndim == 2, f"out_smooth is not 2D, its shape is {out_smooth.shape}"
 
             if mu:
-                next_corrs = 1 - sd.cdist(in_smooth, out_smooth, "correlation")
+                next_corrs = 1 - sd.cdist(in_smooth, out_smooth, metric="correlation")
                 corrs += mu[v] * z2r(next_corrs)
 
             else:
-                corrs = 1 - sd.cdist(in_smooth, out_smooth, "correlation")
+                corrs = 1 - sd.cdist(in_smooth, out_smooth, metric="correlation")
 
             if v in orig_level:
 
@@ -1473,15 +1490,21 @@ def r2z(r):
 
     Parameters
     ----------
-    r : int or ndarray
-        Correlation value
+    r : int, float, or ndarray
+        Correlation value(s)
 
     Returns
     ----------
-    result : int or ndarray
-        Fishers z transformed correlation value
-
+    result : int, float, or ndarray
+        Fisher's z-transformed correlation value(s)
     """
+    
+    # Ensure r is within the valid range for the Fisher transformation
+    if np.any(r <= -1) or np.any(r >= 1):
+        # Clip r to a valid range (-1, 1) to avoid log of non-positive values
+        r = np.clip(r, -0.9999, 0.9999)
+
+    # Perform the Fisher z-transformation
     return 0.5 * (np.log(1 + r) - np.log(1 - r))
 
 
@@ -1500,7 +1523,12 @@ def z2r(z):
         Correlation value
 
     """
-    r = np.divide((np.exp(2 * z) - 1), (np.exp(2 * z) + 1))
+    # Calculate the denominator
+    denominator = np.exp(2 * z) + 1
+    denominator_safe = np.where(denominator != 0, denominator, np.finfo(float).eps)  # Use a small epsilon value if denominator is zero
+
+    # Perform the division
+    r = np.divide(np.exp(2 * z) - 1, denominator_safe)
     r[np.isnan(r)] = 0
     r[np.isinf(r)] = np.sign(r)[np.isinf(r)]
     return r
