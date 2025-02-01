@@ -823,7 +823,6 @@ def weighted_timepoint_decoder(
             next_results_pd = pd.concat(
 <<<<<<< HEAD
                 [next_results_pd, mu_pd], axis=1, join='inner'
->>>>>>>>> Temporary merge branch 2
             )
 
             results_pd = pd.concat([results_pd, next_results_pd])
@@ -1210,7 +1209,6 @@ def weighted_timepoint_decoder_ec(
             next_results_pd = pd.concat(
 <<<<<<< HEAD
                 [next_results_pd, mu_pd], axis=1, join='inner'
->>>>>>>>> Temporary merge branch 2
             )
 
             results_pd = pd.concat([results_pd, next_results_pd])
