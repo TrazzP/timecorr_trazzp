@@ -101,4 +101,14 @@ ENV/
 # Rope project settings
 .ropeproject
 
-.idea/
+# pytest
+.pytest_cache
+
+# idea files
+.idea
+.idea/**/
+
+*Untitled*
+
+# Big Data files
+* .mat
