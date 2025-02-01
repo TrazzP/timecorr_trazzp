@@ -125,6 +125,3 @@ else:
     append_iter = pd.read_csv(save_file + '.csv', index_col=0)
     append_iter = append_iter.append(iter_results)
     append_iter.to_csv(save_file + '.csv')
-    
-
-#Test
