@@ -20,7 +20,7 @@ wp = sys.argv[7]
 
 
 #Change this later so I can check if running on local machine or on cluster
-debug = True
+debug = False
 
 result_name = 'level_analysis_optimized_param_search'
 data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')  # Set 'data' as the base directory
@@ -73,11 +73,11 @@ if debug:
         print(c)
         if c == 'paragraph':
             if factors == 700:
-                next_data = list(map(lambda i: pieman_data[c][:, i][0][:100, :70], np.where(np.arange(pieman_data[c].shape[1]) != 3)[0]))
+                next_data = list(map(lambda i: pieman_data[c][:, i][0][:30, :70], np.where(np.arange(pieman_data[c].shape[1]) != 3)[0]))
             else:
-                next_data = list(map(lambda i: pieman_data[c][:, i][0][:100, :70], np.where(np.arange(pieman_data[c].shape[1]) != 0)[0]))
+                next_data = list(map(lambda i: pieman_data[c][:, i][0][:30, :70], np.where(np.arange(pieman_data[c].shape[1]) != 0)[0]))
         else:
-            next_data = list(map(lambda i: pieman_data[c][:, i][0][:100, :70], np.arange(pieman_data[c].shape[1])))
+            next_data = list(map(lambda i: pieman_data[c][:, i][0][:30, :70], np.arange(pieman_data[c].shape[1])))
         data.extend(next_data)
         conds.extend([c]*len(next_data))
     del pieman_data
@@ -123,5 +123,5 @@ if not os.path.isfile(save_file + '.csv'):
       iter_results.to_csv(save_file + '.csv')
 else:
     append_iter = pd.read_csv(save_file + '.csv', index_col=0)
-    append_iter = append_iter.append(iter_results)
+    append_iter = append_iter._append(iter_results)
     append_iter.to_csv(save_file + '.csv')
