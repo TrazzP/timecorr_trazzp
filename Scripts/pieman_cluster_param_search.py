@@ -101,11 +101,11 @@ else:
     del pieman_data
 
 
-data = np.array(data)
+data = np.array(data, dtype=object)
 conds = np.array(conds)
 append_iter = pd.DataFrame()
 
-iter_results = tc.helpers.weighted_timepoint_decoder(data[conds == cond], nfolds=2, optimize_levels=list(range(0,int(level)+1)), level=int(level),
+iter_results = tc.helpers.weighted_timepoint_decoder(np.array(data[conds == cond]), nfolds=2, optimize_levels=list(range(0,int(level)+1)), level=int(level),
                                     combine=corrmean_combine,
                                     cfun=eval(cfun),
                                     rfun=rfun,
@@ -125,3 +125,6 @@ else:
     append_iter = pd.read_csv(save_file + '.csv', index_col=0)
     append_iter = append_iter._append(iter_results)
     append_iter.to_csv(save_file + '.csv')
+
+
+#Example Script: python3 pieman_cluster_param_search.py intact 10 10 isfc PCA 5 gaussian
