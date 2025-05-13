@@ -22,7 +22,8 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 # ----------------------------------------------------------------------------------
 cluster = True
 if cluster:
-    print(os.path)
+    sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
+    print(sys.path)
 else:
     sys.path.append('/app')
 
