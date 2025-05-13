@@ -13,7 +13,7 @@ S = 5
 
 n_elecs = 20
 
-n_samples = 1000
+n_samples = 100
 
 R = toeplitz(np.linspace(0, 1, n_elecs)[::-1])
 
@@ -75,9 +75,9 @@ def test_wcorr():
     # correlating a timeseries with -1 times itself produces -1's
     assert corrs_col_neg.mean()==-1
     # check if corresponding columns in 3d array produces 1
-    assert (np.isclose(corrs_col_arrays[4,4,500],1))
+    assert (np.isclose(corrs_col_arrays[4,4,50],1))
     # check if toeplitz matrix is produced
-    assert (np.allclose(corrs_col_arrays[:, :, 500], R, atol=.2))
+    assert (np.allclose(corrs_col_arrays[:, :, 50], R, atol=.2))
     # check if corrs is a numpy array
     assert isinstance(corrs, np.ndarray)
 
@@ -129,7 +129,6 @@ def test_timepoint_decoder_comine_type():
 
     is_array = timepoint_decoder(try_data, level=[1], combine= np.array([mean_combine, corrmean_combine]), cfun=isfc,
                                    rfun='eigenvector_centrality', weights_params=laplace['params'])
-
     assert np.allclose(is_fun, is_array, is_list)
 
 
@@ -157,7 +156,6 @@ def test_timepoint_decoder_cfun_type():
     is_array = timepoint_decoder(try_data, level=np.array([0, 1]), combine=corrmean_combine,
                                                  cfun=np.array([None, isfc]),
                                                  rfun='eigenvector_centrality', weights_params=laplace['params'])
-
     assert np.allclose(is_fun, is_array, is_list)
 
 
@@ -189,7 +187,6 @@ def test_timepoint_decode_rfun_type():
                                                  cfun=np.array([None, isfc]),
                                                  rfun=np.array(['eigenvector_centrality', 'eigenvector_centrality']),
                                                  weights_params=laplace['params'])
-
     assert np.allclose(is_str, is_array, is_list)
 
 

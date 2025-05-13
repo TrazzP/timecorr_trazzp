@@ -109,3 +109,6 @@ ENV/
 .idea/**/
 
 *Untitled*
+
+# Big Data files
+*.mat

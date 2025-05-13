@@ -1,12 +1,12 @@
 
 import numpy as np
 import pandas as pd
-import hypertools as hyp
 
 import timecorr as tc
 from timecorr.timecorr import timecorr
 from timecorr.simulate import simulate_data
 from timecorr.helpers import isfc, gaussian_weights, gaussian_params
+from timecorr.braintools import brain_reduce, brain_format
 
 #TODO: need *real* tests-- e.g. generate a small dataset and verify that we actually get the correct answers
 
@@ -15,11 +15,9 @@ data_list= np.random.randn(10,3)
 pandas_dataframe= pd.DataFrame(np.random.randint(low=0, high=10, size=(2, 2)))
 numpy_array= np.array([[5, 9], [10, 7]])
 numpy_array_list= np.array([[8,2],[4,6]]).tolist()
-# if above is how to make a numpy list than TC isn't capible np.lists currently
-random_numbers= (2 ,3 ,5, 10, 12, 4, 6)
 
-sim_1 = simulate_data(S=1, T=30, K=50, set_random_seed=100)
-sim_3 = simulate_data(S=3, T=30, K=50, set_random_seed=100)
+sim_1 = simulate_data(S=1, T=30, K=30, set_random_seed=100)
+sim_3 = simulate_data(S=3, T=30, K=30, set_random_seed=100)
 
 width = 10
 laplace = {'name': 'Laplace', 'weights': tc.laplace_weights, 'params': {'scale': width}}
@@ -82,33 +80,38 @@ def test_exclude_timepoints_neg():
 
 
 def test_timecorr():
+    # Format different types of input data
+    data_dl = brain_format.format_data(data_list)
+    data_pdf = brain_format.format_data(pandas_dataframe)
+    data_npa = brain_format.format_data(numpy_array)
+    data_npl = brain_format.format_data(numpy_array_list)
 
-    data_dl = hyp.tools.format_data(data_list)
-    data_pdf = hyp.tools.format_data(pandas_dataframe)
-    data_npa = hyp.tools.format_data(numpy_array)
-#   data_npl = hyp.tools.format_data(numpy_array_list)
-#   data_rand = hyp.tools.format_data(random_numbers)
-#   these are now lists
-    assert isinstance (data_dl, list)
+    # Check all outputs are lists
+    assert isinstance(data_dl, list)
+    assert isinstance(data_pdf, list)
+    assert isinstance(data_npa, list)
+    assert isinstance(data_npl, list)
 
-    Test_dl=  data_dl[0].shape[0]
-    Test_pdf=  data_pdf[0].shape[0]
-    Test_npa=  data_npa[0].shape[0]
-    #Test returns the shape of the weights_function
-#   Test_npl=  data_npl[0].shape[0]
-#   Test_rand=  data_rn[0].shape[0]
+    # Check shapes of first elements in each formatted list
+    assert data_dl[0].shape[0] > 0, "data_dl first element has zero rows"
+    assert data_pdf[0].shape[0] > 0, "data_pdf first element has zero rows"
+    assert data_npa[0].shape[0] > 0, "data_npa first element has zero rows"
+    assert data_npl[0].shape[0] > 0, "data_npl first element has zero rows"
 
-    assert isinstance (Test_pdf, int)
+    # Test gaussian_weights function
+    dl_tester = gaussian_weights(data_dl[0].shape[0], params=gaussian_params)
+    pdf_tester = gaussian_weights(data_pdf[0].shape[0], params=gaussian_params)
+    npa_tester = gaussian_weights(data_npa[0].shape[0], params=gaussian_params)
+    npl_tester = gaussian_weights(data_npl[0].shape[0], params=gaussian_params)
+    
+    # Verify gaussian_weights outputs
+    assert isinstance(dl_tester, np.ndarray), "dl_tester is not a numpy array"
+    assert dl_tester.shape == (data_dl[0].shape[0], data_dl[0].shape[0]), "dl_tester shape mismatch"
+    assert npa_tester.shape == (data_npa[0].shape[0], data_npa[0].shape[0]), "npa_tester shape mismatch"
 
-    dl_tester = gaussian_weights(Test_dl, params=gaussian_params)
-    pdf_tester = gaussian_weights(Test_pdf, params=gaussian_params)
-    npa_tester = gaussian_weights(Test_npa, params=gaussian_params)
-#   thrid_tester = gaussian_weights(T3, params=gaussian_params)
-#   fourth_tester = gaussian_weights(T4, params=gaussian_params)
-
-    assert isinstance (npa_tester, np.ndarray)
-   # assert npa_tester.shape == data_npa.shape
-   # assert dl_tester.shape > data_dl.shape
+    # Verify no errors in handling other input formats
+    assert pdf_tester.shape == (data_pdf[0].shape[0], data_pdf[0].shape[0]), "pdf_tester shape mismatch"
+    assert npl_tester.shape == (data_npl[0].shape[0], data_npl[0].shape[0]), "npl_tester shape mismatch"
 
 
 #unsure how to test 'across' mode
