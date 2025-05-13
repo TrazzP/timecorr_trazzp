@@ -4,7 +4,7 @@ import warnings
 import numpy as np
 from sklearn.decomposition import PCA, FastICA, IncrementalPCA, KernelPCA, FactorAnalysis, TruncatedSVD, SparsePCA, MiniBatchSparsePCA, DictionaryLearning, MiniBatchDictionaryLearning
 from sklearn.manifold import TSNE, MDS, SpectralEmbedding, LocallyLinearEmbedding, Isomap
-from umap import UMAP
+from umap.umap_ import UMAP
 from .brain_format import format_data as formatter
 from .brain_helpers import memoize
 

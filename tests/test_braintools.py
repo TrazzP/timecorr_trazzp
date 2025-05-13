@@ -131,7 +131,7 @@ def test_reduce_UMAP():
 
 
 def test_reduce_params_UMAP():
-    from umap import UMAP
+    from umap.umap_ import UMAP
     data1 = np.random.rand(20, 10)
     params = {'n_neighbors': 5, 'n_components': 2, 'metric': 'correlation', 'random_state': 1234}
     # testing override of n_dims by n_components. Should raise UserWarning due to conflict
