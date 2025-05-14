@@ -14,7 +14,7 @@ cd /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp
 source .venv/bin/activate
 
 
-cd /Scripts
+cd Scripts
 mkdir -p slurm-out
 
 # 2) pick the weight‐function name based on the array ID
