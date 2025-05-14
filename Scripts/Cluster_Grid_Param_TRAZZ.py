@@ -39,7 +39,7 @@ DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 # ----------------------------------------------------------------------------------
 # Directory Setup
 # ----------------------------------------------------------------------------------
-result_name = 'level_analysis_optimized_param_search'
+result_name = 'Data_Reduction_Testing'
 data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'inital_data')
 results_dir = os.path.join(
     data_dir,
