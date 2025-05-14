@@ -33,7 +33,7 @@ from timecorr.helpers import isfc, wisfc, mean_combine, corrmean_combine
 # ----------------------------------------------------------------------------------
 # Debug Mode Configuration
 # ----------------------------------------------------------------------------------
-debug = True
+debug = False
 DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 
 # ----------------------------------------------------------------------------------
@@ -99,3 +99,10 @@ else:
     updated.to_csv(save_file, index=False)
 
 print(f"✨ Experiment complete. Results archived at: {save_file}")
+
+
+# ----------------------------------------------------------------------------------
+# Example Usage
+# ----------------------------------------------------------------------------------
+
+# python3 Cluster_Grid_Param_TRAZZ.py intact 100 10 10 isfc PCA 5 gaussian
