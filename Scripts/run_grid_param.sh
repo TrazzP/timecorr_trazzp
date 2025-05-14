@@ -11,8 +11,11 @@
 
 # 1) go into your repo and activate your .venv
 cd /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp
-mkdir -p slurm-out
 source .venv/bin/activate
+
+
+cd /Scripts
+mkdir -p slurm-out
 
 # 2) pick the weight‐function name based on the array ID
 #    (make sure the order here matches the 10 you want)
