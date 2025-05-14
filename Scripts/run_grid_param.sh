@@ -1,11 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name=Trazz_Timecorr_Param-Sweep
+#SBATCH --job-name=Trazz_Timecorr_Param_Sweep
 #SBATCH --output=slurm-out/param-sweep.%a.out
 #SBATCH --error=slurm-out/param-sweep.%a.err
-#SBATCH --time=06:00:00
-#SBATCH --mem=16G
+#SBATCH --time=12:00:00
+#SBATCH --mem=32G
 #SBATCH --cpus-per-task=1
 #SBATCH --array=0-15            # 10 tasks: IDs 0–9
+#SBATCH --mail-type=all
+#SBATCH --mail-user=tp183485@umconnect.umt.edu
 
 # 1) go into your repo and activate your .venv
 cd /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp
