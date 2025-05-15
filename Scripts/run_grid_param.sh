@@ -2,8 +2,8 @@
 #SBATCH --job-name=Trazz_Timecorr_Param_Sweep
 #SBATCH --output=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/slurm-out/param-sweep.%a.out
 #SBATCH --error=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/slurm-out/param-sweep.%a.err
-#SBATCH --time=3:00:00
-#SBATCH --mem=32G
+#SBATCH --time=6:00:00
+#SBATCH --mem=128G
 #SBATCH --cpus-per-task=1
 #SBATCH --array=0-15
 #SBATCH --mail-type=ALL

@@ -1,0 +1,7 @@
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+slurmstepd-hgcpu3-9: error: *** JOB 1034749 ON hgcpu3-9 CANCELLED AT 2025-05-15T20:15:38 ***
