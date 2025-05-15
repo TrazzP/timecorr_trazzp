@@ -33,105 +33,79 @@ models = {
 def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
     """
     Reduces dimensionality of an array, or list of arrays
-
-    Parameters
-    ----------
-    x : Numpy array or list of arrays
-        Dimensionality reduction using PCA is performed on this array.
-
-    reduce : str or dict
-        Decomposition/manifold learning model to use.  Models supported: PCA,
-        IncrementalPCA, SparsePCA, MiniBatchSparsePCA, KernelPCA, FastICA,
-        FactorAnalysis, TruncatedSVD, DictionaryLearning, MiniBatchDictionaryLearning,
-        TSNE, Isomap, SpectralEmbedding, LocallyLinearEmbedding, MDS and UMAP.
-        Can be passed as a string, but for finer control of the model
-        parameters, pass as a dictionary, e.g. reduce={'model' : 'PCA',
-        'params' : {'whiten' : True}}. See scikit-learn specific model docs
-        for details on parameters supported for each model.
-
-    ndims : int
-        Number of dimensions to reduce
-
-    format_data : bool
-        Whether or not to first call the format_data function (default: True).
-
-
-    Returns
-    ----------
-    x_reduced : Numpy array or list of arrays
-        The reduced data with ndims dimensionality is returned.  If the input
-        is a list, a list is returned.
-
     """
 
+    # Parse reduce argument
     if isinstance(reduce, (str, np.bytes_)):
         model_name = reduce
-        model_params = {
-            'n_components': ndims
-        }
-
+        model_params = { 'n_components': ndims }
     elif isinstance(reduce, dict):
         try:
             model_name = reduce['model']
             model_params = reduce['params']
         except KeyError:
-            raise ValueError('If passing a dictionary, pass the model as the value of the "model" key and a \
-            dictionary of custom params as the value of the "params" key.')
-
+            raise ValueError("If passing a dictionary, pass keys 'model' and 'params'.")
     else:
-        # handle other possibilities below
         model_name = reduce
 
+    # Validate model
     try:
-        # if the model passed is a string, make sure it's one of the supported options
         if isinstance(model_name, (str, np.bytes_)):
-            model = models[model_name]
-        # otherwise check any custom object for necessary methods
+            model_cls = models[model_name]
         else:
-            model = model_name
-            getattr(model, 'fit_transform')
-            getattr(model, 'n_components')
+            model_cls = model_name
+            getattr(model_cls, 'fit_transform')
+            getattr(model_cls, 'n_components')
     except (KeyError, AttributeError):
-        raise ValueError('reduce must be one of the supported options or support n_components and fit_transform \
-         methods. See http://hypertools.readthedocs.io/en/latest/hypertools.tools.reduce.html#hypertools.tools.reduce \
-         for supported models')
+        raise ValueError('Unsupported reduction model.')
 
-    # check for multiple values from n_components & ndims args
+    # Sync n_components and ndims
     if 'n_components' in model_params:
-        if (ndims is None) or (ndims == model_params['n_components']):
-            pass
-        else:
-            warnings.warn('Unequal values passed to dims and n_components. Using ndims parameter.')
+        if ndims is not None and ndims != model_params['n_components']:
+            warnings.warn('Unequal dims vs n_components: using ndims.')
             model_params['n_components'] = ndims
     else:
         model_params['n_components'] = ndims
 
-    # convert to common format
+    # Format data
     if format_data:
         x = formatter(x, ppca=True)
 
-    # if ndims/n_components is not passed or all data is < ndims-dimensional, just return it
-    if model_params['n_components'] is None or all([i.shape[1] <= model_params['n_components'] for i in x]):
+    # Early exit if no reduction needed
+    if model_params['n_components'] is None or all(i.shape[1] <= model_params['n_components'] for i in x):
         return x
 
     stacked_x = np.vstack(x)
-    if stacked_x.shape[0] == 1:
-        warnings.warn('Cannot reduce the dimensionality of a single row of'
-                      ' data. Return zeros length of ndims')
-        return [np.zeros((1, model_params['n_components']))]
+    if stacked_x.shape[0] <= model_params['n_components']:
+        warnings.warn('Rows <= ndims: returning zeros.')
+        return [np.zeros((stacked_x.shape[0], model_params['n_components']))]
 
+    # --- Algorithm-specific parameter tweaks ---
+    name = model_name.lower()
+    # TSNE: allow >3 dims via exact method, speedups
+    if name == 'tsne':
+        n_comp = model_params.get('n_components')
+        if n_comp and n_comp > 3:
+            model_params['method'] = 'exact'
+        # reduce default iterations for speed
+        model_params.setdefault('n_iter', 300)
+        model_params.setdefault('init', 'pca')
+        model_params.setdefault('learning_rate', 'auto')
 
-    elif stacked_x.shape[0] < model_params['n_components']:
-            warnings.warn('The number of rows in your data is less than ndims.'
-                          ' The data will be reduced to the number of rows.')
-            
-    # initialize model
-    model = model(**model_params)
+    # DictionaryLearning: limit iterations, loosen tolerance
+    if name == 'dictionarylearning':
+        model_params.setdefault('max_iter', 300)
+        model_params.setdefault('tol', 1e-2)
 
-    # reduce data
+    # SparsePCA: limit iterations, loosen tolerance
+    if name == 'sparsepca':
+        model_params.setdefault('max_iter', 300)
+        model_params.setdefault('tol', 1e-2)
+
+    # initialize and reduce
+    model = model_cls(**model_params)
     x_reduced = reduce_list(x, model)
     return x_reduced
-
 
 # sub functions
 def reduce_list(x, model):

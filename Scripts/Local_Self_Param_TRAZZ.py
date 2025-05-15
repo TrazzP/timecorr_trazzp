@@ -33,7 +33,7 @@ from timecorr.helpers import isfc, wisfc, mean_combine, corrmean_combine
 # ----------------------------------------------------------------------------------
 # Debug Mode Configuration
 # ----------------------------------------------------------------------------------
-debug = True
+debug = False
 DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 
 # ----------------------------------------------------------------------------------
