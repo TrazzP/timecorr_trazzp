@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Scripts/Cluster_Grid_Param_TRAZZ.py", line 77, in <module>
+    iter_results = tc.helpers.weighted_timepoint_decoder(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 754, in weighted_timepoint_decoder
+    in_smooth, out_smooth, in_raw, out_raw = folding_levels(
+                                             ^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 876, in folding_levels
+    timecorr(
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/timecorr.py", line 144, in timecorr
+    corrs = reduce(combine(cfun(data, weights)), rfun=rfun)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 356, in reduce
+    red_corrs = brain_reduce.reduce(corrs, reduce=rfun, ndims=V)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_helpers.py", line 149, in memoizer
+    cache[key] = obj(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py", line 132, in reduce
+    x_reduced = reduce_list(x, model)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py", line 139, in reduce_list
+    x_r = np.vsplit(model.fit_transform(np.vstack(x)), split)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py", line 1178, in fit_transform
+    embedding = self._fit(X)
+                ^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py", line 920, in _fit
+    raise ValueError(
+ValueError: 'n_components' should be inferior to 4 for the barnes_hut algorithm as it relies on quad-tree or oct-tree.
