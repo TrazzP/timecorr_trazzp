@@ -1,9 +1,0 @@
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-slurmstepd-hgcpu8-3: error: *** JOB 1034747 ON hgcpu8-3 CANCELLED AT 2025-05-15T20:15:38 ***
