@@ -1,21 +1,20 @@
 #!/bin/bash
 #SBATCH --job-name=Trazz_Timecorr_Param_Sweep
-#SBATCH --output=slurm-out/param-sweep.%a.out
-#SBATCH --error=slurm-out/param-sweep.%a.err
-#SBATCH --time=12:00:00
+#SBATCH --output=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/slurm-out/param-sweep.%a.out
+#SBATCH --error=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/slurm-out/param-sweep.%a.err
+#SBATCH --time=3:00:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=1
-#SBATCH --array=0-15            # 10 tasks: IDs 0–9
-#SBATCH --mail-type=all
+#SBATCH --array=0-15
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user=tp183485@umconnect.umt.edu
 
-# 1) go into your repo and activate your .venv
+# you can cd anywhere now, logs will always go to that exact folder
+mkdir -p /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/slurm-out
 cd /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp
-source .venv/bin/activate
-
+source timecorr_venv/bin/activate
 
 cd Scripts
-mkdir -p slurm-out
 
 # 2) pick the weight‐function name based on the array ID
 #    (make sure the order here matches the 10 you want)
