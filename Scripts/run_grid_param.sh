@@ -5,7 +5,7 @@
 #SBATCH --time=10:00:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=1
-#SBATCH --array=0-16
+#SBATCH --array=0-15
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tp183485@umconnect.umt.edu
 
@@ -16,9 +16,24 @@ cd /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp
 source timecorr_venv/bin/activate
 cd Scripts
 
-PARAMS=( PCA IncrementalPCA SparsePCA MiniBatchSparsePCA KernelPCA FastICA \
-         FactorAnalysis TruncatedSVD DictionaryLearning MiniBatchDictionaryLearning \
-         TSNE Isomap SpectralEmbedding LocallyLinearEmbedding MDS UMAP )
+PARAMS=(
+  PCA
+  IncrementalPCA
+  SparsePCA
+  MiniBatchSparsePCA
+  KernelPCA
+  FastICA
+  FactorAnalysis
+  TruncatedSVD
+  DictionaryLearning
+  MiniBatchDictionaryLearning
+  TSNE
+  Isomap
+  SpectralEmbedding
+  LocallyLinearEmbedding
+  MDS
+  UMAP
+)
 
 WP=${PARAMS[$SLURM_ARRAY_TASK_ID]}
 
