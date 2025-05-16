@@ -5,7 +5,7 @@
 #SBATCH --time=10:00:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=1
-#SBATCH --array=0-15
+#SBATCH --array=0-14
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tp183485@umconnect.umt.edu
 
