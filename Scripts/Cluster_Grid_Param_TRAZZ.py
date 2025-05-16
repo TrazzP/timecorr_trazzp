@@ -23,7 +23,6 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
-    print(sys.path)
 else:
     sys.path.append('/app')
 
@@ -39,15 +38,10 @@ DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 # ----------------------------------------------------------------------------------
 # Directory Setup
 # ----------------------------------------------------------------------------------
-result_name = 'Data_Reduction_Testing'
 data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'inital_data')
-results_dir = os.path.join(
-    data_dir,
-    result_name,
-    f"{cfun}_{rfun}_{wp}_{width}{'_debug' if debug else ''}"
-)
-os.makedirs(results_dir, exist_ok=True)
 
+results_dir ='/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data'
+os.makedirs(results_dir, exist_ok=True)
 # ----------------------------------------------------------------------------------
 # Data Loading & Optional Debug Truncation
 # ----------------------------------------------------------------------------------
@@ -90,7 +84,9 @@ iter_results['iteration'] = int(reps)
 # ----------------------------------------------------------------------------------
 # Results Persistence
 # ----------------------------------------------------------------------------------
-save_file = os.path.join(results_dir, f'{cond}.csv')
+filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv"
+save_file = os.path.join(results_dir, filename)
+
 if not os.path.isfile(save_file):
     iter_results.to_csv(save_file, index=False)
 else:
