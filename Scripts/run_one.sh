@@ -12,7 +12,7 @@
 # cfun   ← isfc (hard‐coded)
 # alg    ← one of your 16 WP methods
 # width  ← 5,10,…,50
-# ker    ← gaussian|mexican_hat|laplace
+# wp    ← gaussian|mexican_hat|laplace
 
 # build your output path
 #OUTDIR=../Cluster_Data/"$cond"/"$fac"/"$ker"/"$alg"/"$width"

@@ -87,10 +87,6 @@ iter_results['iteration'] = int(reps)
 filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv"
 save_file = os.path.join(results_dir, filename)
 
-# Skip if we've already produced this result
-if os.path.isfile(save_file):
-    sys.exit(0)
-    
 if not os.path.isfile(save_file):
     iter_results.to_csv(save_file, index=False)
 else:
