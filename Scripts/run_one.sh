@@ -24,4 +24,4 @@ source timecorr_venv/bin/activate
 cd Scripts
 
 python Cluster_Grid_Param_TRAZZ.py \
-  "$cond" "$fac" 10 10 "$cfun" "$alg" "$width" "$ker"
+  "$cond" "$fac" 10 10 "$cfun" "$alg" "$width" "$wp"
