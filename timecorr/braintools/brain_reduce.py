@@ -25,7 +25,7 @@ models = {
     'SpectralEmbedding': SpectralEmbedding,
     'LocallyLinearEmbedding': LocallyLinearEmbedding,
     'MDS': MDS,
-    'UMAP': UMAP
+    'UMAP': UMAP,
 }
 
 # main function
@@ -57,7 +57,7 @@ def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
             getattr(model_cls, 'fit_transform')
             getattr(model_cls, 'n_components')
     except (KeyError, AttributeError):
-        raise ValueError('Unsupported reduction model.')
+        raise ValueError(f'Unsupported reduction model. {reduce}')
 
     # Sync n_components and ndims
     if 'n_components' in model_params:
