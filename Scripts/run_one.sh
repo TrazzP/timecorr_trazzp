@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=Trazz_Grid
-#SBATCH --output=/dev/null      # we’ll redirect in‐script
-#SBATCH --error=/dev/null
+#SBATCH --output=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.out
+#SBATCH --error=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.err
 #SBATCH --time=10:00:00
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=1
