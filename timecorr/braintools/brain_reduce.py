@@ -57,7 +57,11 @@ def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
             getattr(model_cls, 'fit_transform')
             getattr(model_cls, 'n_components')
     except (KeyError, AttributeError):
-        raise ValueError(f'Unsupported reduction model. {reduce}')
+        bad = model_name if isinstance(model_name, str) else reduce
+        valid = ', '.join(sorted(models.keys()))
+        raise ValueError(f"Unsupported reduction model {bad!r}. "
+                         f"Valid options are: {valid}")
+
 
     # Sync n_components and ndims
     if 'n_components' in model_params:
