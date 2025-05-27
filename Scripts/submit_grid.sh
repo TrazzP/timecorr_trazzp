@@ -6,6 +6,16 @@
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=1
 
+
+# live‐log to a shared file that updates immediately
+LIVELOG=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/submit_grid.live.log
+# tee both stdout and stderr into LIVELOG (unbuffered)
+exec > >(stdbuf -oL tee -a "$LIVELOG") 2> >(stdbuf -oL tee -a "$LIVELOG" >&2)
+# optional: echo every command
+set -x
+
+
+
 USER=$(whoami)
 MAXJ=15
 COMBOS=combos.txt
