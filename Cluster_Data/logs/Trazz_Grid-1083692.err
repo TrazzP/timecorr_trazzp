@@ -1,0 +1,24 @@
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
