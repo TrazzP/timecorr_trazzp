@@ -20,6 +20,7 @@ uniform_params = {}
 boxcar_params = {"width": 10}
 
 
+
 def gaussian_weights(T, params=gaussian_params):
     if params is None:
         params = gaussian_params
