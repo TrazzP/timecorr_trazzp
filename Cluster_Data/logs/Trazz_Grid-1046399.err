@@ -1,0 +1,44 @@
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/var/spool/slurmd/job1046399/slurm_script: line 27: 3916079 Killed                  python Cluster_Grid_Param_TRAZZ.py "$cond" "$fac" "$lvl" "$reps" "$cfun" "$rfun" "$width" "$wp"
+slurmstepd-hggpu4-12: error: Detected 1 oom_kill event in StepId=1046399.batch. Some of the step tasks have been OOM Killed.

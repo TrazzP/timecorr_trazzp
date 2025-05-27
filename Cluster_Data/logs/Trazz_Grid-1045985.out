@@ -1,0 +1,195 @@
+corrs 1
+sub corrs 10
+corrs 2
+sub corrs 20
+corrs 3
+sub corrs 30
+corrs 4
+sub corrs 40
+corrs 5
+sub corrs 50
+corrs 6
+sub corrs 60
+corrs 7
+sub corrs 70
+corrs 8
+sub corrs 80
+corrs 9
+sub corrs 90
+corrs 10
+sub corrs 100
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.20373323961937706
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+       rank  accuracy     error
+0  0.917198  0.102941  0.203733
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.1457477292387543
+            Iterations: 4
+            Function evaluations: 23
+            Gradient evaluations: 4
+       rank  accuracy     error
+0  0.920118  0.117647  0.145748
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.049605320069204234
+            Iterations: 5
+            Function evaluations: 33
+            Gradient evaluations: 5
+       rank  accuracy     error
+0  0.971102  0.191176  0.049605
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.03311526816609004
+            Iterations: 5
+            Function evaluations: 39
+            Gradient evaluations: 5
+       rank  accuracy     error
+0  0.971224  0.209559  0.033115
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.03168252595155717
+            Iterations: 5
+            Function evaluations: 43
+            Gradient evaluations: 5
+       rank  accuracy     error
+0  0.967534  0.191176  0.031683
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.026559796712802806
+            Iterations: 8
+            Function evaluations: 73
+            Gradient evaluations: 8
+       rank  accuracy    error
+0  0.945542  0.080882  0.02656
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.011353806228373701
+            Iterations: 6
+            Function evaluations: 66
+            Gradient evaluations: 6
+       rank  accuracy     error
+0  0.986281  0.246324  0.011354
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.015381704152249164
+            Iterations: 3
+            Function evaluations: 39
+            Gradient evaluations: 3
+       rank  accuracy     error
+0  0.981158  0.202206  0.015382
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.01154303633217993
+            Iterations: 3
+            Function evaluations: 41
+            Gradient evaluations: 3
+       rank  accuracy     error
+0  0.985024  0.257353  0.011543
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.01269193339100346
+            Iterations: 8
+            Function evaluations: 110
+            Gradient evaluations: 8
+       rank  accuracy     error
+0  0.985105  0.242647  0.012692
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.008920847750865058
+            Iterations: 5
+            Function evaluations: 72
+            Gradient evaluations: 5
+       rank  accuracy     error
+0  0.985781  0.235294  0.008921
+corrs 1
+sub corrs 10
+corrs 2
+sub corrs 20
+corrs 3
+sub corrs 30
+corrs 4
+sub corrs 40
+corrs 5
+sub corrs 50
+corrs 6
+sub corrs 60
+corrs 7
+sub corrs 70
+corrs 8
+sub corrs 80
+corrs 9
+sub corrs 90
+corrs 10
+sub corrs 100
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.18525627162629757
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+       rank  accuracy     error
+0  0.917063  0.128676  0.185256
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.1444907006920415
+            Iterations: 5
+            Function evaluations: 31
+            Gradient evaluations: 5
+       rank  accuracy     error
+0  0.923619  0.136029  0.144491
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.03331801470588243
+            Iterations: 6
+            Function evaluations: 39
+            Gradient evaluations: 6
+       rank  accuracy     error
+0  0.974278  0.231618  0.033318
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.027141003460207678
+            Iterations: 4
+            Function evaluations: 32
+            Gradient evaluations: 4
+       rank  accuracy     error
+0  0.977928  0.253676  0.027141
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.02749243079584781
+            Iterations: 6
+            Function evaluations: 49
+            Gradient evaluations: 6
+       rank  accuracy     error
+0  0.978198      0.25  0.027492
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.038021734429065764
+            Iterations: 7
+            Function evaluations: 67
+            Gradient evaluations: 7
+      rank  accuracy     error
+0  0.97759  0.238971  0.038022
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.007190743944636667
+            Iterations: 10
+            Function evaluations: 104
+            Gradient evaluations: 10
+       rank  accuracy     error
+0  0.990322  0.275735  0.007191
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.007096128892733552
+            Iterations: 10
+            Function evaluations: 113
+            Gradient evaluations: 10
+       rank  accuracy     error
+0  0.989917  0.261029  0.007096
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.007717884948096877
+            Iterations: 7
+            Function evaluations: 83
+            Gradient evaluations: 7
+      rank  accuracy     error
+0  0.98966  0.242647  0.007718
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.007379974048442895
+            Iterations: 8
+            Function evaluations: 102
+            Gradient evaluations: 8
+       rank  accuracy    error
+0  0.989295  0.257353  0.00738
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.006325692041522481
+            Iterations: 10
+            Function evaluations: 134
+            Gradient evaluations: 10
+       rank  accuracy     error
+0  0.991025  0.290441  0.006326
+✨ Experiment complete. Results archived at: /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/paragraph_100_10_10_isfc_UMAP_35_gaussian.csv

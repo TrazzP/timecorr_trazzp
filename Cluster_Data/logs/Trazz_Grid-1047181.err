@@ -1,0 +1,57 @@
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+slurmstepd-hggpu4-4: error: *** JOB 1047181 ON hggpu4-4 CANCELLED AT 2025-05-25T08:56:26 DUE TO TIME LIMIT ***

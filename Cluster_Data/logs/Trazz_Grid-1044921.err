@@ -1,0 +1,4 @@
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
+  corrs[:, :, t] = np.divide(alpha, beta)
+/var/spool/slurmd/job1044921/slurm_script: line 27: 27821 Killed                  python Cluster_Grid_Param_TRAZZ.py "$cond" "$fac" "$lvl" "$reps" "$cfun" "$rfun" "$width" "$wp"
+slurmstepd-hgcpu6-15: error: Detected 1 oom_kill event in StepId=1044921.batch. Some of the step tasks have been OOM Killed.

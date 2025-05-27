@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Scripts/Cluster_Grid_Param_TRAZZ.py", line 68, in <module>
+    weights_param = weight_defs.get(wp, eval(wp))
+                                        ^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'gaussian' is not defined
