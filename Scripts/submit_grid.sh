@@ -12,7 +12,7 @@ LIVELOG=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/submit_g
 : > "$LIVELOG"
 
 USER=$(whoami)
-MAXJ=15
+MAXJ=16
 COMBOS=combos.txt
 TOTAL=$(wc -l < "$COMBOS")
 i=1
@@ -21,7 +21,7 @@ i=1
 echo "$(date +'%Y-%m-%d %H:%M:%S') Starting submit_grid for $TOTAL combos" | tee -a "$LIVELOG"
 
 while [ "$i" -le "$TOTAL" ]; do
-  RUNNING=$(squeue -u "$USER" -n Trazz_Grid -h | wc -l)
+  RUNNING=$(squeue -u "$USER" -h | wc -l)
 
   if [ "$RUNNING" -lt "$MAXJ" ]; then
     LINE=$(sed -n "${i}p" "$COMBOS")
