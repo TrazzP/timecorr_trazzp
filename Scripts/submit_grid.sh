@@ -22,20 +22,24 @@ while [ "$i" -le "$TOTAL" ]; do
     read cond fac lvl reps cfun rfun width wp <<< "$LINE"
 
     # build the exact output path
-    OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}.csv"
+    OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}.csv"
 
     if [ -f "$OUT" ]; then
       echo "Skipping #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp} (already done)"
-      i=$((i+1))
+      ((i++))
       continue
     fi
 
     sbatch \
+      --job-name="${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}" \
+      --output="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.out" \
+      --error="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.err" \
       --export=ALL,cond="$cond",fac="$fac",lvl="$lvl",reps="$reps",cfun="$cfun",rfun="$rfun",width="$width",wp="$wp" \
       run_one.sh
 
+
     echo "Submitted #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp}"
-    i=$((i+1))
+    ((i++))
   else
     sleep 30
   fi
