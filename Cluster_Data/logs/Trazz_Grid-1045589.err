@@ -1,2 +1,0 @@
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 3 iterations, i.e. alpha=5.589e-03, with an active set of 3 regressors, and the smallest cholesky pivot element being 1.490e-08. Reduce max_iter or increase eps parameters.
-  warnings.warn(
