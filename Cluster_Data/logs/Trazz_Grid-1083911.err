@@ -18,3 +18,6 @@
   corrs[:, :, t] = np.divide(alpha, beta)
 /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
   corrs[:, :, t] = np.divide(alpha, beta)
+/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
+  warnings.warn('Rows <= ndims: returning zeros.')
+slurmstepd-hgcpu3-1: error: *** JOB 1083911 ON hgcpu3-1 CANCELLED AT 2025-05-27T18:24:38 ***

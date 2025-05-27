@@ -4,8 +4,4 @@
   warnings.warn('Rows <= ndims: returning zeros.')
 /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
   corrs[:, :, t] = np.divide(alpha, beta)
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: divide by zero encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py:144: RuntimeWarning: invalid value encountered in divide
-  corrs[:, :, t] = np.divide(alpha, beta)
-slurmstepd-hgcpu6-13: error: *** JOB 1084409 ON hgcpu6-13 CANCELLED AT 2025-05-27T18:24:38 ***
+slurmstepd-hgcpu6-12: error: *** JOB 1084587 ON hgcpu6-12 CANCELLED AT 2025-05-27T18:24:38 ***
