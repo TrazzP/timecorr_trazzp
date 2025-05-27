@@ -40,7 +40,7 @@ DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 # ----------------------------------------------------------------------------------
 data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'inital_data')
 
-results_dir ='/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data'
+results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', cond)
 os.makedirs(results_dir, exist_ok=True)
 # ----------------------------------------------------------------------------------
 # Data Loading & Optional Debug Truncation

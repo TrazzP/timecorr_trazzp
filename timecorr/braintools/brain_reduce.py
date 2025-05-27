@@ -86,13 +86,30 @@ def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
 
     # --- Algorithm-specific parameter tweaks ---
     name = model_name.lower()
+    
+    # rename deprecated force_all_finite → ensure_all_finite
+    if 'force_all_finite' in model_params:
+        model_params['ensure_all_finite'] = model_params.pop('force_all_finite')
+
+    
+    if model_name == 'fastica':
+        # avoid non-convergence by giving it more iterations & a looser tol
+        model_params.setdefault('max_iter', 200)
+        model_params.setdefault('tol', 1e-4)
+
+    if model_name == 'UMAP':
+        # avoid the "n_jobs overridden" warning
+        model_params.setdefault('random_state', None)
+
     # TSNE: allow >3 dims via exact method, speedups
     if name == 'tsne':
+        if 'n_iter' in model_params:
+            model_params['max_iter'] = model_params.pop('n_iter')
         n_comp = model_params.get('n_components')
         if n_comp and n_comp > 3:
             model_params['method'] = 'exact'
         # reduce default iterations for speed
-        model_params.setdefault('n_iter', 300)
+        model_params.setdefault('max_iter', 300)
         model_params.setdefault('init', 'pca')
         model_params.setdefault('learning_rate', 'auto')
 

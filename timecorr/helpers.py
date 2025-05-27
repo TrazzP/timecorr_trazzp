@@ -141,7 +141,10 @@ def wcorr(a, b, weights):
 
         alpha = np.dot(diffs_a.T, diffs_b)
         beta = np.sqrt(np.dot(vara.T, varb))
-        corrs[:, :, t] = np.divide(alpha, beta)
+        
+        with np.errstate(divide='ignore', invalid='ignore'):
+            corr = np.divide(alpha, beta)
+        corrs[:, :, t] = corr
 
     return corrs
 
