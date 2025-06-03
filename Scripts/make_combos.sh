@@ -1,6 +1,6 @@
 #!/bin/bash
-PARAM1=(intact paragraph sentence word)
-PARAM2=(100 700)
+PARAM1=(intact paragraph word rest)
+PARAM2=(100)
 PARAM3=(\
   PCA IncrementalPCA SparsePCA MiniBatchSparsePCA \
   KernelPCA FastICA FactorAnalysis TruncatedSVD \
