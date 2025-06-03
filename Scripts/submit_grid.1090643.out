@@ -928,3 +928,53 @@ Submitted batch job 1090660
 21:44:51 Submitted #913 → word,100,10,10,isfc,PCA,15,mexican_hat
 Submitted batch job 1090661
 21:44:51 Submitted #914 → word,100,10,10,isfc,PCA,20,mexican_hat
+Submitted batch job 1090761
+21:56:22 Submitted #915 → word,100,10,10,isfc,PCA,25,mexican_hat
+Submitted batch job 1090762
+21:56:22 Submitted #916 → word,100,10,10,isfc,PCA,30,mexican_hat
+Submitted batch job 1090763
+21:56:22 Submitted #917 → word,100,10,10,isfc,PCA,35,mexican_hat
+Submitted batch job 1090769
+21:56:52 Submitted #918 → word,100,10,10,isfc,PCA,40,mexican_hat
+Submitted batch job 1090770
+21:56:52 Submitted #919 → word,100,10,10,isfc,PCA,45,mexican_hat
+Submitted batch job 1090771
+21:56:52 Submitted #920 → word,100,10,10,isfc,PCA,50,mexican_hat
+Submitted batch job 1090772
+21:56:52 Submitted #921 → word,100,10,10,isfc,PCA,5,laplace
+Submitted batch job 1090773
+21:56:52 Submitted #922 → word,100,10,10,isfc,PCA,10,laplace
+Submitted batch job 1090776
+21:57:22 Submitted #923 → word,100,10,10,isfc,PCA,15,laplace
+Submitted batch job 1090777
+21:57:22 Submitted #924 → word,100,10,10,isfc,PCA,20,laplace
+Submitted batch job 1090778
+21:57:22 Submitted #925 → word,100,10,10,isfc,PCA,25,laplace
+Submitted batch job 1090779
+21:57:22 Submitted #926 → word,100,10,10,isfc,PCA,30,laplace
+Submitted batch job 1090783
+21:57:52 Submitted #927 → word,100,10,10,isfc,PCA,35,laplace
+Submitted batch job 1090839
+22:07:53 Submitted #928 → word,100,10,10,isfc,PCA,40,laplace
+Submitted batch job 1090842
+22:08:53 Submitted #929 → word,100,10,10,isfc,PCA,45,laplace
+Submitted batch job 1090843
+22:08:53 Submitted #930 → word,100,10,10,isfc,PCA,50,laplace
+Submitted batch job 1090844
+22:08:53 Submitted #931 → word,100,10,10,isfc,IncrementalPCA,5,gaussian
+Submitted batch job 1090845
+22:08:53 Submitted #932 → word,100,10,10,isfc,IncrementalPCA,10,gaussian
+Submitted batch job 1090847
+22:09:23 Submitted #933 → word,100,10,10,isfc,IncrementalPCA,15,gaussian
+Submitted batch job 1090848
+22:09:23 Submitted #934 → word,100,10,10,isfc,IncrementalPCA,20,gaussian
+Submitted batch job 1090849
+22:09:23 Submitted #935 → word,100,10,10,isfc,IncrementalPCA,25,gaussian
+Submitted batch job 1090850
+22:09:23 Submitted #936 → word,100,10,10,isfc,IncrementalPCA,30,gaussian
+Submitted batch job 1090852
+22:09:53 Submitted #937 → word,100,10,10,isfc,IncrementalPCA,35,gaussian
+Submitted batch job 1090854
+22:10:23 Submitted #938 → word,100,10,10,isfc,IncrementalPCA,40,gaussian
+Submitted batch job 1090855
+22:10:23 Submitted #939 → word,100,10,10,isfc,IncrementalPCA,45,gaussian
