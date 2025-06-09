@@ -13,7 +13,7 @@ LIVELOG=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/submit_g
 
 USER=$(whoami)
 MAXJ=16
-COMBOS=combos.txt
+COMBOS=combos100.txt
 TOTAL=$(wc -l < "$COMBOS")
 i=1
 
