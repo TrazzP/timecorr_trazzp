@@ -17,12 +17,11 @@ def parse_params_from_stem(stem: str):
     """
     Stem format: <cond>_<factors>_<level>_<reps>_<cfun>_<rfun>_<width>_<wp>
     We assume cond == "intact" here; return the 7‐tuple (factors, level, reps,
-    cfun, rfun, width, wp).  Raises ValueError if the stem doesn’t match.
+    cfun, rfun, width, wp). Raises ValueError if the stem doesn’t match.
     """
     parts = stem.split("_")
     if len(parts) < 8 or parts[0] != "intact":
         raise ValueError(f"Unexpected filename stem: {stem}")
-    # Reconstruct wp if it contained underscores:
     factors = parts[1]
     level   = parts[2]
     reps    = parts[3]
@@ -36,24 +35,23 @@ def load_mean_series(cond, factors, level, reps, cfun, rfun, width, wp):
     """
     Try to load CSV at:
       /app/Cluster_Data/{cond}/{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv
-    Compute and return a pandas.Series indexed by level (as in the CSV) containing
-    mean(accuracy) per level.  Raises FileNotFoundError if the file is missing.
+    Compute and return a pandas.Series indexed by level containing mean(accuracy).
+    Raises FileNotFoundError if the file is missing.
     """
     fname = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv"
     csv_path = INPUT_ROOT / cond / fname
     if not csv_path.exists():
         raise FileNotFoundError(f"{csv_path} not found")
     df = pd.read_csv(csv_path)
-    # group by the CSV’s "level" column (which may or may not match our 'level' variable)
     return df.groupby("level")["accuracy"].mean().sort_index()
 
 def main():
-    # 1) Gather all stems under intact/
+    # 1) Ensure intact/ exists
     if not INTACT_DIR.is_dir():
         print(f"Error: '{INTACT_DIR}' does not exist or is not a directory.")
         sys.exit(1)
 
-    # Collect a set of unique parameter‐tuples by scanning filenames:
+    # Scan intact/ for valid stems
     tuples = []
     for csv_path in INTACT_DIR.glob("*.csv"):
         stem = csv_path.stem
@@ -68,9 +66,10 @@ def main():
         print("No valid CSVs found in intact/.")
         sys.exit(0)
 
-    # 2) For each (stem, params), attempt to load & plot across all four conditions
+    # Prepare output root
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
 
+    # 2) For each parameter‐tuple, load across all conditions and plot
     for stem, (factors, level, reps, cfun, rfun, width, wp) in tuples:
         all_series = {}
         for cond in CONDS:
@@ -78,29 +77,31 @@ def main():
                 series = load_mean_series(cond, factors, level, reps, cfun, rfun, width, wp)
                 all_series[cond] = series
             except FileNotFoundError:
-                # Simply skip any missing condition
                 continue
 
         if not all_series:
-            # Somehow even intact was missing (unlikely), so skip
             print(f"  → No data found for '{stem}' under any condition; skipping.")
             continue
 
-        # 3) Plot all available conditions on one figure
+        # Plot
         plt.figure(figsize=(8, 5))
         for cond, series in all_series.items():
             plt.plot(series.index, series.values, marker="o", label=cond.capitalize())
 
         plt.xlabel("Level")
         plt.ylabel("Accuracy")
-        plt.title(f"Compare: {stem}")
+
+        # Build base name (dropping the leading 'intact_')
+        file_base = f"compare_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}"
+        plt.title(file_base)
         plt.legend()
         plt.grid(True)
         plt.tight_layout()
 
-        # 4) Save under /app/Graphs/comparisons/compare_<stem>.png
-        out_name = f"compare_{stem}.png"
-        out_fp   = OUTPUT_ROOT / out_name
+        # Save into subfolder named by rfun (e.g. MDS)
+        subdir = OUTPUT_ROOT / rfun
+        subdir.mkdir(parents=True, exist_ok=True)
+        out_fp = subdir / f"{file_base}.png"
         plt.savefig(out_fp)
         plt.close()
         print(f"  → Saved {out_fp}")
