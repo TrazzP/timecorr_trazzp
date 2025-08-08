@@ -1,0 +1,867 @@
+2025-06-28 16:08:42 Starting submit_grid for 3600 combos
+16:08:42 Skipping #1 → intact,100,10,10,isfc,PCA,5,gaussian (already done)
+16:08:42 Skipping #2 → intact,100,10,10,isfc,PCA,10,gaussian (already done)
+16:08:42 Skipping #3 → intact,100,10,10,isfc,PCA,15,gaussian (already done)
+16:08:42 Skipping #4 → intact,100,10,10,isfc,PCA,20,gaussian (already done)
+16:08:42 Skipping #5 → intact,100,10,10,isfc,PCA,25,gaussian (already done)
+16:08:42 Skipping #6 → intact,100,10,10,isfc,PCA,30,gaussian (already done)
+16:08:42 Skipping #7 → intact,100,10,10,isfc,PCA,35,gaussian (already done)
+16:08:42 Skipping #8 → intact,100,10,10,isfc,PCA,40,gaussian (already done)
+16:08:42 Skipping #9 → intact,100,10,10,isfc,PCA,45,gaussian (already done)
+16:08:42 Skipping #10 → intact,100,10,10,isfc,PCA,50,gaussian (already done)
+16:08:42 Skipping #11 → intact,100,10,10,isfc,PCA,5,mexican_hat (already done)
+16:08:42 Skipping #12 → intact,100,10,10,isfc,PCA,10,mexican_hat (already done)
+16:08:42 Skipping #13 → intact,100,10,10,isfc,PCA,15,mexican_hat (already done)
+16:08:42 Skipping #14 → intact,100,10,10,isfc,PCA,20,mexican_hat (already done)
+16:08:42 Skipping #15 → intact,100,10,10,isfc,PCA,25,mexican_hat (already done)
+16:08:42 Skipping #16 → intact,100,10,10,isfc,PCA,30,mexican_hat (already done)
+16:08:42 Skipping #17 → intact,100,10,10,isfc,PCA,35,mexican_hat (already done)
+16:08:42 Skipping #18 → intact,100,10,10,isfc,PCA,40,mexican_hat (already done)
+16:08:42 Skipping #19 → intact,100,10,10,isfc,PCA,45,mexican_hat (already done)
+16:08:42 Skipping #20 → intact,100,10,10,isfc,PCA,50,mexican_hat (already done)
+16:08:42 Skipping #21 → intact,100,10,10,isfc,PCA,5,laplace (already done)
+16:08:42 Skipping #22 → intact,100,10,10,isfc,PCA,10,laplace (already done)
+16:08:42 Skipping #23 → intact,100,10,10,isfc,PCA,15,laplace (already done)
+16:08:42 Skipping #24 → intact,100,10,10,isfc,PCA,20,laplace (already done)
+16:08:43 Skipping #25 → intact,100,10,10,isfc,PCA,25,laplace (already done)
+16:08:43 Skipping #26 → intact,100,10,10,isfc,PCA,30,laplace (already done)
+16:08:43 Skipping #27 → intact,100,10,10,isfc,PCA,35,laplace (already done)
+16:08:43 Skipping #28 → intact,100,10,10,isfc,PCA,40,laplace (already done)
+16:08:43 Skipping #29 → intact,100,10,10,isfc,PCA,45,laplace (already done)
+16:08:43 Skipping #30 → intact,100,10,10,isfc,PCA,50,laplace (already done)
+16:08:43 Skipping #31 → intact,100,10,10,isfc,IncrementalPCA,5,gaussian (already done)
+16:08:43 Skipping #32 → intact,100,10,10,isfc,IncrementalPCA,10,gaussian (already done)
+16:08:43 Skipping #33 → intact,100,10,10,isfc,IncrementalPCA,15,gaussian (already done)
+16:08:43 Skipping #34 → intact,100,10,10,isfc,IncrementalPCA,20,gaussian (already done)
+16:08:43 Skipping #35 → intact,100,10,10,isfc,IncrementalPCA,25,gaussian (already done)
+16:08:43 Skipping #36 → intact,100,10,10,isfc,IncrementalPCA,30,gaussian (already done)
+16:08:43 Skipping #37 → intact,100,10,10,isfc,IncrementalPCA,35,gaussian (already done)
+16:08:43 Skipping #38 → intact,100,10,10,isfc,IncrementalPCA,40,gaussian (already done)
+16:08:43 Skipping #39 → intact,100,10,10,isfc,IncrementalPCA,45,gaussian (already done)
+16:08:43 Skipping #40 → intact,100,10,10,isfc,IncrementalPCA,50,gaussian (already done)
+16:08:43 Skipping #41 → intact,100,10,10,isfc,IncrementalPCA,5,mexican_hat (already done)
+16:08:43 Skipping #42 → intact,100,10,10,isfc,IncrementalPCA,10,mexican_hat (already done)
+16:08:43 Skipping #43 → intact,100,10,10,isfc,IncrementalPCA,15,mexican_hat (already done)
+16:08:43 Skipping #44 → intact,100,10,10,isfc,IncrementalPCA,20,mexican_hat (already done)
+16:08:43 Skipping #45 → intact,100,10,10,isfc,IncrementalPCA,25,mexican_hat (already done)
+16:08:43 Skipping #46 → intact,100,10,10,isfc,IncrementalPCA,30,mexican_hat (already done)
+16:08:43 Skipping #47 → intact,100,10,10,isfc,IncrementalPCA,35,mexican_hat (already done)
+16:08:43 Skipping #48 → intact,100,10,10,isfc,IncrementalPCA,40,mexican_hat (already done)
+16:08:43 Skipping #49 → intact,100,10,10,isfc,IncrementalPCA,45,mexican_hat (already done)
+16:08:43 Skipping #50 → intact,100,10,10,isfc,IncrementalPCA,50,mexican_hat (already done)
+16:08:43 Skipping #51 → intact,100,10,10,isfc,IncrementalPCA,5,laplace (already done)
+16:08:43 Skipping #52 → intact,100,10,10,isfc,IncrementalPCA,10,laplace (already done)
+16:08:43 Skipping #53 → intact,100,10,10,isfc,IncrementalPCA,15,laplace (already done)
+16:08:43 Skipping #54 → intact,100,10,10,isfc,IncrementalPCA,20,laplace (already done)
+16:08:43 Skipping #55 → intact,100,10,10,isfc,IncrementalPCA,25,laplace (already done)
+16:08:43 Skipping #56 → intact,100,10,10,isfc,IncrementalPCA,30,laplace (already done)
+16:08:43 Skipping #57 → intact,100,10,10,isfc,IncrementalPCA,35,laplace (already done)
+16:08:43 Skipping #58 → intact,100,10,10,isfc,IncrementalPCA,40,laplace (already done)
+16:08:43 Skipping #59 → intact,100,10,10,isfc,IncrementalPCA,45,laplace (already done)
+16:08:43 Skipping #60 → intact,100,10,10,isfc,IncrementalPCA,50,laplace (already done)
+16:08:43 Skipping #61 → intact,100,10,10,isfc,SparsePCA,5,gaussian (already done)
+16:08:43 Skipping #62 → intact,100,10,10,isfc,SparsePCA,10,gaussian (already done)
+16:08:43 Skipping #63 → intact,100,10,10,isfc,SparsePCA,15,gaussian (already done)
+16:08:43 Skipping #64 → intact,100,10,10,isfc,SparsePCA,20,gaussian (already done)
+16:08:43 Skipping #65 → intact,100,10,10,isfc,SparsePCA,25,gaussian (already done)
+16:08:43 Skipping #66 → intact,100,10,10,isfc,SparsePCA,30,gaussian (already done)
+16:08:43 Skipping #67 → intact,100,10,10,isfc,SparsePCA,35,gaussian (already done)
+16:08:43 Skipping #68 → intact,100,10,10,isfc,SparsePCA,40,gaussian (already done)
+16:08:43 Skipping #69 → intact,100,10,10,isfc,SparsePCA,45,gaussian (already done)
+16:08:44 Skipping #70 → intact,100,10,10,isfc,SparsePCA,50,gaussian (already done)
+16:08:44 Skipping #71 → intact,100,10,10,isfc,SparsePCA,5,mexican_hat (already done)
+16:08:44 Skipping #72 → intact,100,10,10,isfc,SparsePCA,10,mexican_hat (already done)
+16:08:44 Skipping #73 → intact,100,10,10,isfc,SparsePCA,15,mexican_hat (already done)
+16:08:44 Skipping #74 → intact,100,10,10,isfc,SparsePCA,20,mexican_hat (already done)
+16:08:44 Skipping #75 → intact,100,10,10,isfc,SparsePCA,25,mexican_hat (already done)
+16:08:44 Skipping #76 → intact,100,10,10,isfc,SparsePCA,30,mexican_hat (already done)
+16:08:44 Skipping #77 → intact,100,10,10,isfc,SparsePCA,35,mexican_hat (already done)
+16:08:44 Skipping #78 → intact,100,10,10,isfc,SparsePCA,40,mexican_hat (already done)
+16:08:44 Skipping #79 → intact,100,10,10,isfc,SparsePCA,45,mexican_hat (already done)
+16:08:44 Skipping #80 → intact,100,10,10,isfc,SparsePCA,50,mexican_hat (already done)
+16:08:44 Skipping #81 → intact,100,10,10,isfc,SparsePCA,5,laplace (already done)
+16:08:44 Skipping #82 → intact,100,10,10,isfc,SparsePCA,10,laplace (already done)
+16:08:44 Skipping #83 → intact,100,10,10,isfc,SparsePCA,15,laplace (already done)
+16:08:44 Skipping #84 → intact,100,10,10,isfc,SparsePCA,20,laplace (already done)
+16:08:44 Skipping #85 → intact,100,10,10,isfc,SparsePCA,25,laplace (already done)
+16:08:44 Skipping #86 → intact,100,10,10,isfc,SparsePCA,30,laplace (already done)
+16:08:44 Skipping #87 → intact,100,10,10,isfc,SparsePCA,35,laplace (already done)
+16:08:44 Skipping #88 → intact,100,10,10,isfc,SparsePCA,40,laplace (already done)
+16:08:44 Skipping #89 → intact,100,10,10,isfc,SparsePCA,45,laplace (already done)
+16:08:44 Skipping #90 → intact,100,10,10,isfc,SparsePCA,50,laplace (already done)
+16:08:44 Skipping #91 → intact,100,10,10,isfc,MiniBatchSparsePCA,5,gaussian (already done)
+16:08:44 Skipping #92 → intact,100,10,10,isfc,MiniBatchSparsePCA,10,gaussian (already done)
+16:08:44 Skipping #93 → intact,100,10,10,isfc,MiniBatchSparsePCA,15,gaussian (already done)
+16:08:44 Skipping #94 → intact,100,10,10,isfc,MiniBatchSparsePCA,20,gaussian (already done)
+16:08:44 Skipping #95 → intact,100,10,10,isfc,MiniBatchSparsePCA,25,gaussian (already done)
+16:08:44 Skipping #96 → intact,100,10,10,isfc,MiniBatchSparsePCA,30,gaussian (already done)
+16:08:44 Skipping #97 → intact,100,10,10,isfc,MiniBatchSparsePCA,35,gaussian (already done)
+16:08:44 Skipping #98 → intact,100,10,10,isfc,MiniBatchSparsePCA,40,gaussian (already done)
+16:08:44 Skipping #99 → intact,100,10,10,isfc,MiniBatchSparsePCA,45,gaussian (already done)
+16:08:44 Skipping #100 → intact,100,10,10,isfc,MiniBatchSparsePCA,50,gaussian (already done)
+16:08:44 Skipping #101 → intact,100,10,10,isfc,MiniBatchSparsePCA,5,mexican_hat (already done)
+16:08:44 Skipping #102 → intact,100,10,10,isfc,MiniBatchSparsePCA,10,mexican_hat (already done)
+16:08:44 Skipping #103 → intact,100,10,10,isfc,MiniBatchSparsePCA,15,mexican_hat (already done)
+16:08:44 Skipping #104 → intact,100,10,10,isfc,MiniBatchSparsePCA,20,mexican_hat (already done)
+16:08:44 Skipping #105 → intact,100,10,10,isfc,MiniBatchSparsePCA,25,mexican_hat (already done)
+16:08:44 Skipping #106 → intact,100,10,10,isfc,MiniBatchSparsePCA,30,mexican_hat (already done)
+16:08:44 Skipping #107 → intact,100,10,10,isfc,MiniBatchSparsePCA,35,mexican_hat (already done)
+16:08:44 Skipping #108 → intact,100,10,10,isfc,MiniBatchSparsePCA,40,mexican_hat (already done)
+16:08:44 Skipping #109 → intact,100,10,10,isfc,MiniBatchSparsePCA,45,mexican_hat (already done)
+16:08:44 Skipping #110 → intact,100,10,10,isfc,MiniBatchSparsePCA,50,mexican_hat (already done)
+16:08:44 Skipping #111 → intact,100,10,10,isfc,MiniBatchSparsePCA,5,laplace (already done)
+16:08:44 Skipping #112 → intact,100,10,10,isfc,MiniBatchSparsePCA,10,laplace (already done)
+16:08:44 Skipping #113 → intact,100,10,10,isfc,MiniBatchSparsePCA,15,laplace (already done)
+16:08:45 Skipping #114 → intact,100,10,10,isfc,MiniBatchSparsePCA,20,laplace (already done)
+16:08:45 Skipping #115 → intact,100,10,10,isfc,MiniBatchSparsePCA,25,laplace (already done)
+16:08:45 Skipping #116 → intact,100,10,10,isfc,MiniBatchSparsePCA,30,laplace (already done)
+16:08:45 Skipping #117 → intact,100,10,10,isfc,MiniBatchSparsePCA,35,laplace (already done)
+16:08:45 Skipping #118 → intact,100,10,10,isfc,MiniBatchSparsePCA,40,laplace (already done)
+16:08:45 Skipping #119 → intact,100,10,10,isfc,MiniBatchSparsePCA,45,laplace (already done)
+16:08:45 Skipping #120 → intact,100,10,10,isfc,MiniBatchSparsePCA,50,laplace (already done)
+16:08:45 Skipping #121 → intact,100,10,10,isfc,KernelPCA,5,gaussian (already done)
+16:08:45 Skipping #122 → intact,100,10,10,isfc,KernelPCA,10,gaussian (already done)
+16:08:45 Skipping #123 → intact,100,10,10,isfc,KernelPCA,15,gaussian (already done)
+16:08:45 Skipping #124 → intact,100,10,10,isfc,KernelPCA,20,gaussian (already done)
+16:08:45 Skipping #125 → intact,100,10,10,isfc,KernelPCA,25,gaussian (already done)
+16:08:45 Skipping #126 → intact,100,10,10,isfc,KernelPCA,30,gaussian (already done)
+16:08:45 Skipping #127 → intact,100,10,10,isfc,KernelPCA,35,gaussian (already done)
+16:08:45 Skipping #128 → intact,100,10,10,isfc,KernelPCA,40,gaussian (already done)
+16:08:45 Skipping #129 → intact,100,10,10,isfc,KernelPCA,45,gaussian (already done)
+16:08:45 Skipping #130 → intact,100,10,10,isfc,KernelPCA,50,gaussian (already done)
+16:08:45 Skipping #131 → intact,100,10,10,isfc,KernelPCA,5,mexican_hat (already done)
+16:08:45 Skipping #132 → intact,100,10,10,isfc,KernelPCA,10,mexican_hat (already done)
+16:08:45 Skipping #133 → intact,100,10,10,isfc,KernelPCA,15,mexican_hat (already done)
+16:08:45 Skipping #134 → intact,100,10,10,isfc,KernelPCA,20,mexican_hat (already done)
+16:08:45 Skipping #135 → intact,100,10,10,isfc,KernelPCA,25,mexican_hat (already done)
+16:08:45 Skipping #136 → intact,100,10,10,isfc,KernelPCA,30,mexican_hat (already done)
+16:08:45 Skipping #137 → intact,100,10,10,isfc,KernelPCA,35,mexican_hat (already done)
+16:08:45 Skipping #138 → intact,100,10,10,isfc,KernelPCA,40,mexican_hat (already done)
+16:08:45 Skipping #139 → intact,100,10,10,isfc,KernelPCA,45,mexican_hat (already done)
+16:08:45 Skipping #140 → intact,100,10,10,isfc,KernelPCA,50,mexican_hat (already done)
+16:08:45 Skipping #141 → intact,100,10,10,isfc,KernelPCA,5,laplace (already done)
+16:08:45 Skipping #142 → intact,100,10,10,isfc,KernelPCA,10,laplace (already done)
+16:08:45 Skipping #143 → intact,100,10,10,isfc,KernelPCA,15,laplace (already done)
+16:08:45 Skipping #144 → intact,100,10,10,isfc,KernelPCA,20,laplace (already done)
+16:08:45 Skipping #145 → intact,100,10,10,isfc,KernelPCA,25,laplace (already done)
+16:08:45 Skipping #146 → intact,100,10,10,isfc,KernelPCA,30,laplace (already done)
+16:08:45 Skipping #147 → intact,100,10,10,isfc,KernelPCA,35,laplace (already done)
+16:08:45 Skipping #148 → intact,100,10,10,isfc,KernelPCA,40,laplace (already done)
+16:08:45 Skipping #149 → intact,100,10,10,isfc,KernelPCA,45,laplace (already done)
+16:08:45 Skipping #150 → intact,100,10,10,isfc,KernelPCA,50,laplace (already done)
+16:08:45 Skipping #151 → intact,100,10,10,isfc,FastICA,5,gaussian (already done)
+16:08:45 Skipping #152 → intact,100,10,10,isfc,FastICA,10,gaussian (already done)
+16:08:45 Skipping #153 → intact,100,10,10,isfc,FastICA,15,gaussian (already done)
+16:08:45 Skipping #154 → intact,100,10,10,isfc,FastICA,20,gaussian (already done)
+16:08:45 Skipping #155 → intact,100,10,10,isfc,FastICA,25,gaussian (already done)
+16:08:45 Skipping #156 → intact,100,10,10,isfc,FastICA,30,gaussian (already done)
+16:08:45 Skipping #157 → intact,100,10,10,isfc,FastICA,35,gaussian (already done)
+16:08:45 Skipping #158 → intact,100,10,10,isfc,FastICA,40,gaussian (already done)
+16:08:46 Skipping #159 → intact,100,10,10,isfc,FastICA,45,gaussian (already done)
+16:08:46 Skipping #160 → intact,100,10,10,isfc,FastICA,50,gaussian (already done)
+16:08:46 Skipping #161 → intact,100,10,10,isfc,FastICA,5,mexican_hat (already done)
+16:08:46 Skipping #162 → intact,100,10,10,isfc,FastICA,10,mexican_hat (already done)
+16:08:46 Skipping #163 → intact,100,10,10,isfc,FastICA,15,mexican_hat (already done)
+16:08:46 Skipping #164 → intact,100,10,10,isfc,FastICA,20,mexican_hat (already done)
+16:08:46 Skipping #165 → intact,100,10,10,isfc,FastICA,25,mexican_hat (already done)
+16:08:46 Skipping #166 → intact,100,10,10,isfc,FastICA,30,mexican_hat (already done)
+16:08:46 Skipping #167 → intact,100,10,10,isfc,FastICA,35,mexican_hat (already done)
+16:08:46 Skipping #168 → intact,100,10,10,isfc,FastICA,40,mexican_hat (already done)
+16:08:46 Skipping #169 → intact,100,10,10,isfc,FastICA,45,mexican_hat (already done)
+16:08:46 Skipping #170 → intact,100,10,10,isfc,FastICA,50,mexican_hat (already done)
+16:08:46 Skipping #171 → intact,100,10,10,isfc,FastICA,5,laplace (already done)
+16:08:46 Skipping #172 → intact,100,10,10,isfc,FastICA,10,laplace (already done)
+16:08:46 Skipping #173 → intact,100,10,10,isfc,FastICA,15,laplace (already done)
+16:08:46 Skipping #174 → intact,100,10,10,isfc,FastICA,20,laplace (already done)
+16:08:46 Skipping #175 → intact,100,10,10,isfc,FastICA,25,laplace (already done)
+16:08:46 Skipping #176 → intact,100,10,10,isfc,FastICA,30,laplace (already done)
+16:08:46 Skipping #177 → intact,100,10,10,isfc,FastICA,35,laplace (already done)
+16:08:46 Skipping #178 → intact,100,10,10,isfc,FastICA,40,laplace (already done)
+16:08:46 Skipping #179 → intact,100,10,10,isfc,FastICA,45,laplace (already done)
+16:08:46 Skipping #180 → intact,100,10,10,isfc,FastICA,50,laplace (already done)
+16:08:46 Skipping #181 → intact,100,10,10,isfc,FactorAnalysis,5,gaussian (already done)
+16:08:46 Skipping #182 → intact,100,10,10,isfc,FactorAnalysis,10,gaussian (already done)
+16:08:46 Skipping #183 → intact,100,10,10,isfc,FactorAnalysis,15,gaussian (already done)
+16:08:46 Skipping #184 → intact,100,10,10,isfc,FactorAnalysis,20,gaussian (already done)
+16:08:46 Skipping #185 → intact,100,10,10,isfc,FactorAnalysis,25,gaussian (already done)
+16:08:46 Skipping #186 → intact,100,10,10,isfc,FactorAnalysis,30,gaussian (already done)
+16:08:46 Skipping #187 → intact,100,10,10,isfc,FactorAnalysis,35,gaussian (already done)
+16:08:46 Skipping #188 → intact,100,10,10,isfc,FactorAnalysis,40,gaussian (already done)
+16:08:46 Skipping #189 → intact,100,10,10,isfc,FactorAnalysis,45,gaussian (already done)
+16:08:46 Skipping #190 → intact,100,10,10,isfc,FactorAnalysis,50,gaussian (already done)
+16:08:46 Skipping #191 → intact,100,10,10,isfc,FactorAnalysis,5,mexican_hat (already done)
+16:08:46 Skipping #192 → intact,100,10,10,isfc,FactorAnalysis,10,mexican_hat (already done)
+16:08:46 Skipping #193 → intact,100,10,10,isfc,FactorAnalysis,15,mexican_hat (already done)
+16:08:46 Skipping #194 → intact,100,10,10,isfc,FactorAnalysis,20,mexican_hat (already done)
+16:08:46 Skipping #195 → intact,100,10,10,isfc,FactorAnalysis,25,mexican_hat (already done)
+16:08:46 Skipping #196 → intact,100,10,10,isfc,FactorAnalysis,30,mexican_hat (already done)
+16:08:46 Skipping #197 → intact,100,10,10,isfc,FactorAnalysis,35,mexican_hat (already done)
+16:08:46 Skipping #198 → intact,100,10,10,isfc,FactorAnalysis,40,mexican_hat (already done)
+16:08:46 Skipping #199 → intact,100,10,10,isfc,FactorAnalysis,45,mexican_hat (already done)
+16:08:46 Skipping #200 → intact,100,10,10,isfc,FactorAnalysis,50,mexican_hat (already done)
+16:08:46 Skipping #201 → intact,100,10,10,isfc,FactorAnalysis,5,laplace (already done)
+16:08:46 Skipping #202 → intact,100,10,10,isfc,FactorAnalysis,10,laplace (already done)
+16:08:46 Skipping #203 → intact,100,10,10,isfc,FactorAnalysis,15,laplace (already done)
+16:08:47 Skipping #204 → intact,100,10,10,isfc,FactorAnalysis,20,laplace (already done)
+16:08:47 Skipping #205 → intact,100,10,10,isfc,FactorAnalysis,25,laplace (already done)
+16:08:47 Skipping #206 → intact,100,10,10,isfc,FactorAnalysis,30,laplace (already done)
+16:08:47 Skipping #207 → intact,100,10,10,isfc,FactorAnalysis,35,laplace (already done)
+16:08:47 Skipping #208 → intact,100,10,10,isfc,FactorAnalysis,40,laplace (already done)
+16:08:47 Skipping #209 → intact,100,10,10,isfc,FactorAnalysis,45,laplace (already done)
+16:08:47 Skipping #210 → intact,100,10,10,isfc,FactorAnalysis,50,laplace (already done)
+16:08:47 Skipping #211 → intact,100,10,10,isfc,TruncatedSVD,5,gaussian (already done)
+16:08:47 Skipping #212 → intact,100,10,10,isfc,TruncatedSVD,10,gaussian (already done)
+16:08:47 Skipping #213 → intact,100,10,10,isfc,TruncatedSVD,15,gaussian (already done)
+16:08:47 Skipping #214 → intact,100,10,10,isfc,TruncatedSVD,20,gaussian (already done)
+16:08:47 Skipping #215 → intact,100,10,10,isfc,TruncatedSVD,25,gaussian (already done)
+16:08:47 Skipping #216 → intact,100,10,10,isfc,TruncatedSVD,30,gaussian (already done)
+16:08:47 Skipping #217 → intact,100,10,10,isfc,TruncatedSVD,35,gaussian (already done)
+16:08:47 Skipping #218 → intact,100,10,10,isfc,TruncatedSVD,40,gaussian (already done)
+16:08:47 Skipping #219 → intact,100,10,10,isfc,TruncatedSVD,45,gaussian (already done)
+16:08:47 Skipping #220 → intact,100,10,10,isfc,TruncatedSVD,50,gaussian (already done)
+16:08:47 Skipping #221 → intact,100,10,10,isfc,TruncatedSVD,5,mexican_hat (already done)
+16:08:47 Skipping #222 → intact,100,10,10,isfc,TruncatedSVD,10,mexican_hat (already done)
+16:08:47 Skipping #223 → intact,100,10,10,isfc,TruncatedSVD,15,mexican_hat (already done)
+16:08:47 Skipping #224 → intact,100,10,10,isfc,TruncatedSVD,20,mexican_hat (already done)
+16:08:47 Skipping #225 → intact,100,10,10,isfc,TruncatedSVD,25,mexican_hat (already done)
+16:08:47 Skipping #226 → intact,100,10,10,isfc,TruncatedSVD,30,mexican_hat (already done)
+16:08:47 Skipping #227 → intact,100,10,10,isfc,TruncatedSVD,35,mexican_hat (already done)
+16:08:47 Skipping #228 → intact,100,10,10,isfc,TruncatedSVD,40,mexican_hat (already done)
+16:08:47 Skipping #229 → intact,100,10,10,isfc,TruncatedSVD,45,mexican_hat (already done)
+16:08:47 Skipping #230 → intact,100,10,10,isfc,TruncatedSVD,50,mexican_hat (already done)
+16:08:47 Skipping #231 → intact,100,10,10,isfc,TruncatedSVD,5,laplace (already done)
+16:08:47 Skipping #232 → intact,100,10,10,isfc,TruncatedSVD,10,laplace (already done)
+16:08:47 Skipping #233 → intact,100,10,10,isfc,TruncatedSVD,15,laplace (already done)
+16:08:47 Skipping #234 → intact,100,10,10,isfc,TruncatedSVD,20,laplace (already done)
+16:08:47 Skipping #235 → intact,100,10,10,isfc,TruncatedSVD,25,laplace (already done)
+16:08:47 Skipping #236 → intact,100,10,10,isfc,TruncatedSVD,30,laplace (already done)
+16:08:47 Skipping #237 → intact,100,10,10,isfc,TruncatedSVD,35,laplace (already done)
+16:08:47 Skipping #238 → intact,100,10,10,isfc,TruncatedSVD,40,laplace (already done)
+16:08:47 Skipping #239 → intact,100,10,10,isfc,TruncatedSVD,45,laplace (already done)
+16:08:47 Skipping #240 → intact,100,10,10,isfc,TruncatedSVD,50,laplace (already done)
+16:08:47 Skipping #241 → intact,100,10,10,isfc,DictionaryLearning,5,gaussian (already done)
+16:08:47 Skipping #242 → intact,100,10,10,isfc,DictionaryLearning,10,gaussian (already done)
+16:08:47 Skipping #243 → intact,100,10,10,isfc,DictionaryLearning,15,gaussian (already done)
+16:08:47 Skipping #244 → intact,100,10,10,isfc,DictionaryLearning,20,gaussian (already done)
+16:08:47 Skipping #245 → intact,100,10,10,isfc,DictionaryLearning,25,gaussian (already done)
+16:08:47 Skipping #246 → intact,100,10,10,isfc,DictionaryLearning,30,gaussian (already done)
+16:08:47 Skipping #247 → intact,100,10,10,isfc,DictionaryLearning,35,gaussian (already done)
+16:08:48 Skipping #248 → intact,100,10,10,isfc,DictionaryLearning,40,gaussian (already done)
+16:08:48 Skipping #249 → intact,100,10,10,isfc,DictionaryLearning,45,gaussian (already done)
+16:08:48 Skipping #250 → intact,100,10,10,isfc,DictionaryLearning,50,gaussian (already done)
+16:08:48 Skipping #251 → intact,100,10,10,isfc,DictionaryLearning,5,mexican_hat (already done)
+16:08:48 Skipping #252 → intact,100,10,10,isfc,DictionaryLearning,10,mexican_hat (already done)
+16:08:48 Skipping #253 → intact,100,10,10,isfc,DictionaryLearning,15,mexican_hat (already done)
+16:08:48 Skipping #254 → intact,100,10,10,isfc,DictionaryLearning,20,mexican_hat (already done)
+16:08:48 Skipping #255 → intact,100,10,10,isfc,DictionaryLearning,25,mexican_hat (already done)
+16:08:48 Skipping #256 → intact,100,10,10,isfc,DictionaryLearning,30,mexican_hat (already done)
+16:08:48 Skipping #257 → intact,100,10,10,isfc,DictionaryLearning,35,mexican_hat (already done)
+16:08:48 Skipping #258 → intact,100,10,10,isfc,DictionaryLearning,40,mexican_hat (already done)
+16:08:48 Skipping #259 → intact,100,10,10,isfc,DictionaryLearning,45,mexican_hat (already done)
+16:08:48 Skipping #260 → intact,100,10,10,isfc,DictionaryLearning,50,mexican_hat (already done)
+16:08:48 Skipping #261 → intact,100,10,10,isfc,DictionaryLearning,5,laplace (already done)
+16:08:48 Skipping #262 → intact,100,10,10,isfc,DictionaryLearning,10,laplace (already done)
+16:08:48 Skipping #263 → intact,100,10,10,isfc,DictionaryLearning,15,laplace (already done)
+16:08:48 Skipping #264 → intact,100,10,10,isfc,DictionaryLearning,20,laplace (already done)
+16:08:48 Skipping #265 → intact,100,10,10,isfc,DictionaryLearning,25,laplace (already done)
+16:08:48 Skipping #266 → intact,100,10,10,isfc,DictionaryLearning,30,laplace (already done)
+16:08:48 Skipping #267 → intact,100,10,10,isfc,DictionaryLearning,35,laplace (already done)
+16:08:48 Skipping #268 → intact,100,10,10,isfc,DictionaryLearning,40,laplace (already done)
+16:08:48 Skipping #269 → intact,100,10,10,isfc,DictionaryLearning,45,laplace (already done)
+16:08:48 Skipping #270 → intact,100,10,10,isfc,DictionaryLearning,50,laplace (already done)
+16:08:48 Skipping #271 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,5,gaussian (already done)
+16:08:48 Skipping #272 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,10,gaussian (already done)
+16:08:48 Skipping #273 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,15,gaussian (already done)
+16:08:48 Skipping #274 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,20,gaussian (already done)
+16:08:48 Skipping #275 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,25,gaussian (already done)
+16:08:48 Skipping #276 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,30,gaussian (already done)
+16:08:48 Skipping #277 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,35,gaussian (already done)
+16:08:48 Skipping #278 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,40,gaussian (already done)
+16:08:48 Skipping #279 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,45,gaussian (already done)
+16:08:48 Skipping #280 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,50,gaussian (already done)
+16:08:48 Skipping #281 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,5,mexican_hat (already done)
+16:08:48 Skipping #282 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,10,mexican_hat (already done)
+16:08:48 Skipping #283 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,15,mexican_hat (already done)
+16:08:48 Skipping #284 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,20,mexican_hat (already done)
+16:08:48 Skipping #285 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,25,mexican_hat (already done)
+16:08:48 Skipping #286 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,30,mexican_hat (already done)
+16:08:48 Skipping #287 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,35,mexican_hat (already done)
+16:08:48 Skipping #288 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,40,mexican_hat (already done)
+16:08:48 Skipping #289 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,45,mexican_hat (already done)
+16:08:48 Skipping #290 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,50,mexican_hat (already done)
+16:08:48 Skipping #291 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,5,laplace (already done)
+16:08:48 Skipping #292 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,10,laplace (already done)
+16:08:49 Skipping #293 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,15,laplace (already done)
+16:08:49 Skipping #294 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,20,laplace (already done)
+16:08:49 Skipping #295 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,25,laplace (already done)
+16:08:49 Skipping #296 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,30,laplace (already done)
+16:08:49 Skipping #297 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,35,laplace (already done)
+16:08:49 Skipping #298 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,40,laplace (already done)
+16:08:49 Skipping #299 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,45,laplace (already done)
+16:08:49 Skipping #300 → intact,100,10,10,isfc,MiniBatchDictionaryLearning,50,laplace (already done)
+16:08:49 Skipping #301 → intact,100,10,10,isfc,Isomap,5,gaussian (already done)
+16:08:49 Skipping #302 → intact,100,10,10,isfc,Isomap,10,gaussian (already done)
+16:08:49 Skipping #303 → intact,100,10,10,isfc,Isomap,15,gaussian (already done)
+16:08:49 Skipping #304 → intact,100,10,10,isfc,Isomap,20,gaussian (already done)
+16:08:49 Skipping #305 → intact,100,10,10,isfc,Isomap,25,gaussian (already done)
+16:08:49 Skipping #306 → intact,100,10,10,isfc,Isomap,30,gaussian (already done)
+16:08:49 Skipping #307 → intact,100,10,10,isfc,Isomap,35,gaussian (already done)
+16:08:49 Skipping #308 → intact,100,10,10,isfc,Isomap,40,gaussian (already done)
+16:08:49 Skipping #309 → intact,100,10,10,isfc,Isomap,45,gaussian (already done)
+16:08:49 Skipping #310 → intact,100,10,10,isfc,Isomap,50,gaussian (already done)
+16:08:49 Skipping #311 → intact,100,10,10,isfc,Isomap,5,mexican_hat (already done)
+16:08:49 Skipping #312 → intact,100,10,10,isfc,Isomap,10,mexican_hat (already done)
+16:08:49 Skipping #313 → intact,100,10,10,isfc,Isomap,15,mexican_hat (already done)
+16:08:49 Skipping #314 → intact,100,10,10,isfc,Isomap,20,mexican_hat (already done)
+16:08:49 Skipping #315 → intact,100,10,10,isfc,Isomap,25,mexican_hat (already done)
+16:08:49 Skipping #316 → intact,100,10,10,isfc,Isomap,30,mexican_hat (already done)
+16:08:49 Skipping #317 → intact,100,10,10,isfc,Isomap,35,mexican_hat (already done)
+16:08:49 Skipping #318 → intact,100,10,10,isfc,Isomap,40,mexican_hat (already done)
+16:08:49 Skipping #319 → intact,100,10,10,isfc,Isomap,45,mexican_hat (already done)
+16:08:49 Skipping #320 → intact,100,10,10,isfc,Isomap,50,mexican_hat (already done)
+16:08:49 Skipping #321 → intact,100,10,10,isfc,Isomap,5,laplace (already done)
+16:08:49 Skipping #322 → intact,100,10,10,isfc,Isomap,10,laplace (already done)
+16:08:49 Skipping #323 → intact,100,10,10,isfc,Isomap,15,laplace (already done)
+16:08:49 Skipping #324 → intact,100,10,10,isfc,Isomap,20,laplace (already done)
+16:08:49 Skipping #325 → intact,100,10,10,isfc,Isomap,25,laplace (already done)
+16:08:49 Skipping #326 → intact,100,10,10,isfc,Isomap,30,laplace (already done)
+16:08:49 Skipping #327 → intact,100,10,10,isfc,Isomap,35,laplace (already done)
+16:08:49 Skipping #328 → intact,100,10,10,isfc,Isomap,40,laplace (already done)
+16:08:49 Skipping #329 → intact,100,10,10,isfc,Isomap,45,laplace (already done)
+16:08:49 Skipping #330 → intact,100,10,10,isfc,Isomap,50,laplace (already done)
+16:08:49 Skipping #331 → intact,100,10,10,isfc,SpectralEmbedding,5,gaussian (already done)
+16:08:49 Skipping #332 → intact,100,10,10,isfc,SpectralEmbedding,10,gaussian (already done)
+16:08:49 Skipping #333 → intact,100,10,10,isfc,SpectralEmbedding,15,gaussian (already done)
+16:08:49 Skipping #334 → intact,100,10,10,isfc,SpectralEmbedding,20,gaussian (already done)
+16:08:49 Skipping #335 → intact,100,10,10,isfc,SpectralEmbedding,25,gaussian (already done)
+16:08:49 Skipping #336 → intact,100,10,10,isfc,SpectralEmbedding,30,gaussian (already done)
+16:08:49 Skipping #337 → intact,100,10,10,isfc,SpectralEmbedding,35,gaussian (already done)
+16:08:50 Skipping #338 → intact,100,10,10,isfc,SpectralEmbedding,40,gaussian (already done)
+16:08:50 Skipping #339 → intact,100,10,10,isfc,SpectralEmbedding,45,gaussian (already done)
+16:08:50 Skipping #340 → intact,100,10,10,isfc,SpectralEmbedding,50,gaussian (already done)
+16:08:50 Skipping #341 → intact,100,10,10,isfc,SpectralEmbedding,5,mexican_hat (already done)
+16:08:50 Skipping #342 → intact,100,10,10,isfc,SpectralEmbedding,10,mexican_hat (already done)
+16:08:50 Skipping #343 → intact,100,10,10,isfc,SpectralEmbedding,15,mexican_hat (already done)
+16:08:50 Skipping #344 → intact,100,10,10,isfc,SpectralEmbedding,20,mexican_hat (already done)
+16:08:50 Skipping #345 → intact,100,10,10,isfc,SpectralEmbedding,25,mexican_hat (already done)
+16:08:50 Skipping #346 → intact,100,10,10,isfc,SpectralEmbedding,30,mexican_hat (already done)
+16:08:50 Skipping #347 → intact,100,10,10,isfc,SpectralEmbedding,35,mexican_hat (already done)
+16:08:50 Skipping #348 → intact,100,10,10,isfc,SpectralEmbedding,40,mexican_hat (already done)
+16:08:50 Skipping #349 → intact,100,10,10,isfc,SpectralEmbedding,45,mexican_hat (already done)
+16:08:50 Skipping #350 → intact,100,10,10,isfc,SpectralEmbedding,50,mexican_hat (already done)
+16:08:50 Skipping #351 → intact,100,10,10,isfc,SpectralEmbedding,5,laplace (already done)
+16:08:50 Skipping #352 → intact,100,10,10,isfc,SpectralEmbedding,10,laplace (already done)
+16:08:50 Skipping #353 → intact,100,10,10,isfc,SpectralEmbedding,15,laplace (already done)
+16:08:50 Skipping #354 → intact,100,10,10,isfc,SpectralEmbedding,20,laplace (already done)
+16:08:50 Skipping #355 → intact,100,10,10,isfc,SpectralEmbedding,25,laplace (already done)
+16:08:50 Skipping #356 → intact,100,10,10,isfc,SpectralEmbedding,30,laplace (already done)
+16:08:50 Skipping #357 → intact,100,10,10,isfc,SpectralEmbedding,35,laplace (already done)
+16:08:50 Skipping #358 → intact,100,10,10,isfc,SpectralEmbedding,40,laplace (already done)
+16:08:50 Skipping #359 → intact,100,10,10,isfc,SpectralEmbedding,45,laplace (already done)
+16:08:50 Skipping #360 → intact,100,10,10,isfc,SpectralEmbedding,50,laplace (already done)
+16:08:50 Skipping #361 → intact,100,10,10,isfc,LocallyLinearEmbedding,5,gaussian (already done)
+16:08:50 Skipping #362 → intact,100,10,10,isfc,LocallyLinearEmbedding,10,gaussian (already done)
+16:08:50 Skipping #363 → intact,100,10,10,isfc,LocallyLinearEmbedding,15,gaussian (already done)
+16:08:50 Skipping #364 → intact,100,10,10,isfc,LocallyLinearEmbedding,20,gaussian (already done)
+16:08:50 Skipping #365 → intact,100,10,10,isfc,LocallyLinearEmbedding,25,gaussian (already done)
+16:08:50 Skipping #366 → intact,100,10,10,isfc,LocallyLinearEmbedding,30,gaussian (already done)
+16:08:50 Skipping #367 → intact,100,10,10,isfc,LocallyLinearEmbedding,35,gaussian (already done)
+16:08:50 Skipping #368 → intact,100,10,10,isfc,LocallyLinearEmbedding,40,gaussian (already done)
+16:08:50 Skipping #369 → intact,100,10,10,isfc,LocallyLinearEmbedding,45,gaussian (already done)
+16:08:50 Skipping #370 → intact,100,10,10,isfc,LocallyLinearEmbedding,50,gaussian (already done)
+16:08:50 Skipping #371 → intact,100,10,10,isfc,LocallyLinearEmbedding,5,mexican_hat (already done)
+16:08:50 Skipping #372 → intact,100,10,10,isfc,LocallyLinearEmbedding,10,mexican_hat (already done)
+16:08:50 Skipping #373 → intact,100,10,10,isfc,LocallyLinearEmbedding,15,mexican_hat (already done)
+16:08:50 Skipping #374 → intact,100,10,10,isfc,LocallyLinearEmbedding,20,mexican_hat (already done)
+16:08:50 Skipping #375 → intact,100,10,10,isfc,LocallyLinearEmbedding,25,mexican_hat (already done)
+16:08:50 Skipping #376 → intact,100,10,10,isfc,LocallyLinearEmbedding,30,mexican_hat (already done)
+16:08:50 Skipping #377 → intact,100,10,10,isfc,LocallyLinearEmbedding,35,mexican_hat (already done)
+16:08:50 Skipping #378 → intact,100,10,10,isfc,LocallyLinearEmbedding,40,mexican_hat (already done)
+16:08:50 Skipping #379 → intact,100,10,10,isfc,LocallyLinearEmbedding,45,mexican_hat (already done)
+16:08:50 Skipping #380 → intact,100,10,10,isfc,LocallyLinearEmbedding,50,mexican_hat (already done)
+16:08:50 Skipping #381 → intact,100,10,10,isfc,LocallyLinearEmbedding,5,laplace (already done)
+16:08:50 Skipping #382 → intact,100,10,10,isfc,LocallyLinearEmbedding,10,laplace (already done)
+16:08:51 Skipping #383 → intact,100,10,10,isfc,LocallyLinearEmbedding,15,laplace (already done)
+16:08:51 Skipping #384 → intact,100,10,10,isfc,LocallyLinearEmbedding,20,laplace (already done)
+16:08:51 Skipping #385 → intact,100,10,10,isfc,LocallyLinearEmbedding,25,laplace (already done)
+16:08:51 Skipping #386 → intact,100,10,10,isfc,LocallyLinearEmbedding,30,laplace (already done)
+16:08:51 Skipping #387 → intact,100,10,10,isfc,LocallyLinearEmbedding,35,laplace (already done)
+16:08:51 Skipping #388 → intact,100,10,10,isfc,LocallyLinearEmbedding,40,laplace (already done)
+16:08:51 Skipping #389 → intact,100,10,10,isfc,LocallyLinearEmbedding,45,laplace (already done)
+16:08:51 Skipping #390 → intact,100,10,10,isfc,LocallyLinearEmbedding,50,laplace (already done)
+16:08:51 Skipping #391 → intact,100,10,10,isfc,MDS,5,gaussian (already done)
+16:08:51 Skipping #392 → intact,100,10,10,isfc,MDS,10,gaussian (already done)
+16:08:51 Skipping #393 → intact,100,10,10,isfc,MDS,15,gaussian (already done)
+16:08:51 Skipping #394 → intact,100,10,10,isfc,MDS,20,gaussian (already done)
+16:08:51 Skipping #395 → intact,100,10,10,isfc,MDS,25,gaussian (already done)
+16:08:51 Skipping #396 → intact,100,10,10,isfc,MDS,30,gaussian (already done)
+16:08:51 Skipping #397 → intact,100,10,10,isfc,MDS,35,gaussian (already done)
+16:08:51 Skipping #398 → intact,100,10,10,isfc,MDS,40,gaussian (already done)
+16:08:51 Skipping #399 → intact,100,10,10,isfc,MDS,45,gaussian (already done)
+16:08:51 Skipping #400 → intact,100,10,10,isfc,MDS,50,gaussian (already done)
+16:08:51 Skipping #401 → intact,100,10,10,isfc,MDS,5,mexican_hat (already done)
+16:08:51 Skipping #402 → intact,100,10,10,isfc,MDS,10,mexican_hat (already done)
+16:08:51 Skipping #403 → intact,100,10,10,isfc,MDS,15,mexican_hat (already done)
+16:08:51 Skipping #404 → intact,100,10,10,isfc,MDS,20,mexican_hat (already done)
+16:08:51 Skipping #405 → intact,100,10,10,isfc,MDS,25,mexican_hat (already done)
+16:08:51 Skipping #406 → intact,100,10,10,isfc,MDS,30,mexican_hat (already done)
+16:08:51 Skipping #407 → intact,100,10,10,isfc,MDS,35,mexican_hat (already done)
+16:08:51 Skipping #408 → intact,100,10,10,isfc,MDS,40,mexican_hat (already done)
+16:08:51 Skipping #409 → intact,100,10,10,isfc,MDS,45,mexican_hat (already done)
+16:08:51 Skipping #410 → intact,100,10,10,isfc,MDS,50,mexican_hat (already done)
+16:08:51 Skipping #411 → intact,100,10,10,isfc,MDS,5,laplace (already done)
+16:08:51 Skipping #412 → intact,100,10,10,isfc,MDS,10,laplace (already done)
+16:08:51 Skipping #413 → intact,100,10,10,isfc,MDS,15,laplace (already done)
+16:08:51 Skipping #414 → intact,100,10,10,isfc,MDS,20,laplace (already done)
+16:08:51 Skipping #415 → intact,100,10,10,isfc,MDS,25,laplace (already done)
+16:08:51 Skipping #416 → intact,100,10,10,isfc,MDS,30,laplace (already done)
+16:08:51 Skipping #417 → intact,100,10,10,isfc,MDS,35,laplace (already done)
+16:08:51 Skipping #418 → intact,100,10,10,isfc,MDS,40,laplace (already done)
+16:08:51 Skipping #419 → intact,100,10,10,isfc,MDS,45,laplace (already done)
+16:08:51 Skipping #420 → intact,100,10,10,isfc,MDS,50,laplace (already done)
+16:08:51 Skipping #421 → intact,100,10,10,isfc,UMAP,5,gaussian (already done)
+16:08:51 Skipping #422 → intact,100,10,10,isfc,UMAP,10,gaussian (already done)
+16:08:51 Skipping #423 → intact,100,10,10,isfc,UMAP,15,gaussian (already done)
+16:08:51 Skipping #424 → intact,100,10,10,isfc,UMAP,20,gaussian (already done)
+16:08:51 Skipping #425 → intact,100,10,10,isfc,UMAP,25,gaussian (already done)
+16:08:51 Skipping #426 → intact,100,10,10,isfc,UMAP,30,gaussian (already done)
+16:08:51 Skipping #427 → intact,100,10,10,isfc,UMAP,35,gaussian (already done)
+16:08:52 Skipping #428 → intact,100,10,10,isfc,UMAP,40,gaussian (already done)
+16:08:52 Skipping #429 → intact,100,10,10,isfc,UMAP,45,gaussian (already done)
+16:08:52 Skipping #430 → intact,100,10,10,isfc,UMAP,50,gaussian (already done)
+16:08:52 Skipping #431 → intact,100,10,10,isfc,UMAP,5,mexican_hat (already done)
+16:08:52 Skipping #432 → intact,100,10,10,isfc,UMAP,10,mexican_hat (already done)
+16:08:52 Skipping #433 → intact,100,10,10,isfc,UMAP,15,mexican_hat (already done)
+16:08:52 Skipping #434 → intact,100,10,10,isfc,UMAP,20,mexican_hat (already done)
+16:08:52 Skipping #435 → intact,100,10,10,isfc,UMAP,25,mexican_hat (already done)
+16:08:52 Skipping #436 → intact,100,10,10,isfc,UMAP,30,mexican_hat (already done)
+16:08:52 Skipping #437 → intact,100,10,10,isfc,UMAP,35,mexican_hat (already done)
+16:08:52 Skipping #438 → intact,100,10,10,isfc,UMAP,40,mexican_hat (already done)
+16:08:52 Skipping #439 → intact,100,10,10,isfc,UMAP,45,mexican_hat (already done)
+16:08:52 Skipping #440 → intact,100,10,10,isfc,UMAP,50,mexican_hat (already done)
+16:08:52 Skipping #441 → intact,100,10,10,isfc,UMAP,5,laplace (already done)
+16:08:52 Skipping #442 → intact,100,10,10,isfc,UMAP,10,laplace (already done)
+16:08:52 Skipping #443 → intact,100,10,10,isfc,UMAP,15,laplace (already done)
+16:08:52 Skipping #444 → intact,100,10,10,isfc,UMAP,20,laplace (already done)
+16:08:52 Skipping #445 → intact,100,10,10,isfc,UMAP,25,laplace (already done)
+16:08:52 Skipping #446 → intact,100,10,10,isfc,UMAP,30,laplace (already done)
+16:08:52 Skipping #447 → intact,100,10,10,isfc,UMAP,35,laplace (already done)
+16:08:52 Skipping #448 → intact,100,10,10,isfc,UMAP,40,laplace (already done)
+16:08:52 Skipping #449 → intact,100,10,10,isfc,UMAP,45,laplace (already done)
+16:08:52 Skipping #450 → intact,100,10,10,isfc,UMAP,50,laplace (already done)
+16:08:52 Skipping #451 → intact,700,10,10,isfc,PCA,5,gaussian (already done)
+16:08:52 Skipping #452 → intact,700,10,10,isfc,PCA,10,gaussian (already done)
+16:08:52 Skipping #453 → intact,700,10,10,isfc,PCA,15,gaussian (already done)
+16:08:52 Skipping #454 → intact,700,10,10,isfc,PCA,20,gaussian (already done)
+16:08:52 Skipping #455 → intact,700,10,10,isfc,PCA,25,gaussian (already done)
+16:08:52 Skipping #456 → intact,700,10,10,isfc,PCA,30,gaussian (already done)
+16:08:52 Skipping #457 → intact,700,10,10,isfc,PCA,35,gaussian (already done)
+16:08:52 Skipping #458 → intact,700,10,10,isfc,PCA,40,gaussian (already done)
+16:08:52 Skipping #459 → intact,700,10,10,isfc,PCA,45,gaussian (already done)
+16:08:52 Skipping #460 → intact,700,10,10,isfc,PCA,50,gaussian (already done)
+16:08:52 Skipping #461 → intact,700,10,10,isfc,PCA,5,mexican_hat (already done)
+16:08:52 Skipping #462 → intact,700,10,10,isfc,PCA,10,mexican_hat (already done)
+16:08:52 Skipping #463 → intact,700,10,10,isfc,PCA,15,mexican_hat (already done)
+16:08:52 Skipping #464 → intact,700,10,10,isfc,PCA,20,mexican_hat (already done)
+16:08:52 Skipping #465 → intact,700,10,10,isfc,PCA,25,mexican_hat (already done)
+16:08:52 Skipping #466 → intact,700,10,10,isfc,PCA,30,mexican_hat (already done)
+16:08:52 Skipping #467 → intact,700,10,10,isfc,PCA,35,mexican_hat (already done)
+16:08:52 Skipping #468 → intact,700,10,10,isfc,PCA,40,mexican_hat (already done)
+16:08:52 Skipping #469 → intact,700,10,10,isfc,PCA,45,mexican_hat (already done)
+16:08:52 Skipping #470 → intact,700,10,10,isfc,PCA,50,mexican_hat (already done)
+16:08:52 Skipping #471 → intact,700,10,10,isfc,PCA,5,laplace (already done)
+16:08:52 Skipping #472 → intact,700,10,10,isfc,PCA,10,laplace (already done)
+16:08:52 Skipping #473 → intact,700,10,10,isfc,PCA,15,laplace (already done)
+16:08:53 Skipping #474 → intact,700,10,10,isfc,PCA,20,laplace (already done)
+16:08:53 Skipping #475 → intact,700,10,10,isfc,PCA,25,laplace (already done)
+16:08:53 Skipping #476 → intact,700,10,10,isfc,PCA,30,laplace (already done)
+16:08:53 Skipping #477 → intact,700,10,10,isfc,PCA,35,laplace (already done)
+16:08:53 Skipping #478 → intact,700,10,10,isfc,PCA,40,laplace (already done)
+16:08:53 Skipping #479 → intact,700,10,10,isfc,PCA,45,laplace (already done)
+16:08:53 Skipping #480 → intact,700,10,10,isfc,PCA,50,laplace (already done)
+16:08:53 Skipping #481 → intact,700,10,10,isfc,IncrementalPCA,5,gaussian (already done)
+16:08:53 Skipping #482 → intact,700,10,10,isfc,IncrementalPCA,10,gaussian (already done)
+16:08:53 Skipping #483 → intact,700,10,10,isfc,IncrementalPCA,15,gaussian (already done)
+16:08:53 Skipping #484 → intact,700,10,10,isfc,IncrementalPCA,20,gaussian (already done)
+16:08:53 Skipping #485 → intact,700,10,10,isfc,IncrementalPCA,25,gaussian (already done)
+16:08:53 Skipping #486 → intact,700,10,10,isfc,IncrementalPCA,30,gaussian (already done)
+16:08:53 Skipping #487 → intact,700,10,10,isfc,IncrementalPCA,35,gaussian (already done)
+16:08:53 Skipping #488 → intact,700,10,10,isfc,IncrementalPCA,40,gaussian (already done)
+16:08:53 Skipping #489 → intact,700,10,10,isfc,IncrementalPCA,45,gaussian (already done)
+16:08:53 Skipping #490 → intact,700,10,10,isfc,IncrementalPCA,50,gaussian (already done)
+Submitted batch job 1138578
+16:08:53 Submitted #491 → intact,700,10,10,isfc,IncrementalPCA,5,mexican_hat
+Submitted batch job 1138579
+16:08:53 Submitted #492 → intact,700,10,10,isfc,IncrementalPCA,10,mexican_hat
+Submitted batch job 1138580
+16:08:53 Submitted #493 → intact,700,10,10,isfc,IncrementalPCA,15,mexican_hat
+Submitted batch job 1138581
+16:08:53 Submitted #494 → intact,700,10,10,isfc,IncrementalPCA,20,mexican_hat
+16:08:53 Skipping #495 → intact,700,10,10,isfc,IncrementalPCA,25,mexican_hat (already done)
+16:08:53 Skipping #496 → intact,700,10,10,isfc,IncrementalPCA,30,mexican_hat (already done)
+16:08:53 Skipping #497 → intact,700,10,10,isfc,IncrementalPCA,35,mexican_hat (already done)
+16:08:53 Skipping #498 → intact,700,10,10,isfc,IncrementalPCA,40,mexican_hat (already done)
+16:08:53 Skipping #499 → intact,700,10,10,isfc,IncrementalPCA,45,mexican_hat (already done)
+16:08:53 Skipping #500 → intact,700,10,10,isfc,IncrementalPCA,50,mexican_hat (already done)
+16:08:53 Skipping #501 → intact,700,10,10,isfc,IncrementalPCA,5,laplace (already done)
+16:08:53 Skipping #502 → intact,700,10,10,isfc,IncrementalPCA,10,laplace (already done)
+16:08:53 Skipping #503 → intact,700,10,10,isfc,IncrementalPCA,15,laplace (already done)
+16:08:53 Skipping #504 → intact,700,10,10,isfc,IncrementalPCA,20,laplace (already done)
+Submitted batch job 1138582
+16:08:53 Submitted #505 → intact,700,10,10,isfc,IncrementalPCA,25,laplace
+16:08:53 Skipping #506 → intact,700,10,10,isfc,IncrementalPCA,30,laplace (already done)
+16:08:53 Skipping #507 → intact,700,10,10,isfc,IncrementalPCA,35,laplace (already done)
+Submitted batch job 1138583
+16:08:53 Submitted #508 → intact,700,10,10,isfc,IncrementalPCA,40,laplace
+Submitted batch job 1138584
+16:08:53 Submitted #509 → intact,700,10,10,isfc,IncrementalPCA,45,laplace
+Submitted batch job 1138585
+16:08:53 Submitted #510 → intact,700,10,10,isfc,IncrementalPCA,50,laplace
+Submitted batch job 1138586
+16:08:53 Submitted #511 → intact,700,10,10,isfc,SparsePCA,5,gaussian
+Submitted batch job 1138587
+16:08:54 Submitted #512 → intact,700,10,10,isfc,SparsePCA,10,gaussian
+Submitted batch job 1138588
+16:08:54 Submitted #513 → intact,700,10,10,isfc,SparsePCA,15,gaussian
+Submitted batch job 1138589
+16:08:54 Submitted #514 → intact,700,10,10,isfc,SparsePCA,20,gaussian
+Submitted batch job 1138590
+16:08:54 Submitted #515 → intact,700,10,10,isfc,SparsePCA,25,gaussian
+Submitted batch job 1138591
+16:08:54 Submitted #516 → intact,700,10,10,isfc,SparsePCA,30,gaussian
+Submitted batch job 1138592
+16:08:54 Submitted #517 → intact,700,10,10,isfc,SparsePCA,35,gaussian
+Submitted batch job 1139721
+06:00:57 Submitted #518 → intact,700,10,10,isfc,SparsePCA,40,gaussian
+Submitted batch job 1140580
+16:23:37 Submitted #519 → intact,700,10,10,isfc,SparsePCA,45,gaussian
+Submitted batch job 1140584
+16:26:07 Submitted #520 → intact,700,10,10,isfc,SparsePCA,50,gaussian
+Submitted batch job 1140594
+16:32:38 Submitted #521 → intact,700,10,10,isfc,SparsePCA,5,mexican_hat
+18:59:02 Submitted #522 → intact,700,10,10,isfc,SparsePCA,10,mexican_hat
+Submitted batch job 1141197
+01:32:49 Submitted #523 → intact,700,10,10,isfc,SparsePCA,15,mexican_hat
+Submitted batch job 1141205
+01:38:49 Submitted #524 → intact,700,10,10,isfc,SparsePCA,20,mexican_hat
+Submitted batch job 1141222
+01:44:49 Submitted #525 → intact,700,10,10,isfc,SparsePCA,25,mexican_hat
+Submitted batch job 1141652
+06:58:45 Submitted #526 → intact,700,10,10,isfc,SparsePCA,30,mexican_hat
+18:58:49 Submitted #527 → intact,700,10,10,isfc,SparsePCA,35,mexican_hat
+Submitted batch job 1143581
+18:59:05 Submitted #528 → intact,700,10,10,isfc,SparsePCA,40,mexican_hat
+Submitted batch job 1143621
+20:09:51 Submitted #529 → intact,700,10,10,isfc,SparsePCA,45,mexican_hat
+Submitted batch job 1143622
+20:09:51 Submitted #530 → intact,700,10,10,isfc,SparsePCA,50,mexican_hat
+Submitted batch job 1143623
+20:09:51 Submitted #531 → intact,700,10,10,isfc,SparsePCA,5,laplace
+Submitted batch job 1143624
+20:09:51 Submitted #532 → intact,700,10,10,isfc,SparsePCA,10,laplace
+Submitted batch job 1144150
+10:01:50 Submitted #533 → intact,700,10,10,isfc,SparsePCA,15,laplace
+Submitted batch job 1144686
+20:24:19 Submitted #534 → intact,700,10,10,isfc,SparsePCA,20,laplace
+Submitted batch job 1144687
+20:27:20 Submitted #535 → intact,700,10,10,isfc,SparsePCA,25,laplace
+Submitted batch job 1144690
+20:33:20 Submitted #536 → intact,700,10,10,isfc,SparsePCA,30,laplace
+Submitted batch job 1144797
+23:00:10 Submitted #537 → intact,700,10,10,isfc,SparsePCA,35,laplace
+Submitted batch job 1145153
+05:33:24 Submitted #538 → intact,700,10,10,isfc,SparsePCA,40,laplace
+Submitted batch job 1145158
+05:38:55 Submitted #539 → intact,700,10,10,isfc,SparsePCA,45,laplace
+Submitted batch job 1145222
+07:09:51 Submitted #540 → intact,700,10,10,isfc,SparsePCA,50,laplace
+Submitted batch job 1145364
+10:59:39 Submitted #541 → intact,700,10,10,isfc,MiniBatchSparsePCA,5,gaussian
+Submitted batch job 1147603
+03:50:32 Submitted #542 → intact,700,10,10,isfc,MiniBatchSparsePCA,10,gaussian
+Submitted batch job 1148414
+22:59:44 Submitted #543 → intact,700,10,10,isfc,MiniBatchSparsePCA,15,gaussian
+Submitted batch job 1148415
+22:59:49 Submitted #544 → intact,700,10,10,isfc,MiniBatchSparsePCA,20,gaussian
+Submitted batch job 1148419
+00:10:37 Submitted #545 → intact,700,10,10,isfc,MiniBatchSparsePCA,25,gaussian
+Submitted batch job 1148420
+00:10:37 Submitted #546 → intact,700,10,10,isfc,MiniBatchSparsePCA,30,gaussian
+Submitted batch job 1148421
+00:10:37 Submitted #547 → intact,700,10,10,isfc,MiniBatchSparsePCA,35,gaussian
+Submitted batch job 1148422
+00:10:37 Submitted #548 → intact,700,10,10,isfc,MiniBatchSparsePCA,40,gaussian
+Submitted batch job 1149064
+14:02:15 Submitted #549 → intact,700,10,10,isfc,MiniBatchSparsePCA,45,gaussian
+18:58:59 Submitted #550 → intact,700,10,10,isfc,MiniBatchSparsePCA,50,gaussian
+21:14:24 Submitted #551 → intact,700,10,10,isfc,MiniBatchSparsePCA,5,mexican_hat
+Submitted batch job 1149443
+21:14:39 Submitted #552 → intact,700,10,10,isfc,MiniBatchSparsePCA,10,mexican_hat
+21:15:31 Submitted #553 → intact,700,10,10,isfc,MiniBatchSparsePCA,15,mexican_hat
+21:16:33 Submitted #554 → intact,700,10,10,isfc,MiniBatchSparsePCA,20,mexican_hat
+Submitted batch job 1149447
+21:16:46 Submitted #555 → intact,700,10,10,isfc,MiniBatchSparsePCA,25,mexican_hat
+21:19:18 Submitted #556 → intact,700,10,10,isfc,MiniBatchSparsePCA,30,mexican_hat
+21:21:22 Submitted #557 → intact,700,10,10,isfc,MiniBatchSparsePCA,35,mexican_hat
+21:21:44 Submitted #558 → intact,700,10,10,isfc,MiniBatchSparsePCA,40,mexican_hat
+21:22:09 Submitted #559 → intact,700,10,10,isfc,MiniBatchSparsePCA,45,mexican_hat
+21:22:31 Submitted #560 → intact,700,10,10,isfc,MiniBatchSparsePCA,50,mexican_hat
+Submitted batch job 1150023
+16:19:08 Submitted #561 → intact,700,10,10,isfc,MiniBatchSparsePCA,5,laplace
+Submitted batch job 1150088
+17:58:35 Submitted #562 → intact,700,10,10,isfc,MiniBatchSparsePCA,10,laplace
+18:59:01 Submitted #563 → intact,700,10,10,isfc,MiniBatchSparsePCA,15,laplace
+Submitted batch job 1150588
+09:16:11 Submitted #564 → intact,700,10,10,isfc,MiniBatchSparsePCA,20,laplace
+Submitted batch job 1150921
+17:07:39 Submitted #565 → intact,700,10,10,isfc,MiniBatchSparsePCA,25,laplace
+Submitted batch job 1150979
+18:51:18 Submitted #566 → intact,700,10,10,isfc,MiniBatchSparsePCA,30,laplace
+Submitted batch job 1150996
+19:17:38 Submitted #567 → intact,700,10,10,isfc,MiniBatchSparsePCA,35,laplace
+Submitted batch job 1151068
+20:47:53 Submitted #568 → intact,700,10,10,isfc,MiniBatchSparsePCA,40,laplace
+Submitted batch job 1151072
+21:06:08 Submitted #569 → intact,700,10,10,isfc,MiniBatchSparsePCA,45,laplace
+Submitted batch job 1151127
+22:37:39 Submitted #570 → intact,700,10,10,isfc,MiniBatchSparsePCA,50,laplace
+00:01:08 Skipping #571 → intact,700,10,10,isfc,KernelPCA,5,gaussian (already done)
+00:01:08 Skipping #572 → intact,700,10,10,isfc,KernelPCA,10,gaussian (already done)
+00:01:09 Skipping #573 → intact,700,10,10,isfc,KernelPCA,15,gaussian (already done)
+00:01:09 Skipping #574 → intact,700,10,10,isfc,KernelPCA,20,gaussian (already done)
+00:01:09 Skipping #575 → intact,700,10,10,isfc,KernelPCA,25,gaussian (already done)
+00:01:09 Skipping #576 → intact,700,10,10,isfc,KernelPCA,30,gaussian (already done)
+00:01:09 Skipping #577 → intact,700,10,10,isfc,KernelPCA,35,gaussian (already done)
+00:01:09 Skipping #578 → intact,700,10,10,isfc,KernelPCA,40,gaussian (already done)
+00:01:09 Skipping #579 → intact,700,10,10,isfc,KernelPCA,45,gaussian (already done)
+00:01:09 Skipping #580 → intact,700,10,10,isfc,KernelPCA,50,gaussian (already done)
+00:01:09 Skipping #581 → intact,700,10,10,isfc,KernelPCA,5,mexican_hat (already done)
+00:01:10 Skipping #582 → intact,700,10,10,isfc,KernelPCA,10,mexican_hat (already done)
+00:01:10 Skipping #583 → intact,700,10,10,isfc,KernelPCA,15,mexican_hat (already done)
+00:01:10 Skipping #584 → intact,700,10,10,isfc,KernelPCA,20,mexican_hat (already done)
+00:01:10 Skipping #585 → intact,700,10,10,isfc,KernelPCA,25,mexican_hat (already done)
+00:01:10 Skipping #586 → intact,700,10,10,isfc,KernelPCA,30,mexican_hat (already done)
+00:01:10 Skipping #587 → intact,700,10,10,isfc,KernelPCA,35,mexican_hat (already done)
+00:01:10 Skipping #588 → intact,700,10,10,isfc,KernelPCA,40,mexican_hat (already done)
+00:01:10 Skipping #589 → intact,700,10,10,isfc,KernelPCA,45,mexican_hat (already done)
+00:01:10 Skipping #590 → intact,700,10,10,isfc,KernelPCA,50,mexican_hat (already done)
+00:01:10 Skipping #591 → intact,700,10,10,isfc,KernelPCA,5,laplace (already done)
+00:01:11 Skipping #592 → intact,700,10,10,isfc,KernelPCA,10,laplace (already done)
+00:01:11 Skipping #593 → intact,700,10,10,isfc,KernelPCA,15,laplace (already done)
+00:01:11 Skipping #594 → intact,700,10,10,isfc,KernelPCA,20,laplace (already done)
+00:01:11 Skipping #595 → intact,700,10,10,isfc,KernelPCA,25,laplace (already done)
+00:01:11 Skipping #596 → intact,700,10,10,isfc,KernelPCA,30,laplace (already done)
+00:01:11 Skipping #597 → intact,700,10,10,isfc,KernelPCA,35,laplace (already done)
+00:01:11 Skipping #598 → intact,700,10,10,isfc,KernelPCA,40,laplace (already done)
+00:01:11 Skipping #599 → intact,700,10,10,isfc,KernelPCA,45,laplace (already done)
+00:01:11 Skipping #600 → intact,700,10,10,isfc,KernelPCA,50,laplace (already done)
+00:01:12 Skipping #601 → intact,700,10,10,isfc,FastICA,5,gaussian (already done)
+00:01:12 Skipping #602 → intact,700,10,10,isfc,FastICA,10,gaussian (already done)
+00:01:12 Skipping #603 → intact,700,10,10,isfc,FastICA,15,gaussian (already done)
+00:01:12 Skipping #604 → intact,700,10,10,isfc,FastICA,20,gaussian (already done)
+00:01:22 Skipping #605 → intact,700,10,10,isfc,FastICA,25,gaussian (already done)
+00:01:29 Skipping #606 → intact,700,10,10,isfc,FastICA,30,gaussian (already done)
+00:01:37 Skipping #607 → intact,700,10,10,isfc,FastICA,35,gaussian (already done)
+00:01:38 Skipping #608 → intact,700,10,10,isfc,FastICA,40,gaussian (already done)
+00:01:39 Skipping #609 → intact,700,10,10,isfc,FastICA,45,gaussian (already done)
+00:01:39 Skipping #610 → intact,700,10,10,isfc,FastICA,50,gaussian (already done)
+00:01:39 Skipping #611 → intact,700,10,10,isfc,FastICA,5,mexican_hat (already done)
+00:01:39 Skipping #612 → intact,700,10,10,isfc,FastICA,10,mexican_hat (already done)
+00:01:39 Skipping #613 → intact,700,10,10,isfc,FastICA,15,mexican_hat (already done)
+00:01:39 Skipping #614 → intact,700,10,10,isfc,FastICA,20,mexican_hat (already done)
+00:01:39 Skipping #615 → intact,700,10,10,isfc,FastICA,25,mexican_hat (already done)
+00:01:39 Skipping #616 → intact,700,10,10,isfc,FastICA,30,mexican_hat (already done)
+00:01:39 Skipping #617 → intact,700,10,10,isfc,FastICA,35,mexican_hat (already done)
+00:01:39 Skipping #618 → intact,700,10,10,isfc,FastICA,40,mexican_hat (already done)
+00:01:39 Skipping #619 → intact,700,10,10,isfc,FastICA,45,mexican_hat (already done)
+00:01:39 Skipping #620 → intact,700,10,10,isfc,FastICA,50,mexican_hat (already done)
+00:01:40 Skipping #621 → intact,700,10,10,isfc,FastICA,5,laplace (already done)
+00:01:40 Skipping #622 → intact,700,10,10,isfc,FastICA,10,laplace (already done)
+00:01:40 Skipping #623 → intact,700,10,10,isfc,FastICA,15,laplace (already done)
+00:01:40 Skipping #624 → intact,700,10,10,isfc,FastICA,20,laplace (already done)
+00:01:40 Skipping #625 → intact,700,10,10,isfc,FastICA,25,laplace (already done)
+00:01:40 Skipping #626 → intact,700,10,10,isfc,FastICA,30,laplace (already done)
+00:01:40 Skipping #627 → intact,700,10,10,isfc,FastICA,35,laplace (already done)
+00:01:40 Skipping #628 → intact,700,10,10,isfc,FastICA,40,laplace (already done)
+00:01:40 Skipping #629 → intact,700,10,10,isfc,FastICA,45,laplace (already done)
+00:01:40 Skipping #630 → intact,700,10,10,isfc,FastICA,50,laplace (already done)
+Submitted batch job 1151179
+00:01:40 Submitted #631 → intact,700,10,10,isfc,FactorAnalysis,5,gaussian
+Submitted batch job 1151305
+00:52:45 Submitted #632 → intact,700,10,10,isfc,FactorAnalysis,10,gaussian
+Submitted batch job 1151311
+00:58:33 Submitted #633 → intact,700,10,10,isfc,FactorAnalysis,15,gaussian
+Submitted batch job 1151470
+06:31:40 Submitted #634 → intact,700,10,10,isfc,FactorAnalysis,20,gaussian
+Submitted batch job 1151515
+08:05:15 Submitted #635 → intact,700,10,10,isfc,FactorAnalysis,25,gaussian
+Submitted batch job 1151543
+09:09:11 Submitted #636 → intact,700,10,10,isfc,FactorAnalysis,30,gaussian
+Submitted batch job 1151617
+11:26:11 Submitted #637 → intact,700,10,10,isfc,FactorAnalysis,35,gaussian
+Submitted batch job 1151782
+17:13:26 Submitted #638 → intact,700,10,10,isfc,FactorAnalysis,40,gaussian
+Submitted batch job 1152284
+00:49:52 Submitted #639 → intact,700,10,10,isfc,FactorAnalysis,45,gaussian
+Submitted batch job 1152473
+06:00:51 Submitted #640 → intact,700,10,10,isfc,FactorAnalysis,50,gaussian
+Submitted batch job 1152549
+08:32:20 Submitted #641 → intact,700,10,10,isfc,FactorAnalysis,5,mexican_hat
+Submitted batch job 1152563
+08:59:20 Submitted #642 → intact,700,10,10,isfc,FactorAnalysis,10,mexican_hat
+Submitted batch job 1152577
+09:28:30 Submitted #643 → intact,700,10,10,isfc,FactorAnalysis,15,mexican_hat
+Submitted batch job 1152684
+13:21:24 Submitted #644 → intact,700,10,10,isfc,FactorAnalysis,20,mexican_hat
+Submitted batch job 1152728
+15:06:09 Submitted #645 → intact,700,10,10,isfc,FactorAnalysis,25,mexican_hat
+Submitted batch job 1152961
+16:14:01 Submitted #646 → intact,700,10,10,isfc,FactorAnalysis,30,mexican_hat
+Submitted batch job 1153029
+17:23:55 Submitted #647 → intact,700,10,10,isfc,FactorAnalysis,35,mexican_hat
+Submitted batch job 1153048
+17:38:13 Submitted #648 → intact,700,10,10,isfc,FactorAnalysis,40,mexican_hat
+Submitted batch job 1153181
+20:04:00 Submitted #649 → intact,700,10,10,isfc,FactorAnalysis,45,mexican_hat
+Submitted batch job 1153190
+20:14:40 Submitted #650 → intact,700,10,10,isfc,FactorAnalysis,50,mexican_hat
+Submitted batch job 1153249
+22:02:37 Submitted #651 → intact,700,10,10,isfc,FactorAnalysis,5,laplace
+Submitted batch job 1153271
+22:46:25 Submitted #652 → intact,700,10,10,isfc,FactorAnalysis,10,laplace
+Submitted batch job 1153283
+23:10:20 Submitted #653 → intact,700,10,10,isfc,FactorAnalysis,15,laplace
+Submitted batch job 1153600
+07:27:02 Submitted #654 → intact,700,10,10,isfc,FactorAnalysis,20,laplace
+Submitted batch job 1153726
+11:54:10 Submitted #655 → intact,700,10,10,isfc,FactorAnalysis,25,laplace
+Submitted batch job 1153769
+13:22:59 Submitted #656 → intact,700,10,10,isfc,FactorAnalysis,30,laplace
+Submitted batch job 1153855
+16:06:01 Submitted #657 → intact,700,10,10,isfc,FactorAnalysis,35,laplace
+Submitted batch job 1153882
+17:05:00 Submitted #658 → intact,700,10,10,isfc,FactorAnalysis,40,laplace
+Submitted batch job 1154242
+21:56:03 Submitted #659 → intact,700,10,10,isfc,FactorAnalysis,45,laplace
+Submitted batch job 1154301
+23:31:52 Submitted #660 → intact,700,10,10,isfc,FactorAnalysis,50,laplace
+01:29:41 Skipping #661 → intact,700,10,10,isfc,TruncatedSVD,5,gaussian (already done)
+01:29:41 Skipping #662 → intact,700,10,10,isfc,TruncatedSVD,10,gaussian (already done)
+01:29:41 Skipping #663 → intact,700,10,10,isfc,TruncatedSVD,15,gaussian (already done)
+01:29:41 Skipping #664 → intact,700,10,10,isfc,TruncatedSVD,20,gaussian (already done)
+01:29:41 Skipping #665 → intact,700,10,10,isfc,TruncatedSVD,25,gaussian (already done)
+01:29:41 Skipping #666 → intact,700,10,10,isfc,TruncatedSVD,30,gaussian (already done)
+01:29:41 Skipping #667 → intact,700,10,10,isfc,TruncatedSVD,35,gaussian (already done)
+01:29:42 Skipping #668 → intact,700,10,10,isfc,TruncatedSVD,40,gaussian (already done)
+01:29:42 Skipping #669 → intact,700,10,10,isfc,TruncatedSVD,45,gaussian (already done)
+01:29:42 Skipping #670 → intact,700,10,10,isfc,TruncatedSVD,50,gaussian (already done)
+01:29:42 Skipping #671 → intact,700,10,10,isfc,TruncatedSVD,5,mexican_hat (already done)
+01:29:42 Skipping #672 → intact,700,10,10,isfc,TruncatedSVD,10,mexican_hat (already done)
+01:29:42 Skipping #673 → intact,700,10,10,isfc,TruncatedSVD,15,mexican_hat (already done)
+01:29:42 Skipping #674 → intact,700,10,10,isfc,TruncatedSVD,20,mexican_hat (already done)
+01:29:42 Skipping #675 → intact,700,10,10,isfc,TruncatedSVD,25,mexican_hat (already done)
+01:29:42 Skipping #676 → intact,700,10,10,isfc,TruncatedSVD,30,mexican_hat (already done)
+01:29:42 Skipping #677 → intact,700,10,10,isfc,TruncatedSVD,35,mexican_hat (already done)
+01:29:42 Skipping #678 → intact,700,10,10,isfc,TruncatedSVD,40,mexican_hat (already done)
+01:29:42 Skipping #679 → intact,700,10,10,isfc,TruncatedSVD,45,mexican_hat (already done)
+01:29:42 Skipping #680 → intact,700,10,10,isfc,TruncatedSVD,50,mexican_hat (already done)
+01:29:42 Skipping #681 → intact,700,10,10,isfc,TruncatedSVD,5,laplace (already done)
+01:29:42 Skipping #682 → intact,700,10,10,isfc,TruncatedSVD,10,laplace (already done)
+01:29:43 Skipping #683 → intact,700,10,10,isfc,TruncatedSVD,15,laplace (already done)
+01:29:44 Skipping #684 → intact,700,10,10,isfc,TruncatedSVD,20,laplace (already done)
+01:29:45 Skipping #685 → intact,700,10,10,isfc,TruncatedSVD,25,laplace (already done)
+01:29:46 Skipping #686 → intact,700,10,10,isfc,TruncatedSVD,30,laplace (already done)
+01:29:47 Skipping #687 → intact,700,10,10,isfc,TruncatedSVD,35,laplace (already done)
+01:29:49 Skipping #688 → intact,700,10,10,isfc,TruncatedSVD,40,laplace (already done)
+01:29:50 Skipping #689 → intact,700,10,10,isfc,TruncatedSVD,45,laplace (already done)
+01:29:50 Skipping #690 → intact,700,10,10,isfc,TruncatedSVD,50,laplace (already done)
+Submitted batch job 1154358
+01:29:52 Submitted #691 → intact,700,10,10,isfc,DictionaryLearning,5,gaussian
+Submitted batch job 1154460
+05:06:18 Submitted #692 → intact,700,10,10,isfc,DictionaryLearning,10,gaussian
+Submitted batch job 1154487
+05:53:58 Submitted #693 → intact,700,10,10,isfc,DictionaryLearning,15,gaussian
+Submitted batch job 1154498
+06:15:06 Submitted #694 → intact,700,10,10,isfc,DictionaryLearning,20,gaussian
+Submitted batch job 1154567
+08:58:08 Submitted #695 → intact,700,10,10,isfc,DictionaryLearning,25,gaussian
+Submitted batch job 1154590
+09:23:52 Submitted #696 → intact,700,10,10,isfc,DictionaryLearning,30,gaussian
+Submitted batch job 1154613
+10:09:00 Submitted #697 → intact,700,10,10,isfc,DictionaryLearning,35,gaussian
+Submitted batch job 1154836
+17:31:50 Submitted #698 → intact,700,10,10,isfc,DictionaryLearning,40,gaussian
+Submitted batch job 1155022
+20:16:38 Submitted #699 → intact,700,10,10,isfc,DictionaryLearning,45,gaussian
+Submitted batch job 1155138
+00:04:05 Submitted #700 → intact,700,10,10,isfc,DictionaryLearning,50,gaussian
+Submitted batch job 1155158
+00:46:25 Submitted #701 → intact,700,10,10,isfc,DictionaryLearning,5,mexican_hat
+Submitted batch job 1155315
+06:09:02 Submitted #702 → intact,700,10,10,isfc,DictionaryLearning,10,mexican_hat
+Submitted batch job 1155345
+06:58:40 Submitted #703 → intact,700,10,10,isfc,DictionaryLearning,15,mexican_hat
+Submitted batch job 1155409
+09:26:14 Submitted #704 → intact,700,10,10,isfc,DictionaryLearning,20,mexican_hat
+Submitted batch job 1155508
+12:59:08 Submitted #705 → intact,700,10,10,isfc,DictionaryLearning,25,mexican_hat
+Submitted batch job 1155911
+22:23:52 Submitted #706 → intact,700,10,10,isfc,DictionaryLearning,30,mexican_hat
+Submitted batch job 1155995
+01:20:57 Submitted #707 → intact,700,10,10,isfc,DictionaryLearning,35,mexican_hat
+Submitted batch job 1156073
+04:01:25 Submitted #708 → intact,700,10,10,isfc,DictionaryLearning,40,mexican_hat
+Submitted batch job 1156165
+06:05:12 Submitted #709 → intact,700,10,10,isfc,DictionaryLearning,45,mexican_hat
+Submitted batch job 1156183
+06:33:57 Submitted #710 → intact,700,10,10,isfc,DictionaryLearning,50,mexican_hat
+Submitted batch job 1156240
+08:28:58 Submitted #711 → intact,700,10,10,isfc,DictionaryLearning,5,laplace
+Submitted batch job 1156295
+10:38:21 Submitted #712 → intact,700,10,10,isfc,DictionaryLearning,10,laplace
+Submitted batch job 1156404
+14:18:39 Submitted #713 → intact,700,10,10,isfc,DictionaryLearning,15,laplace
+Submitted batch job 1156781
+20:30:43 Submitted #714 → intact,700,10,10,isfc,DictionaryLearning,20,laplace
+Submitted batch job 1156863
+22:45:21 Submitted #715 → intact,700,10,10,isfc,DictionaryLearning,25,laplace
+Submitted batch job 1157003
+04:12:26 Submitted #716 → intact,700,10,10,isfc,DictionaryLearning,30,laplace
+Submitted batch job 1157209
+11:27:58 Submitted #717 → intact,700,10,10,isfc,DictionaryLearning,35,laplace
+Submitted batch job 1157332
+15:38:44 Submitted #718 → intact,700,10,10,isfc,DictionaryLearning,40,laplace
+Submitted batch job 1157352
+16:20:57 Submitted #719 → intact,700,10,10,isfc,DictionaryLearning,45,laplace
+Submitted batch job 1157625
+20:44:31 Submitted #720 → intact,700,10,10,isfc,DictionaryLearning,50,laplace
+Submitted batch job 1157936
+01:41:47 Submitted #721 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,5,gaussian
+Submitted batch job 1158014
+04:14:12 Submitted #722 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,10,gaussian
+Submitted batch job 1158023
+04:35:18 Submitted #723 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,15,gaussian
+Submitted batch job 1158061
+06:00:45 Submitted #724 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,20,gaussian
+Submitted batch job 1158095
+06:56:15 Submitted #725 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,25,gaussian
+Submitted batch job 1158168
+09:38:56 Submitted #726 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,30,gaussian
+Submitted batch job 1158214
+11:08:52 Submitted #727 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,35,gaussian
+Submitted batch job 1158479
+16:27:56 Submitted #728 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,40,gaussian
+Submitted batch job 1158865
+22:46:18 Submitted #729 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,45,gaussian
+Submitted batch job 1158992
+02:46:10 Submitted #730 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,50,gaussian
+Submitted batch job 1159008
+03:24:05 Submitted #731 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,5,mexican_hat
+Submitted batch job 1159239
+11:37:19 Submitted #732 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,10,mexican_hat
+Submitted batch job 1159252
+12:06:34 Submitted #733 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,15,mexican_hat
+Submitted batch job 1159387
+13:15:25 Submitted #734 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,20,mexican_hat
+Submitted batch job 1159392
+13:25:20 Submitted #735 → intact,700,10,10,isfc,MiniBatchDictionaryLearning,25,mexican_hat
