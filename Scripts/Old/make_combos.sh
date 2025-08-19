@@ -29,6 +29,6 @@ for cond in "${PARAM1[@]}"; do
 done
 
 
-# How to run
+# How to runs
 # chmod +x make_combos.sh
 # ./make_combos.sh > combos.txt
