@@ -1,19 +1,23 @@
 #!/bin/bash
 PARAM1=(intact paragraph word rest)
 PARAM2=(100 700)
-PARAM3=(\
+PARAM3_All=(\
   PCA IncrementalPCA SparsePCA MiniBatchSparsePCA \
   KernelPCA FastICA FactorAnalysis TruncatedSVD \
   DictionaryLearning MiniBatchDictionaryLearning \
   Isomap SpectralEmbedding \
   LocallyLinearEmbedding MDS UMAP)
+
+PARAM3_Filtered=(\
+PCA FactorAnalysis SparcePCA KernelPCA
+)
 KERNELS=(gaussian mexican_hat laplace)
 WIDTHS=($(seq 5 5 50))
 
 : > combos.txt
 for cond in "${PARAM1[@]}"; do
   for fac in "${PARAM2[@]}"; do
-    for alg in "${PARAM3[@]}"; do
+    for alg in "${PARAM3_Filtered[@]}"; do
       for ker in "${KERNELS[@]}"; do
         for w in "${WIDTHS[@]}"; do
           # keep “10 10 isfc” constant as before
