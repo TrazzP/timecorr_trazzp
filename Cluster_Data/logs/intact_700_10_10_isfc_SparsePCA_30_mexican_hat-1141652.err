@@ -1,5 +1,0 @@
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
-  warnings.warn('Rows <= ndims: returning zeros.')
-/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/braintools/brain_reduce.py:84: UserWarning: Rows <= ndims: returning zeros.
-  warnings.warn('Rows <= ndims: returning zeros.')
-slurmstepd-hgcpu1-1: error: *** JOB 1141652 ON hgcpu1-1 CANCELLED AT 2025-07-04T10:59:21 DUE TO TIME LIMIT ***

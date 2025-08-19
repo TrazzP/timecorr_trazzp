@@ -36,6 +36,9 @@ for csv_path in DATA_ROOT.rglob("*.csv"):
 
     # Determine expected output file
     out_fp = OUTPUT_ROOT / cond / factors / rfun / f"{stem}.png"
+
+    # out_fp.parent.mkdir(parents=True, exist_ok=True)
+
     if out_fp.is_file():
         print(f"Skipping {stem}: output already exists at {out_fp}")
         continue
