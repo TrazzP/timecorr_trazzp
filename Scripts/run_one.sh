@@ -2,7 +2,7 @@
 #SBATCH --job-name=Trazz_Grid
 #SBATCH --output=/dev/null
 #SBATCH --error=/dev/null
-#SBATCH --time=20:00:00
+#SBATCH --time=100:00:00
 #SBATCH --mem=128G
 #SBATCH --cpus-per-task=1
 
