@@ -1410,7 +1410,7 @@ def optimize_weights(corrs, opt_init=None):
         args=corrs,
         bounds=bns,
         constraints=con1,
-        options={"disp": True, "eps": 1e-1},
+        options={"disp": True, "eps": 1e-6},
     )
 
     return min_mu.x
