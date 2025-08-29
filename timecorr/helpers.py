@@ -1395,7 +1395,7 @@ def optimize_weights(corrs, opt_init=None):
 
     b = (0, 1)
     bns = (b,) * np.shape(corrs)[0]
-    con1 = {"type": "eq", "fun": lambda x: 1 - np.sum(x)}
+    con1 = {"type": "eq", "fun": lambda x: np.sum(x) - 1}
     if opt_init == "random":
         x0 = sum_to_x(np.shape(corrs)[0], 1)
     elif opt_init == "last":
@@ -1407,10 +1407,16 @@ def optimize_weights(corrs, opt_init=None):
     min_mu = minimize(
         calculate_error,
         x0,
-        args=corrs,
+        args=(corrs,),
+        method="SLSQP",
         bounds=bns,
         constraints=con1,
-        options={"disp": True, "eps": 1e-6},
+        options={
+            "disp": True, 
+            "eps": 1e-1,
+            "ftol": 1e-6,
+            "maxiter": 500,
+            },
     )
 
     return min_mu.x
@@ -1423,7 +1429,6 @@ def sum_to_x(n, x):
 
 
 def calculate_error(mu, corrs, metric="error", sign=1):
-
     results = decoder(weight_corrs(corrs, mu))
     return sign * results[metric].values
 

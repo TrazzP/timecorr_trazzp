@@ -18,14 +18,20 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 )
 
 # ----------------------------------------------------------------------------------
-# Execution Context Detection (Local vs. Cluster)
+# Execution Context Detection (Local vs. Cluster) and Directory Setup
 # ----------------------------------------------------------------------------------
-cluster = True
+cluster = False
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
+    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', cond)
 else:
     sys.path.append('/app')
+    results_dir = os.path.join('/app/Cluster_Data/Local_Machine', cond)
+    
 
+
+data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'initial_data')
+os.makedirs(results_dir, exist_ok=True)
 
 import timecorr as tc
 from timecorr.helpers import isfc, wisfc, mean_combine, corrmean_combine
@@ -35,13 +41,6 @@ from timecorr.helpers import isfc, wisfc, mean_combine, corrmean_combine
 debug = False
 DEBUG_SAMPLE_SIZE = 10  # Number of samples to retain when debugging
 
-# ----------------------------------------------------------------------------------
-# Directory Setup
-# ----------------------------------------------------------------------------------
-data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'initial_data')
-
-results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', cond)
-os.makedirs(results_dir, exist_ok=True)
 # ----------------------------------------------------------------------------------
 # Data Loading & Optional Debug Truncation
 # ----------------------------------------------------------------------------------
@@ -94,7 +93,7 @@ else:
     updated = pd.concat([existing, iter_results], ignore_index=True)
     updated.to_csv(save_file, index=False)
 
-print(f"✨ Experiment complete. Results archived at: {save_file}")
+print(f" Experiment complete. Results at: {save_file}")
 
 
 # ----------------------------------------------------------------------------------
