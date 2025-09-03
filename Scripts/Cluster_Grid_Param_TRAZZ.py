@@ -76,7 +76,8 @@ iter_results = tc.helpers.weighted_timepoint_decoder(
     cfun=eval(cfun),
     rfun=rfun,
     weights_fun=weights_param['weights'],
-    weights_params=weights_param['params']
+    weights_params=weights_param['params'],
+    opt_init='random',
 )
 iter_results['iteration'] = int(reps)
 
