@@ -20,7 +20,7 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 # ----------------------------------------------------------------------------------
 # Execution Context Detection (Local vs. Cluster) and Directory Setup
 # ----------------------------------------------------------------------------------
-cluster = False
+cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
     results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', cond)
