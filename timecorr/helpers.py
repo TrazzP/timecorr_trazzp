@@ -671,6 +671,21 @@ def weighted_timepoint_decoder(
     if type(rfun) not in [list, np.ndarray]:
         rfun = [rfun] * np.shape(level)[0]
 
+    #wrap rfun so it SKIPS reduction when rows <= ndims
+    def _wrap_skip_reduce(f):
+        if f is None:
+            return None
+        def _g(X, ndims, *args, **kwargs):
+            rows = X.shape[0]
+            if rows <= ndims:
+                # Skip reduction: return X unchanged instead of zeros
+                return X
+            return f(X, ndims, *args, **kwargs)
+        return _g
+
+    rfun = [_wrap_skip_reduce(f) for f in rfun]
+    # ------------------------------------------------------------
+
     p_rfun = [None] * np.shape(level)[0]
 
     assert len(level) == len(rfun), (
@@ -716,9 +731,6 @@ def weighted_timepoint_decoder(
                     mean_combine([x for x in out_raw]),
                     "correlation",
                 )
-
-                # next_corrs = (1 - sd.cdist(mean_combine(in_smooth), mean_combine(out_smooth),
-                #                            'correlation'))
                 corrs.append(next_corrs)
 
                 for s in range(0, 1):
@@ -749,8 +761,6 @@ def weighted_timepoint_decoder(
                         mean_combine([x for x in sub_out_raw]),
                         "correlation",
                     )
-                    # next_subcorrs = (1 - sd.cdist(mean_combine(sub_in_smooth),
-                    #                               mean_combine(sub_out_smooth), 'correlation'))
                     sub_corrs.append(next_subcorrs)
 
             else:
@@ -759,8 +769,8 @@ def weighted_timepoint_decoder(
                     in_raw,
                     out_raw,
                     level=v,
-                    cfun=cfun,
-                    rfun=rfun,
+                    cfun=cfun[v],
+                    rfun=rfun[v],  # <-- wrapped version: skips reduction if rows <= ndims
                     combine=combine,
                     weights_fun=weights_fun,
                     weights_params=weights_params,
@@ -777,8 +787,8 @@ def weighted_timepoint_decoder(
                             sub_in_raw,
                             sub_out_raw,
                             level=v,
-                            cfun=cfun,
-                            rfun=rfun,
+                            cfun=cfun[v],
+                            rfun=rfun[v],  # <-- wrapped, per-level
                             combine=combine,
                             weights_fun=weights_fun,
                             weights_params=weights_params,
@@ -818,13 +828,11 @@ def weighted_timepoint_decoder(
             next_results_pd["folds"] = i
 
             mu_pd = pd.DataFrame()
-
             for c in opt_over:
                 mu_pd["level_" + str(c)] = [0]
-
             mu_pd += mu
 
-            next_results_pd = pd.concat([next_results_pd, mu_pd], axis=1, join='inner')
+            next_results_pd = pd.concat([next_results_pd, mu_pd], axis=1, join="inner")
 
             results_pd = pd.concat([results_pd, next_results_pd])
 
