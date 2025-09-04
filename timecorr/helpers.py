@@ -308,6 +308,9 @@ def reduce(corrs, rfun=None):
         parameters, pass as a dictionary, e.g.
         reduction={'model' : 'PCA', 'params' : {'whiten' : True}}.
 
+        See scikit-learn specific model docs for details on parameters supported
+        for each model.
+
         Another option is to use graph theoretic measures computed for each node.
         The following measures are supported (via the brainconn toolbox):
         eigenvector_centrality, pagerank_centrality, and strength.  (Each
@@ -317,53 +320,63 @@ def reduce(corrs, rfun=None):
 
     :return: dimensionality-reduced (or original) correlation matrices
     """
-
     try:
         import networkx as nx
+
         _has_networkx = True
         graph_measures = {
             "eigenvector_centrality": lambda x: nx.eigenvector_centrality(nx.from_numpy_array(x), tol=1e-8),
-            "pagerank_centrality":    lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
-            "strength":               lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight="weight")]),
+            "pagerank_centrality": lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
+            "strength": lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight='weight')]),
         }
     except ImportError:
         _has_networkx = False
         graph_measures = {
             "eigenvector_centrality": None,
-            "pagerank_centrality":    None,
-            "strength":               None,
+            "pagerank_centrality": None,
+            "strength": None,
         }
 
     if rfun is None:
         return corrs
 
-    get_V = lambda x: int((np.sqrt(8 * x + 1) - 1) / 2)  # vec-len -> #nodes
+    get_V = lambda x: int(np.divide(np.sqrt(8 * x + 1) - 1, 2))
 
-    if isinstance(corrs, list):
+    if type(corrs) is list:
         V = get_V(corrs[0].shape[1])
-        rows = corrs[0].shape[0]
     else:
         V = get_V(corrs.shape[1])
-        rows = corrs.shape[0]
 
     if _has_networkx and rfun in graph_measures.keys():
         return apply_by_row(corrs, graph_measures[rfun])
-    elif not _has_networkx and rfun in graph_measures.keys():
-        raise ImportError("networkx is not installed.")
-    else:
-        # --- NEW: skip reduction when rows <= ndims (V) ---
-        if rows <= V:
-            return corrs
-        # --------------------------------------------------
 
+    elif not _has_networkx and rfun in graph_measures.keys():
+        raise ImportError(
+            'networkx is not installed.'
+        )
+
+    else:
         red_corrs = brain_reduce.reduce(corrs, reduce=rfun, ndims=V)
 
-        D = np.shape(red_corrs)[-1]
-        if D < V:
-            # --- FIX: pad with zeros using correct row dimension ---
-            pad = np.zeros((red_corrs.shape[0], V - D))
-            red_corrs = np.hstack((red_corrs, pad))
-            # ------------------------------------------------------
+        # Pad/truncate to exactly V features, handling list vs ndarray
+        if isinstance(red_corrs, list):
+            out = []
+            for mat in red_corrs:
+                D = mat.shape[-1]
+                if D < V:
+                    pad = np.zeros((mat.shape[0], V - D))
+                    mat = np.hstack((mat, pad))
+                elif D > V:
+                    mat = mat[:, :V]
+                out.append(mat)
+            red_corrs = out
+        else:
+            D = red_corrs.shape[-1]
+            if D < V:
+                pad = np.zeros((red_corrs.shape[0], V - D))
+                red_corrs = np.hstack((red_corrs, pad))
+            elif D > V:
+                red_corrs = red_corrs[:, :V]
 
         return red_corrs
 

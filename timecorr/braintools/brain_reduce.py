@@ -80,9 +80,14 @@ def reduce(x, reduce='IncrementalPCA', ndims=None, format_data=True):
         return x
 
     stacked_x = np.vstack(x)
-    if stacked_x.shape[0] <= model_params['n_components']:
-        warnings.warn('Rows <= ndims: returning zeros.')
-        return [np.zeros((stacked_x.shape[0], model_params['n_components']))]
+    rows = stacked_x.shape[0]
+    n_comp = model_params.get('n_components')
+
+    # Clamp n_components so we never hit the "rows <= ndims" zero-output path
+    if n_comp is not None and rows <= n_comp:
+        # valid max rank is at most rows-1 (leave at least 1 d.o.f.)
+        model_params['n_components'] = max(1, rows - 1)
+
 
     # --- Algorithm-specific parameter tweaks ---
     name = model_name.lower()
