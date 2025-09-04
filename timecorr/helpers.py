@@ -769,8 +769,8 @@ def weighted_timepoint_decoder(
                     in_raw,
                     out_raw,
                     level=v,
-                    cfun=cfun[v],
-                    rfun=rfun[v],  # <-- wrapped version: skips reduction if rows <= ndims
+                    cfun=cfun,
+                    rfun=rfun,  # <-- wrapped version: skips reduction if rows <= ndims
                     combine=combine,
                     weights_fun=weights_fun,
                     weights_params=weights_params,
@@ -787,8 +787,8 @@ def weighted_timepoint_decoder(
                             sub_in_raw,
                             sub_out_raw,
                             level=v,
-                            cfun=cfun[v],
-                            rfun=rfun[v],  # <-- wrapped, per-level
+                            cfun=cfun,
+                            rfun=rfun,
                             combine=combine,
                             weights_fun=weights_fun,
                             weights_params=weights_params,
