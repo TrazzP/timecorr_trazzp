@@ -306,10 +306,7 @@ def reduce(corrs, rfun=None):
 
         Can be passed as a string, but for finer control of the model
         parameters, pass as a dictionary, e.g.
-        reduction={‘model’ : ‘PCA’, ‘params’ : {‘whiten’ : True}}.
-
-        See scikit-learn specific model docs for details on parameters supported
-        for each model.
+        reduction={'model' : 'PCA', 'params' : {'whiten' : True}}.
 
         Another option is to use graph theoretic measures computed for each node.
         The following measures are supported (via the brainconn toolbox):
@@ -323,48 +320,53 @@ def reduce(corrs, rfun=None):
 
     try:
         import networkx as nx
-
         _has_networkx = True
         graph_measures = {
             "eigenvector_centrality": lambda x: nx.eigenvector_centrality(nx.from_numpy_array(x), tol=1e-8),
-            "pagerank_centrality": lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
-            "strength": lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight='weight')]),
-    }
+            "pagerank_centrality":    lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
+            "strength":               lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight="weight")]),
+        }
     except ImportError:
         _has_networkx = False
         graph_measures = {
             "eigenvector_centrality": None,
-            "pagerank_centrality": None,
-            "strength": None,
+            "pagerank_centrality":    None,
+            "strength":               None,
         }
 
     if rfun is None:
         return corrs
 
-    get_V = lambda x: int(np.divide(np.sqrt(8 * x + 1) - 1, 2))
+    get_V = lambda x: int((np.sqrt(8 * x + 1) - 1) / 2)  # vec-len -> #nodes
 
-    if type(corrs) is list:
+    if isinstance(corrs, list):
         V = get_V(corrs[0].shape[1])
+        rows = corrs[0].shape[0]
     else:
         V = get_V(corrs.shape[1])
+        rows = corrs.shape[0]
 
     if _has_networkx and rfun in graph_measures.keys():
         return apply_by_row(corrs, graph_measures[rfun])
-
     elif not _has_networkx and rfun in graph_measures.keys():
-        raise ImportError(
-            'networkx is not installed.'
-        )
-
+        raise ImportError("networkx is not installed.")
     else:
+        # --- NEW: skip reduction when rows <= ndims (V) ---
+        if rows <= V:
+            return corrs
+        # --------------------------------------------------
+
         red_corrs = brain_reduce.reduce(corrs, reduce=rfun, ndims=V)
 
         D = np.shape(red_corrs)[-1]
-
         if D < V:
-            red_corrs = np.hstack((red_corrs, np.zeros((D, V - D))))
+            # --- FIX: pad with zeros using correct row dimension ---
+            pad = np.zeros((red_corrs.shape[0], V - D))
+            red_corrs = np.hstack((red_corrs, pad))
+            # ------------------------------------------------------
 
         return red_corrs
+
 
 
 def smooth(w, windowsize=10, kernel_fun=laplace_weights, kernel_params=laplace_params):
