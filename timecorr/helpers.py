@@ -698,7 +698,7 @@ def weighted_timepoint_decoder(
             return f(X, ndims, *args, **kwargs)
         return _g
 
-    rfun = [_wrap_skip_reduce(f) for f in rfun]
+    #rfun = [_wrap_skip_reduce(f) for f in rfun]
     # ------------------------------------------------------------
 
     p_rfun = [None] * np.shape(level)[0]
