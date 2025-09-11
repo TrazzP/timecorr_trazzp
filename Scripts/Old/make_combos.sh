@@ -9,7 +9,7 @@ PARAM3_All=(\
   LocallyLinearEmbedding MDS UMAP)
 
 PARAM3_Filtered=(\
-PCA FactorAnalysis IncrementalPCA TruncatedSVD
+PCA FactorAnalysis IncrementalPCA TruncatedSVD MiniBatchDictionaryLearning MiniBatchSparsePCA FastICA
 )
 KERNELS=(gaussian mexican_hat laplace)
 WIDTHS=($(seq 5 5 50))
