@@ -825,33 +825,111 @@ def weighted_timepoint_decoder(
             optimize_levels = range(v + 1)
 
         opt_over = []
+        best_acc = None
+        best_mu_vec = None
+        best_row = None
 
         for lev in optimize_levels:
-
             opt_over.append(lev)
 
             sub_out_corrs = sub_corrs[opt_over, :, :]
             out_corrs = corrs[opt_over, :, :]
 
             mu = optimize_weights(sub_out_corrs, opt_init)
+            mu_vec = _mu_as_vector(mu, opt_over)          # from earlier step
+            mu_vec = _pad_mu(mu_vec, len(opt_over))       # align for safety
 
-            w_corrs = weight_corrs(out_corrs, mu)
+            # Evaluate
+            w_corrs = weight_corrs(out_corrs, mu_vec)
+            cand_row = decoder(w_corrs)
+            cand_row["level"] = lev
+            cand_row["folds"] = i
+            cand_acc = float(cand_row["accuracy"].iloc[0])
 
-            next_results_pd = decoder(w_corrs)
-            print(next_results_pd)
-            next_results_pd["level"] = lev
-            next_results_pd["folds"] = i
+            # Build pretty weights DF (aligned to current opt_over)
+            mu_df = pd.DataFrame({f"level_{c}": [w] for c, w in zip(opt_over, mu_vec)})
 
-            mu_pd = pd.DataFrame()
-            for c in opt_over:
-                mu_pd["level_" + str(c)] = [0]
-            mu_pd += mu
+            if (best_acc is None) or (cand_acc >= best_acc):
+                # Accept
+                best_acc = cand_acc
+                best_mu_vec = mu_vec.copy()
+                best_row = cand_row.copy()
+                to_store = pd.concat(
+                    [cand_row.reset_index(drop=True), mu_df.reset_index(drop=True)],
+                    axis=1
+                )
+                results_pd = pd.concat([results_pd, to_store], ignore_index=True)
 
-            next_results_pd = pd.concat([next_results_pd, mu_pd], axis=1, join="inner")
+            else:
+                # Reject degradation: carry forward best metrics, set the *new* level's weight to 0
+                mu_vec_reject = _pad_mu(best_mu_vec, len(opt_over))
+                mu_vec_reject[-1] = 0.0  # explicitly zero the newest level
 
-            results_pd = pd.concat([results_pd, next_results_pd])
+                mu_df_reject = pd.DataFrame(
+                    {f"level_{c}": [w] for c, w in zip(opt_over, mu_vec_reject)}
+                )
+
+                row_reject = best_row.copy()
+                row_reject["level"] = lev
+                to_store = pd.concat(
+                    [row_reject.reset_index(drop=True), mu_df_reject.reset_index(drop=True)],
+                    axis=1
+                )
+                results_pd = pd.concat([results_pd, to_store], ignore_index=True)
+
+
+
 
     return results_pd
+
+def _pad_mu(vec, target_len):
+    vec = np.asarray(vec, dtype=float).ravel()
+    if vec.size < target_len:
+        vec = np.pad(vec, (0, target_len - vec.size), mode="constant")
+    elif vec.size > target_len:
+        vec = vec[:target_len]  # defensive; shouldn't happen here
+    return vec
+
+
+def _mu_as_vector(mu, levels):
+    """
+    Return a 1D float numpy array aligned to `levels` (e.g., [0,1,2,...]).
+    Accepts mu as ndarray/list/Series/DataFrame with columns like
+    0 / "0" / "level_0".
+    """
+    import numpy as np
+    import pandas as pd
+
+    # Numpy/list: just coerce and sanity-check length
+    if isinstance(mu, (list, tuple, np.ndarray)):
+        vec = np.asarray(mu, dtype=float).ravel()
+        if vec.size != len(levels):
+            raise ValueError(f"optimize_weights returned {vec.size} weights for {len(levels)} levels")
+        return vec
+
+    # Pandas Series / 1-row DataFrame
+    if isinstance(mu, pd.DataFrame):
+        row = mu.iloc[0]
+    elif isinstance(mu, pd.Series):
+        row = mu
+    else:
+        raise TypeError(f"Unsupported mu type: {type(mu)}")
+
+    vec = np.zeros(len(levels), dtype=float)
+    for j, lev in enumerate(levels):
+        for key in (lev, str(lev), f"level_{lev}"):
+            if key in row.index:
+                vec[j] = float(row[key])
+                break
+
+    # Fallback: if no labeled matches but lengths agree, use row order
+    if np.count_nonzero(vec) == 0 and row.shape[0] == len(levels):
+        try:
+            return row.to_numpy(dtype=float).ravel()
+        except Exception:
+            pass
+
+    return vec
 
 
 def folding_levels(
