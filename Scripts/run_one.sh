@@ -3,7 +3,7 @@
 #SBATCH --output=/dev/null
 #SBATCH --error=/dev/null
 #SBATCH --time=100:00:00
-#SBATCH --mem=128G
+#SBATCH --mem=64G
 #SBATCH --cpus-per-task=2
 
 # these are passed in by the submit script

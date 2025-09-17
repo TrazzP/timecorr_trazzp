@@ -1,0 +1,2 @@
+/var/spool/slurmd/job1266671/slurm_script: line 27: 400041 Killed                  python Cluster_Grid_Param_TRAZZ.py "$cond" "$fac" "$lvl" "$reps" "$cfun" "$rfun" "$width" "$wp"
+slurmstepd-hggpu4-4: error: Detected 1 oom_kill event in StepId=1266671.batch. Some of the step tasks have been OOM Killed.
