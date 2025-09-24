@@ -3,8 +3,8 @@
 #SBATCH --output=/dev/null
 #SBATCH --error=/dev/null
 #SBATCH --time=100:00:00
-#SBATCH --mem=64G
-#SBATCH --cpus-per-task=2
+#SBATCH --mem=128G
+#SBATCH --cpus-per-task=1
 
 # these are passed in by the submit script
 # cond   ← intact|paragraph|sentence|word
