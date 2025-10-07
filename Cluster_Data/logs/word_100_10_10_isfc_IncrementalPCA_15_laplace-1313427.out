@@ -1,0 +1,151 @@
+corrs 1
+sub corrs 10
+corrs 2
+sub corrs 20
+corrs 3
+sub corrs 30
+corrs 4
+sub corrs 40
+corrs 5
+sub corrs 50
+corrs 6
+sub corrs 60
+corrs 7
+sub corrs 70
+corrs 8
+sub corrs 80
+corrs 9
+sub corrs 90
+corrs 10
+sub corrs 100
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.20523333333333324
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.19308888888888878
+            Iterations: 1
+            Function evaluations: 14
+            Gradient evaluations: 1
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.20262222222222215
+            Iterations: 2
+            Function evaluations: 8
+            Gradient evaluations: 2
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.21447777777777768
+            Iterations: 5
+            Function evaluations: 36
+            Gradient evaluations: 5
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.09236666666666672
+            Iterations: 8
+            Function evaluations: 61
+            Gradient evaluations: 8
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.09425555555555562
+            Iterations: 5
+            Function evaluations: 48
+            Gradient evaluations: 5
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.1255111111111112
+            Iterations: 3
+            Function evaluations: 35
+            Gradient evaluations: 3
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.11748888888888882
+            Iterations: 2
+            Function evaluations: 29
+            Gradient evaluations: 2
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.09260000000000006
+            Iterations: 8
+            Function evaluations: 94
+            Gradient evaluations: 8
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.09133333333333339
+            Iterations: 16
+            Function evaluations: 199
+            Gradient evaluations: 16
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.09238888888888894
+            Iterations: 5
+            Function evaluations: 71
+            Gradient evaluations: 5
+corrs 1
+sub corrs 10
+corrs 2
+sub corrs 20
+corrs 3
+sub corrs 30
+corrs 4
+sub corrs 40
+corrs 5
+sub corrs 50
+corrs 6
+sub corrs 60
+corrs 7
+sub corrs 70
+corrs 8
+sub corrs 80
+corrs 9
+sub corrs 90
+corrs 10
+sub corrs 100
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.21615555555555563
+            Iterations: 1
+            Function evaluations: 2
+            Gradient evaluations: 1
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.1923
+            Iterations: 5
+            Function evaluations: 28
+            Gradient evaluations: 5
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.1970000000000001
+            Iterations: 5
+            Function evaluations: 34
+            Gradient evaluations: 5
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.19127777777777788
+            Iterations: 4
+            Function evaluations: 33
+            Gradient evaluations: 4
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.11928888888888885
+            Iterations: 8
+            Function evaluations: 67
+            Gradient evaluations: 8
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.11971111111111109
+            Iterations: 4
+            Function evaluations: 41
+            Gradient evaluations: 4
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.12148888888888885
+            Iterations: 6
+            Function evaluations: 68
+            Gradient evaluations: 6
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.26847777777777754
+            Iterations: 4
+            Function evaluations: 50
+            Gradient evaluations: 4
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.11384444444444436
+            Iterations: 6
+            Function evaluations: 77
+            Gradient evaluations: 6
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.13399999999999998
+            Iterations: 1
+            Function evaluations: 22
+            Gradient evaluations: 1
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 0.10548888888888895
+            Iterations: 7
+            Function evaluations: 98
+            Gradient evaluations: 7
+ Experiment complete. Results at: /mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/word/word_100_10_10_isfc_IncrementalPCA_15_laplace.csv
