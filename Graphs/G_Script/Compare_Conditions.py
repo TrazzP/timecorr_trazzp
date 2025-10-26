@@ -8,7 +8,7 @@ from pathlib import Path
 # CONFIGURATION: adjust these if your directory structure differs.
 # -----------------------------------------------------------------------------
 INPUT_ROOT   = Path("/app/Cluster_Data")
-OUTPUT_ROOT  = Path("/app/Graphs/comparisons")
+OUTPUT_ROOT  = Path("/app/Graphs/Comparisons")
 CONDS        = ["paragraph", "word", "intact", "rest"]
 INTACT_DIR   = INPUT_ROOT / "intact"
 # -----------------------------------------------------------------------------
@@ -99,7 +99,7 @@ def main():
         plt.tight_layout()
 
         # Save into subfolder named by rfun (e.g. MDS)
-        subdir = OUTPUT_ROOT / rfun
+        subdir = OUTPUT_ROOT / factors / rfun
         subdir.mkdir(parents=True, exist_ok=True)
         out_fp = subdir / f"{file_base}.png"
         plt.savefig(out_fp)

@@ -9,7 +9,7 @@ SCRIPT = Path(__file__).parent / "One_Script.py"
 # Base directory containing all CSVs
 DATA_ROOT = Path("/app/Cluster_Data")
 # Base directory for generated graphs
-OUTPUT_ROOT = Path("/app/Graphs/initial_graphs")
+OUTPUT_ROOT = Path("/app/Graphs/Single_Conditions")
 
 if not SCRIPT.is_file():
     print(f"Error: could not find plot script at {SCRIPT}")
@@ -35,7 +35,7 @@ for csv_path in DATA_ROOT.rglob("*.csv"):
     wp = "_".join(parts[7:])
 
     # Determine expected output file
-    out_fp = OUTPUT_ROOT / cond / factors / rfun / f"{stem}.png"
+    out_fp = OUTPUT_ROOT / factors / cond / rfun / f"{stem}.png"
 
     # out_fp.parent.mkdir(parents=True, exist_ok=True)
 

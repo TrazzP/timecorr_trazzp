@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 from pathlib import Path
 
 # ----------------------------------------------------------------------------------
@@ -28,26 +29,35 @@ def load_data(fp):
 # ----------------------------------------------------------------------------------
 def plot_average_accuracy(df: pd.DataFrame, title: str, out_path: Path):
     """Compute mean accuracy across folds and plot vs. level."""
-    # compute average accuracy per level
     mean_acc = df.groupby("level")["accuracy"].mean().sort_index()
+
+    y_min = max(0, mean_acc.min() - 0.05)  # don't go below 0
+    y_max = mean_acc.max() + 0.05
 
     plt.figure(figsize=(8, 5))
     plt.plot(mean_acc.index, mean_acc.values, marker="o", label="Average Accuracy")
+
     plt.xlabel("Level")
     plt.ylabel("Accuracy")
-    plt.title(f"{title} (Average over folds)")
+    plt.title(title)
     plt.legend()
     plt.grid(True)
+
+    # set y limits and ticks
+    plt.ylim(y_min, y_max)
+    plt.yticks(np.arange(0, y_max + 0.05, 0.05))  # only ticks spaced by ≥0.05
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     plt.tight_layout()
     plt.savefig(out_path)
     plt.close()
 
+
 # ----------------------------------------------------------------------------------
 # Run function for programmatic calls
 # ----------------------------------------------------------------------------------
 def run(cond, factors, level, reps, cfun, rfun, width, wp,
-        input_root="/app/Cluster_Data", output_root="/app/Graphs/initial_graphs"):
+        input_root="/app/Cluster_Data", output_root="/app/Graphs/Single_Conditions"):
     """
     Find the CSV, load it, plot accuracy vs. level by fold,
     and save under output_root/cond/factors/rfun.
@@ -59,7 +69,7 @@ def run(cond, factors, level, reps, cfun, rfun, width, wp,
 
     # prepare output
     title = csv_path.stem
-    out_dir = Path(output_root) / cond / str(factors) / rfun
+    out_dir = Path(output_root) / str(factors) / cond / rfun
     out_dir.mkdir(parents=True, exist_ok=True)
     out_fp = out_dir / f"{title}.png"
 
