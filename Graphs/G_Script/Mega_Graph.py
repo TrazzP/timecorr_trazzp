@@ -34,7 +34,7 @@ from matplotlib.cm import ScalarMappable
 INPUT_ROOT = Path("/app/Cluster_Data")
 CONDS      = ["paragraph", "word", "intact", "rest"]
 OUT_DIR    = Path("/app/Graphs/Method_Value_By_Level/Mega")
-OUT_FIG = OUT_DIR / "Method_4x4_ByCond_ByWidth_NoCI_PlateauColored.png"
+OUT_FIG = OUT_DIR / "Mega_Graph_Final.png"
 FACTORS_REQUIRE = "700"
 
 METHODS = ["PCA","IncrementalPCA","FactorAnalysis","TruncatedSVD"]
@@ -131,29 +131,73 @@ def moving_average(y: np.ndarray, win: int) -> np.ndarray:
     return np.convolve(ypad, kernel, mode="valid")
 
 
-def detect_plateau(levels: np.ndarray, acc: np.ndarray, eps: float=EPS, consec: int=CONSEC, smooth_win: int=SMOOTH_WIN) -> Optional[float]:
-    """Return the earliest *level* at which smoothed first-differences stay < eps for `consec` steps.
-    If not found, return the max level.
+def detect_inflection_and_plateau(
+    levels: np.ndarray,
+    acc: np.ndarray,
+    eps: float = EPS,          # near-zero slope threshold for plateau
+    consec: int = CONSEC,      # run length for plateau
+    smooth_win: int = SMOOTH_WIN
+) -> Tuple[Optional[float], Optional[float]]:
     """
-    if len(levels) < 2:
-        return float(levels.max()) if len(levels) else None
-    # Sort by level to ensure monotonic x-axis
+    Returns (inflection_level, plateau_level_after_inflection) using ONLY:
+      • Inflection = zero-crossing of 2nd derivative (of smoothed accuracy).
+      • Plateau   = first post-inflection run where |1st derivative| < eps for `consec` steps.
+    If no zero-crossing exists, inflection falls back to max |1st derivative| (still "rate greatest"),
+    which is consistent with Lucy's wording and *does not* use an elbow/curvature proxy.
+    """
+    n = len(levels)
+    if n < 3:
+        if n: 
+            L = float(np.max(levels))
+            return (L, L)
+        return (None, None)
+
+    # Sort by level and smooth accuracy
     order = np.argsort(levels)
-    lv = levels[order]
-    ya = acc[order]
+    lv = levels[order].astype(float)
+    ya = acc[order].astype(float)
     ys = moving_average(ya, smooth_win)
-    diffs = np.diff(ys)
-    # Absolute deltas; you can also use positive-only if monotonic
-    small = np.abs(diffs) < eps
-    # Find earliest index where we have `consec` small steps in a row
-    if len(small) >= consec:
-        run = np.convolve(small.astype(int), np.ones(consec, dtype=int), mode='valid')
-        idx = np.argmax(run == consec) if np.any(run == consec) else -1
-        if idx >= 0:
-            # Plateau occurs after idx steps; map to a level threshold ~ lv[idx+1]
-            return float(lv[idx+1])
-    # Fallback: no clear plateau
-    return float(lv.max())
+
+    # If your smoother ever shortens length, align lv (moving_average here keeps length)
+    if len(ys) != len(lv):
+        trim = len(lv) - len(ys)
+        left = trim // 2
+        right = trim - left
+        lv = lv[left: len(lv) - right]
+
+    # Finite differences per unit level (handle uneven spacing)
+    dlv = np.diff(lv)
+    d1 = np.diff(ys) / dlv                  # first derivative (slope)
+    d2 = np.diff(d1) / np.diff(lv[:-1])     # second derivative
+
+    # ---- Inflection: first zero-crossing of the second derivative ----
+    # Find indices k where d2[k] and d2[k+1] have opposite signs
+    cross = np.where(np.sign(d2[:-1]) != np.sign(d2[1:]))[0]
+    if cross.size:
+        # choose the first zero-crossing (closest to the earliest bend)
+        k = int(cross[0]) + 1   # d2[k] zero-crosses between levels ~ lv[k+2]
+        inflection_level = float(lv[min(k + 1, len(lv) - 1)])
+        # Map to starting point in slope space (d1 aligns with intervals [lv[i], lv[i+1]])
+        start_idx_in_d1 = max(0, k)  # conservative: begin just after the crossing
+    else:
+        # No zero-crossing ⇒ fall back to "rate greatest": max |d1|
+        i = int(np.argmax(np.abs(d1)))
+        inflection_level = float(lv[i + 1])
+        start_idx_in_d1 = i
+
+    # ---- Plateau: first run after inflection where |slope| < eps for `consec` steps ----
+    post = np.abs(d1[start_idx_in_d1:])
+    plateau_level = float(lv.max())
+    if post.size >= consec:
+        run = np.convolve((post < eps).astype(int), np.ones(consec, dtype=int), mode="valid")
+        j = np.argmax(run == consec) if np.any(run == consec) else -1
+        if j >= 0:
+            # d1[k] spans lv[k]→lv[k+1]; choose the right edge as the plateau "level"
+            plateau_level = float(lv[start_idx_in_d1 + j + 1])
+
+    return (inflection_level, plateau_level)
+
+
 
 # -------------------- Main Plot --------------------
 
@@ -179,8 +223,10 @@ def build_plot_df_by_condition(per_level: pd.DataFrame,
             series = (g.groupby("level", as_index=False)["accuracy"].mean().sort_values("level"))
             lv = series["level"].to_numpy()
             ya = series["accuracy"].to_numpy()
-            pl = detect_plateau(lv, ya, eps=eps, consec=consec, smooth_win=smooth_win)
-            plist.append({"method":method, "wp":wp, "width":width, "plateau_level": pl})
+            infL, platL = detect_inflection_and_plateau(lv, ya, eps=eps, consec=consec, smooth_win=smooth_win)
+            plist.append({"method":method, "wp":wp, "width":width,
+                          "inflection_level":infL, "plateau_level": platL})
+
         pdf = pd.DataFrame(plist)
 
         plot_df = pd.merge(ydf, pdf, on=["method","wp","width"], how="inner")
@@ -230,26 +276,25 @@ def main():
     cmap = plt.cm.viridis
 
     # -------------------- Figure: 4x4 grid --------------------
-    row_conds = ["intact","paragraph","word","rest"]
-    col_methods = METHODS
+    row_methods = METHODS                         # rows = dimensionality reduction methods
+    col_conds   = ["intact","paragraph","word","rest"]  # columns = conditions
 
     fig, axes = plt.subplots(
         4, 4,
-        figsize=(15, 14),       # slightly smaller height for tighter layout
-        sharex=True,
-        sharey=True,
+        figsize=(15, 14),
+        sharex=True, sharey=True,
         constrained_layout=False,
-        gridspec_kw={'hspace': -0.01, 'wspace': 0.1}  # closer rows/cols
+        gridspec_kw={'hspace': 0.03, 'wspace': 0.12}
     )
 
-    for r, cond in enumerate(row_conds):
-        for c, method in enumerate(col_methods):
+    for r, method in enumerate(row_methods):
+        for c, cond in enumerate(col_conds):
             ax = axes[r, c]
-            ms = cond_plot.get(cond, pd.DataFrame())
-            ms = ms[ms["method"]==method]
+            ms_all = cond_plot.get(cond, pd.DataFrame())  # cond-specific df from earlier
+            ms = ms_all[ms_all["method"] == method]
 
             if ms.empty:
-                ax.text(0.5, 0.5, f"No data: {cond} / {method}", ha="center", va="center")
+                ax.text(0.5, 0.5, f"No data: {method} / {cond}", ha="center", va="center")
                 ax.set_box_aspect(1.0)
             else:
                 for wp_name, marker in WP_MARKERS.items():
@@ -259,32 +304,36 @@ def main():
                     ax.scatter(
                         sub["width"], sub["acc_mean"],
                         s=sub["msize"], marker=marker,
-                        c=cmap(norm(sub["plateau_level"].to_numpy())),
+                        c=cmap(norm(sub["plateau_level"].to_numpy())),  # color = plateau level
                         edgecolors='white', linewidths=0.5, alpha=0.95
                     )
                 ax.grid(True, alpha=0.25)
                 ax.set_box_aspect(1.0)
 
-            # --- Axis formatting ---
-            if cond == "intact":
-                ax.set_ylim(0.2, 0.5)  # tighter custom y-range for intact
-            else:
-                ax.set_ylim(*y_lim)
-
+            # Titles on top row: column headers = conditions
             if r == 0:
-                ax.set_title(method, fontsize=11, pad=6)
-            if c == 0:
-                ax.set_ylabel(f"{cond} Accuracy", fontsize=10)
+                ax.set_title(cond, fontsize=11, pad=6)
 
-            # Only bottom row shows x-axis labels/ticks
-            if r == 3:
+            # Y-labels on leftmost column: row headers = methods
+            if c == 0:
+                ax.set_ylabel(f"{method} — mean accuracy", fontsize=10)
+
+            # Only the bottom row shows x-axis labels/ticks
+            if r == len(row_methods) - 1:
                 ax.set_xlabel("Kernel width", fontsize=10)
                 ax.tick_params(axis='x', labelbottom=True, bottom=True)
             else:
                 ax.tick_params(axis='x', labelbottom=False, bottom=False)
 
-    # Tighten the layout: less whitespace on bottom/top
-    plt.subplots_adjust(top=0.94, bottom=0.07, left=0.07, right=0.97, hspace=0.03, wspace=0.12)
+            # Custom y-limits for the "intact" column ONLY
+            if cond == "intact":
+                ax.set_ylim(0.2, 0.5)
+            else:
+                ax.set_ylim(*y_lim)
+
+    # Tighten margins to reduce bottom whitespace
+    plt.subplots_adjust(top=0.93, bottom=0.07, left=0.08, right=0.98, hspace=0.03, wspace=0.12)
+
 
 
     # Profile legend (marker shapes)
@@ -299,7 +348,7 @@ def main():
     cbar = fig.colorbar(sm, ax=axes.ravel().tolist(), orientation='vertical', pad=0.01, fraction=0.03)
     cbar.set_label("Plateau level (earliest)")
 
-    fig.suptitle("4×4: Conditions × Methods — Size∝Width, Shape=WP, Color=Plateau Level (factors=700)", y=0.995, fontsize=14)
+    fig.suptitle("Conditions × Methods ×  Kernel Width, Shape=WP, Color=Plateau Level, Factors=700", y=0.995, fontsize=14)
 
     fig.savefig(OUT_FIG, dpi=220, bbox_inches="tight")
     plt.close(fig)
