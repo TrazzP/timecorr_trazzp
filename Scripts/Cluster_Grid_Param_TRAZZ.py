@@ -23,7 +23,8 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
-    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', cond)
+    #This is changed for the top 10 runs with higher fold count
+    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Folds')
 else:
     sys.path.append('/app')
     results_dir = os.path.join('/app/Cluster_Data/Local_Machine', cond)
@@ -69,7 +70,8 @@ weights_param = eval(wp)
 # ----------------------------------------------------------------------------------
 iter_results = tc.helpers.weighted_timepoint_decoder(
     data,
-    nfolds=2,
+    #This is changed for the top 10 runs with higher fold count
+    nfolds=10,
     optimize_levels=list(range(0, int(level) + 1)),
     level=int(level),
     combine=corrmean_combine,

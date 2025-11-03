@@ -1,0 +1,13 @@
+intact 700 10 10 isfc FactorAnalysis 5 gaussian
+intact 700 10 10 isfc FactorAnalysis 10 gaussian
+intact 700 10 10 isfc FactorAnalysis 15 gaussian
+intact 700 10 10 isfc FactorAnalysis 20 gaussian
+intact 700 10 10 isfc FactorAnalysis 25 gaussian
+intact 700 10 10 isfc FactorAnalysis 30 gaussian
+intact 700 10 10 isfc FactorAnalysis 35 gaussian
+intact 700 10 10 isfc FactorAnalysis 40 gaussian
+intact 700 10 10 isfc FactorAnalysis 45 gaussian
+intact 700 10 10 isfc FactorAnalysis 50 gaussian
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat

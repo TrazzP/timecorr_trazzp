@@ -13,7 +13,8 @@ LIVELOG=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/submit_g
 
 USER=$(whoami)
 MAXJ=16
-COMBOS=combos.txt
+#This is changed for the top 10 runs with higher fold count
+COMBOS=10_folds.txt
 TOTAL=$(wc -l < "$COMBOS")
 i=1
 
@@ -29,8 +30,8 @@ while [ "$i" -le "$TOTAL" ]; do
 
     # ensure per‐cond dir exists
     mkdir -p "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}"
-
-    OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}.csv"
+    #This is changed for the top 10 runs with higher fold count
+    #OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}.csv"
 
     if [ -f "$OUT" ]; then
       msg="$(date +'%H:%M:%S') Skipping #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp} (already done)"
