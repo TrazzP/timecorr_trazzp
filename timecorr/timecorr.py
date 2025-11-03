@@ -147,7 +147,7 @@ def timecorr(data, weights_function=gaussian_weights,
             return_list = False
 
     else:
-        corrs = np.asarray(combine(smooth(data, kernel_fun=weights_function, kernel_params=weights_params))).tolist()
+        corrs = combine(smooth(data, kernel_fun=weights_function, kernel_params=weights_params)).tolist()
 
     if return_list and (not (type(corrs) == list)):
         return [corrs]

@@ -23,8 +23,8 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
-    #This is changed for the top 10 runs with higher fold count
-    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Folds')
+    #This is changed for the top 10 runs with higher iteration count
+    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Iterations')
 else:
     sys.path.append('/app')
     results_dir = os.path.join('/app/Cluster_Data/Local_Machine', cond)
@@ -66,22 +66,33 @@ mexican_hat = {'name': 'Mexican Hat', 'weights': tc.mexican_hat_weights, 'params
 weights_param = eval(wp)
 
 # ----------------------------------------------------------------------------------
-# Weighted Timepoint Decoding
+# Weighted Timepoint Decoding — 10 Iterations of 2-Fold CV
 # ----------------------------------------------------------------------------------
-iter_results = tc.helpers.weighted_timepoint_decoder(
-    data,
-    #This is changed for the top 10 runs with higher fold count
-    nfolds=10,
-    optimize_levels=list(range(0, int(level) + 1)),
-    level=int(level),
-    combine=corrmean_combine,
-    cfun=eval(cfun),
-    rfun=rfun,
-    weights_fun=weights_param['weights'],
-    weights_params=weights_param['params'],
-    opt_init='random',
-)
-iter_results['iteration'] = int(reps)
+N_ITER = 10
+all_results = []
+
+for i in range(N_ITER):
+    print(f"Running iteration {i+1}/{N_ITER}")
+    np.random.seed(1337 + i)  # different fold splits each iteration
+
+    iter_results = tc.helpers.weighted_timepoint_decoder(
+        data,
+        nfolds=2,  # keep standard 2-fold CV
+        optimize_levels=list(range(0, int(level) + 1)),
+        level=int(level),
+        combine=lambda x: np.asarray(corrmean_combine(x)),  # ensures ndarray output
+        cfun=eval(cfun),
+        rfun=rfun,
+        weights_fun=weights_param["weights"],
+        weights_params=weights_param["params"],
+        opt_init="random",
+    )
+
+    iter_results["iteration"] = i
+    iter_results["reps_arg"] = int(reps)
+    all_results.append(iter_results)
+
+final_df = pd.concat(all_results, ignore_index=True)
 
 # ----------------------------------------------------------------------------------
 # Results Persistence
@@ -93,7 +104,7 @@ if not os.path.isfile(save_file):
     iter_results.to_csv(save_file, index=False)
 else:
     existing = pd.read_csv(save_file)
-    updated = pd.concat([existing, iter_results], ignore_index=True)
+    updated = pd.concat([existing, final_df], ignore_index=True)
     updated.to_csv(save_file, index=False)
 
 print(f" Experiment complete. Results at: {save_file}")
