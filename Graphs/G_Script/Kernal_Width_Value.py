@@ -16,6 +16,7 @@ from pathlib import Path
 import math
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
 
 # ---------------- CONFIG ----------------
 INPUT_ROOT  = Path("/app/Cluster_Data")
@@ -117,13 +118,19 @@ def main() -> int:
     # Sort widths and levels
     widths_sorted = sorted(summary_all["width"].unique())
     levels_sorted = sorted(summary_all["level"].unique())
+    
+    # Create a colormap (magma from cold→hot)
+    cmap = plt.cm.get_cmap("magma", len(widths_sorted))
+    norm = mcolors.Normalize(vmin=min(widths_sorted), vmax=max(widths_sorted))
+
 
     plt.figure(figsize=(6, 5))
     for w in widths_sorted:
         sub = summary_all[summary_all["width"] == w]
         if sub.empty:
             continue
-        plt.plot(sub["level"], sub["mean_acc"], marker="o", label=f"w={w}")
+        color = cmap(norm(w))
+        plt.plot(sub["level"], sub["mean_acc"], color=color, marker="o", label=f"w={w}")
     plt.xlabel("Higher-order correlation level", fontsize=14)
     plt.ylabel("Accuracy", fontsize=14)
     plt.title("Kernel Width Comparison (All Widths)", fontsize=16)
