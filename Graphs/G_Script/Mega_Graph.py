@@ -281,10 +281,10 @@ def main():
 
     fig, axes = plt.subplots(
         4, 4,
-        figsize=(15, 14),
+        figsize=(10, 11),
         sharex=True, sharey=True,
         constrained_layout=False,
-        gridspec_kw={'hspace': 0.03, 'wspace': 0.12}
+        gridspec_kw={'hspace': -0.3, 'wspace': 0.12}
     )
 
     for r, method in enumerate(row_methods):
@@ -312,15 +312,15 @@ def main():
 
             # Titles on top row: column headers = conditions
             if r == 0:
-                ax.set_title(cond, fontsize=11, pad=6)
+                ax.set_title(cond, fontsize=14, pad=6)
 
             # Y-labels on leftmost column: row headers = methods
             if c == 0:
-                ax.set_ylabel(f"{method} — mean accuracy", fontsize=10)
+                ax.set_ylabel(f"{method}", fontsize=14)
 
             # Only the bottom row shows x-axis labels/ticks
             if r == len(row_methods) - 1:
-                ax.set_xlabel("Kernel width", fontsize=10)
+                ax.set_xlabel("Kernel width", fontsize=14)
                 ax.tick_params(axis='x', labelbottom=True, bottom=True)
             else:
                 ax.tick_params(axis='x', labelbottom=False, bottom=False)
@@ -332,7 +332,7 @@ def main():
                 ax.set_ylim(*y_lim)
 
     # Tighten margins to reduce bottom whitespace
-    plt.subplots_adjust(top=0.93, bottom=0.07, left=0.08, right=0.98, hspace=0.03, wspace=0.12)
+    plt.subplots_adjust(top=0.97, bottom=0.07, left=0.08, right=0.98, hspace=0.01, wspace=0.12)
 
 
 
@@ -340,17 +340,17 @@ def main():
     proxy = [Line2D([0],[0], marker=m, linestyle='None', markersize=8, markerfacecolor='gray', markeredgecolor='gray')
              for m in WP_MARKERS.values()]
     labels = list(WP_MARKERS.keys())
-    fig.legend(proxy, labels, title="Window profile", loc="lower center", ncol=3, frameon=True)
+    fig.legend(proxy, labels, title="Window Profile", loc="lower center", ncol=3, frameon=True, fontsize=14, title_fontsize=16)
 
     # Colorbar for plateau level
     sm = ScalarMappable(norm=norm, cmap=cmap)
     sm.set_array([])
     cbar = fig.colorbar(sm, ax=axes.ravel().tolist(), orientation='vertical', pad=0.01, fraction=0.03)
-    cbar.set_label("Plateau level (earliest)")
+    cbar.set_label("Plateau level (earliest)", fontsize=14)
 
-    fig.suptitle("Conditions × Methods ×  Kernel Width, Shape=WP, Color=Plateau Level, Factors=700", y=0.995, fontsize=14)
+    fig.suptitle("Conditions × Methods ×  Kernel Width, Shape=WP, Color=Plateau Level", y=0.995, fontsize=18)
 
-    fig.savefig(OUT_FIG, dpi=220, bbox_inches="tight")
+    fig.savefig(OUT_FIG, dpi=620, bbox_inches="tight")
     plt.close(fig)
     print(f"→ Saved: {OUT_FIG}")
     return 0

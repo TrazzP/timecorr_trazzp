@@ -118,15 +118,15 @@ def main() -> int:
     widths_sorted = sorted(summary_all["width"].unique())
     levels_sorted = sorted(summary_all["level"].unique())
 
-    plt.figure(figsize=(11, 6))
+    plt.figure(figsize=(6, 5))
     for w in widths_sorted:
         sub = summary_all[summary_all["width"] == w]
         if sub.empty:
             continue
         plt.plot(sub["level"], sub["mean_acc"], marker="o", label=f"w={w}")
-    plt.xlabel("Higher-order correlation level")
-    plt.ylabel("Accuracy")
-    plt.title("Kernel Width Comparison (All Widths; factors=700)")
+    plt.xlabel("Higher-order correlation level", fontsize=14)
+    plt.ylabel("Accuracy", fontsize=14)
+    plt.title("Kernel Width Comparison (All Widths)", fontsize=16)
     plt.grid(True, alpha=0.3)
     # With many lines, a full legend is okay—if it’s too busy, comment the next line.
     plt.legend(ncol=2, title="Width")
@@ -159,16 +159,16 @@ def main() -> int:
     summary_ci["ci_lower"] = summary_ci.apply(lambda r: ci_map[(r["width"], r["level"])][0], axis=1)
     summary_ci["ci_upper"] = summary_ci.apply(lambda r: ci_map[(r["width"], r["level"])][1], axis=1)
 
-    plt.figure(figsize=(11, 6))
+    plt.figure(figsize=(6, 5))
     for w in key_widths:
         sub = summary_ci[summary_ci["width"] == w].sort_values("level")
         if sub.empty:
             continue
         plt.plot(sub["level"], sub["mean_acc"], marker="o", label=f"w={w}")
         plt.fill_between(sub["level"], sub["ci_lower"], sub["ci_upper"], alpha=0.2)
-    plt.xlabel("Higher-order correlation level")
-    plt.ylabel("Accuracy")
-    plt.title(f"Important Kernel Widths; factors=700)")
+    plt.xlabel("Higher-order correlation level", fontsize=14)
+    plt.ylabel("Accuracy", fontsize=14)
+    plt.title(f"Important Kernel Widths", fontsize=16)
     plt.grid(True, alpha=0.3)
     plt.legend(title="Width")
     plt.tight_layout()

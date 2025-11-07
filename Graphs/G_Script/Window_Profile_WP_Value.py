@@ -131,16 +131,16 @@ def main() -> int:
     raw_summary["ci_lower"] = raw_summary.apply(lambda r: ci_map[(r["wp_norm"], r["level"])][0], axis=1)
     raw_summary["ci_upper"] = raw_summary.apply(lambda r: ci_map[(r["wp_norm"], r["level"])][1], axis=1)
 
-    plt.figure(figsize=(10,5))
+    plt.figure(figsize=(6,5))
     for wp_name in CANON_WP:
         sub = raw_summary[raw_summary["wp_norm"] == wp_name].sort_values("level")
         if sub.empty:
             continue
         plt.plot(sub["level"], sub["mean_acc"], marker="o", label=wp_name)
         plt.fill_between(sub["level"], sub["ci_lower"], sub["ci_upper"], alpha=0.2)
-    plt.xlabel("Higher-order correlation level")
-    plt.ylabel("Accuracy")
-    plt.title("Window Profile Comparison (Raw Accuracy, factors=700)")
+    plt.xlabel("Higher-order correlation level", fontsize=14)
+    plt.ylabel("Accuracy", fontsize= 14)
+    plt.title("Window Profile Comparison (Raw Accuracy)", fontsize=16)
     plt.grid(True, alpha=0.3)
     plt.legend(title="wp")
     plt.tight_layout()
@@ -181,18 +181,23 @@ def main() -> int:
         deltas_summary["ci_lower"] = deltas_summary.apply(lambda r: dci[(r["wp_norm"], r["level"])][0], axis=1)
         deltas_summary["ci_upper"] = deltas_summary.apply(lambda r: dci[(r["wp_norm"], r["level"])][1], axis=1)
 
-        plt.figure(figsize=(10,5))
+        plt.figure(figsize=(6,5))
         all_levels = sorted(deltas_summary["level"].unique())
         plt.plot(all_levels, [0.0]*len(all_levels), label=f"{BASE_WP} (baseline)", linestyle="--")
         for wp_name in [w for w in CANON_WP if w != BASE_WP]:
             sub = deltas_summary[deltas_summary["wp_norm"] == wp_name].sort_values("level")
             if sub.empty:
                 continue
-            plt.plot(sub["level"], sub["mean_delta"], marker="o", label=wp_name)
-            plt.fill_between(sub["level"], sub["ci_lower"], sub["ci_upper"], alpha=0.2)
-        plt.xlabel("Higher-order correlation level")
-        plt.ylabel(f"Accuracy Δ vs {BASE_WP}")
-        plt.title("Window Profile Δ Accuracy vs Gaussian (factors=700)")
+            # Plot the line and capture the line color
+            line, = plt.plot(sub["level"], sub["mean_delta"], marker="o", label=wp_name)
+            color = line.get_color()  # automatically chosen color from the cycle
+
+            # Use the same color for fill_between
+            plt.fill_between(sub["level"], sub["ci_lower"], sub["ci_upper"],
+                     color=color, alpha=0.2)
+        plt.xlabel("Higher-order correlation level", fontsize=14)
+        plt.ylabel(f"Accuracy Δ vs {BASE_WP}", fontsize=14)
+        plt.title("Window Profile Δ Accuracy vs Gaussian", fontsize=16)
         plt.grid(True, alpha=0.3)
         plt.legend(title="wp")
         plt.tight_layout()
