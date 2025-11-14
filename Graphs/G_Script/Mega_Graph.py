@@ -348,7 +348,7 @@ def main():
     cbar = fig.colorbar(sm, ax=axes.ravel().tolist(), orientation='vertical', pad=0.01, fraction=0.03)
     cbar.set_label("Plateau level (earliest)", fontsize=14)
 
-    fig.suptitle("Conditions × Methods ×  Kernel Width, Shape=WP, Color=Plateau Level", y=0.995, fontsize=18)
+    fig.suptitle("Infection and Plateau Across Methods, Conditons, and Kernel Width", y=0.995, fontsize=19)
 
     fig.savefig(OUT_FIG, dpi=620, bbox_inches="tight")
     plt.close(fig)
