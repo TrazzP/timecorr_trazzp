@@ -101,7 +101,7 @@ filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv"
 save_file = os.path.join(results_dir, filename)
 
 if not os.path.isfile(save_file):
-    iter_results.to_csv(save_file, index=False)
+    final_df.to_csv(save_file, index=False)
 else:
     existing = pd.read_csv(save_file)
     updated = pd.concat([existing, final_df], ignore_index=True)

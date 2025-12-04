@@ -1,3 +1,4 @@
+intact 100 10 10 isfc PCA 5 gaussian
 intact 700 10 10 isfc FactorAnalysis 5 gaussian
 intact 700 10 10 isfc FactorAnalysis 10 gaussian
 intact 700 10 10 isfc FactorAnalysis 15 gaussian
