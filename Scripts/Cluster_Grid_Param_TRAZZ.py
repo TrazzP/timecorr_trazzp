@@ -6,7 +6,7 @@ import pandas as pd
 # ----------------------------------------------------------------------------------
 # Command-Line Argument Parsing
 # ----------------------------------------------------------------------------------
-cond, factors, level, reps, cfun, rfun, width, wp = (
+cond, factors, level, reps, cfun, rfun, width, wp, iteration = (
     sys.argv[1],
     int(sys.argv[2]),
     sys.argv[3],
@@ -15,6 +15,8 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
     sys.argv[6],
     int(sys.argv[7]),
     sys.argv[8],
+    int(sys.argv[9]),
+    
 )
 
 # ----------------------------------------------------------------------------------
@@ -23,8 +25,9 @@ cond, factors, level, reps, cfun, rfun, width, wp = (
 cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
-    #This is changed for the top 10 runs with higher iteration count
-    results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Iterations')
+    #Change this if want to put files into the 10 iteration file
+    if True:
+        results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Iterations')
 else:
     sys.path.append('/app')
     results_dir = os.path.join('/app/Cluster_Data/Local_Machine', cond)
@@ -66,38 +69,30 @@ mexican_hat = {'name': 'Mexican Hat', 'weights': tc.mexican_hat_weights, 'params
 weights_param = eval(wp)
 
 # ----------------------------------------------------------------------------------
-# Weighted Timepoint Decoding — 10 Iterations of 2-Fold CV
+# Weighted Timepoint Decoding
 # ----------------------------------------------------------------------------------
-N_ITER = 10
-all_results = []
 
-for i in range(N_ITER):
-    print(f"Running iteration {i+1}/{N_ITER}")
-    np.random.seed(1337 + i)  # different fold splits each iteration
+np.random.seed(1337 + iteration)  # different fold splits each iteration
 
-    iter_results = tc.helpers.weighted_timepoint_decoder(
-        data,
-        nfolds=2,  # keep standard 2-fold CV
-        optimize_levels=list(range(0, int(level) + 1)),
-        level=int(level),
-        combine=lambda x: np.asarray(corrmean_combine(x)),  # ensures ndarray output
-        cfun=eval(cfun),
-        rfun=rfun,
-        weights_fun=weights_param["weights"],
-        weights_params=weights_param["params"],
-        opt_init="random",
-    )
+iter_results = tc.helpers.weighted_timepoint_decoder(
+    data,
+    nfolds=2,  # keep standard 2-fold CV
+    optimize_levels=list(range(0, int(level) + 1)),
+    level=int(level),
+    combine=lambda x: np.asarray(corrmean_combine(x)),  # ensures ndarray output
+    cfun=eval(cfun),
+    rfun=rfun,
+    weights_fun=weights_param["weights"],
+    weights_params=weights_param["params"],
+    opt_init="random",
+)
 
-    iter_results["iteration"] = i
-    iter_results["reps_arg"] = int(reps)
-    all_results.append(iter_results)
-
-final_df = pd.concat(all_results, ignore_index=True)
+final_df = pd.concat(iter_results, ignore_index=True)
 
 # ----------------------------------------------------------------------------------
 # Results Persistence
 # ----------------------------------------------------------------------------------
-filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}.csv"
+filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}_.csv"
 save_file = os.path.join(results_dir, filename)
 
 if not os.path.isfile(save_file):
