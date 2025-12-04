@@ -13,6 +13,7 @@
 # alg    ← one of your 16 WP methods
 # width  ← 5,10,…,50
 # wp    ← gaussian|mexican_hat|laplace
+# iteration  ← 1,...,10
 
 # build your output path
 #OUTDIR=../Cluster_Data/"$cond"/"$fac"/"$ker"/"$alg"/"$width"
@@ -24,4 +25,4 @@ source timecorr_venv/bin/activate
 cd Scripts
 
 python Cluster_Grid_Param_TRAZZ.py \
-  "$cond" "$fac" "$lvl" "$reps" "$cfun" "$rfun" "$width" "$wp"
+  "$cond" "$fac" "$lvl" "$reps" "$cfun" "$rfun" "$width" "$wp" "$iteration"

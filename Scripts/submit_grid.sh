@@ -26,15 +26,15 @@ while [ "$i" -le "$TOTAL" ]; do
 
   if [ "$RUNNING" -lt "$MAXJ" ]; then
     LINE=$(sed -n "${i}p" "$COMBOS")
-    read cond fac lvl reps cfun rfun width wp <<< "$LINE"
+    read cond fac lvl reps cfun rfun width wp iteration <<< "$LINE"
 
     # ensure per‐cond dir exists
     mkdir -p "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}"
     #This is changed for the top 10 runs with hiher interation count
-    #OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}.csv"
+    OUT="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/${cond}/${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}_${iteration}.csv"
 
     if [ -f "$OUT" ]; then
-      msg="$(date +'%H:%M:%S') Skipping #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp} (already done)"
+      msg="$(date +'%H:%M:%S') Skipping #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp},${iteration} (already done)"
       echo "$msg" | tee -a "$LIVELOG"
       ((i++))
       continue
@@ -42,13 +42,13 @@ while [ "$i" -le "$TOTAL" ]; do
 
     # submit the job
     sbatch \
-      --job-name="${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}" \
+      --job-name="${cond}_${fac}_${lvl}_${reps}_${cfun}_${rfun}_${width}_${wp}_${iteration}" \
       --output="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.out" \
       --error="/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/logs/%x-%j.err" \
-      --export=ALL,cond="$cond",fac="$fac",lvl="$lvl",reps="$reps",cfun="$cfun",rfun="$rfun",width="$width",wp="$wp" \
+      --export=ALL,cond="$cond",fac="$fac",lvl="$lvl",reps="$reps",cfun="$cfun",rfun="$rfun",width="$width",wp="$wp",iteration="$iteration" \
       run_one.sh
 
-    msg="$(date +'%H:%M:%S') Submitted #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp}"
+    msg="$(date +'%H:%M:%S') Submitted #$i → ${cond},${fac},${lvl},${reps},${cfun},${rfun},${width},${wp},${iteration}"
     echo "$msg" | tee -a "$LIVELOG"
     ((i++))
   else

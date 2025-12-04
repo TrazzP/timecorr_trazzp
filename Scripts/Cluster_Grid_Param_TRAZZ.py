@@ -25,9 +25,13 @@ cond, factors, level, reps, cfun, rfun, width, wp, iteration = (
 cluster = True
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
-    #Change this if want to put files into the 10 iteration file
-    if True:
-        results_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Iterations')
+    #Change this to True if want to put files into the 10 iteration file
+    if False:
+        base_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data', '10_Iterations')
+    else:
+        base_dir = os.path.join('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data')
+    
+    results_dir = os.path.join(base_dir, cond)
 else:
     sys.path.append('/app')
     results_dir = os.path.join('/app/Cluster_Data/Local_Machine', cond)
@@ -87,20 +91,19 @@ iter_results = tc.helpers.weighted_timepoint_decoder(
     opt_init="random",
 )
 
-final_df = pd.concat(iter_results, ignore_index=True)
+iter_results["iteration"] = iteration
+iter_results["reps_arg"] = int(reps)
+
+final_df = iter_results
 
 # ----------------------------------------------------------------------------------
 # Results Persistence
 # ----------------------------------------------------------------------------------
-filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}_.csv"
+filename = f"{cond}_{factors}_{level}_{reps}_{cfun}_{rfun}_{width}_{wp}_{iteration}.csv"
 save_file = os.path.join(results_dir, filename)
 
-if not os.path.isfile(save_file):
-    final_df.to_csv(save_file, index=False)
-else:
-    existing = pd.read_csv(save_file)
-    updated = pd.concat([existing, final_df], ignore_index=True)
-    updated.to_csv(save_file, index=False)
+final_df.to_csv(save_file, index=False)
+
 
 print(f" Experiment complete. Results at: {save_file}")
 
@@ -109,4 +112,4 @@ print(f" Experiment complete. Results at: {save_file}")
 # Example Usage
 # ----------------------------------------------------------------------------------
 
-# python3 Cluster_Grid_Param_TRAZZ.py intact 100 10 10 isfc PCA 5 gaussian
+# python3 Cluster_Grid_Param_TRAZZ.py intact 100 10 10 isfc PCA 5 gaussian 1

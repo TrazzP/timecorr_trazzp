@@ -6,22 +6,29 @@ PARAM3_All=(\
   KernelPCA FastICA FactorAnalysis TruncatedSVD \
   DictionaryLearning MiniBatchDictionaryLearning \
   Isomap SpectralEmbedding \
-  LocallyLinearEmbedding MDS UMAP)
+  LocallyLinearEmbedding MDS UMAP \
+  eigenvector_centrality pagerank_centrality strength \
+  )
 
 PARAM3_Filtered=(\
 PCA FactorAnalysis IncrementalPCA TruncatedSVD
 )
+PARAM3_GraphMeasures=(\
+eigenvector_centrality pagerank_centrality strength
+)
 KERNELS=(gaussian mexican_hat laplace)
 WIDTHS=($(seq 5 5 50))
+ITERATIONS=($(seq 1 1 10))
 
 : > combos.txt
 for cond in "${PARAM1[@]}"; do
   for fac in "${PARAM2[@]}"; do
-    for alg in "${PARAM3_Filtered[@]}"; do
+    for alg in "${PARAM3_All[@]}"; do
       for ker in "${KERNELS[@]}"; do
         for w in "${WIDTHS[@]}"; do
+        for i in "${ITERATIONS[@]}"; do
           # keep “10 10 isfc” constant as before
-          echo "$cond $fac 10 10 isfc $alg $w $ker"
+          echo "$cond $fac 10 10 isfc $alg $w $ker $i"
         done
       done
     done
