@@ -1,960 +1,1680 @@
-intact 100 10 10 isfc PCA 5 gaussian
-intact 100 10 10 isfc PCA 10 gaussian
-intact 100 10 10 isfc PCA 15 gaussian
-intact 100 10 10 isfc PCA 20 gaussian
-intact 100 10 10 isfc PCA 25 gaussian
-intact 100 10 10 isfc PCA 30 gaussian
-intact 100 10 10 isfc PCA 35 gaussian
-intact 100 10 10 isfc PCA 40 gaussian
-intact 100 10 10 isfc PCA 45 gaussian
-intact 100 10 10 isfc PCA 50 gaussian
-intact 100 10 10 isfc PCA 5 mexican_hat
-intact 100 10 10 isfc PCA 10 mexican_hat
-intact 100 10 10 isfc PCA 15 mexican_hat
-intact 100 10 10 isfc PCA 20 mexican_hat
-intact 100 10 10 isfc PCA 25 mexican_hat
-intact 100 10 10 isfc PCA 30 mexican_hat
-intact 100 10 10 isfc PCA 35 mexican_hat
-intact 100 10 10 isfc PCA 40 mexican_hat
-intact 100 10 10 isfc PCA 45 mexican_hat
-intact 100 10 10 isfc PCA 50 mexican_hat
-intact 100 10 10 isfc PCA 5 laplace
-intact 100 10 10 isfc PCA 10 laplace
-intact 100 10 10 isfc PCA 15 laplace
-intact 100 10 10 isfc PCA 20 laplace
-intact 100 10 10 isfc PCA 25 laplace
-intact 100 10 10 isfc PCA 30 laplace
-intact 100 10 10 isfc PCA 35 laplace
-intact 100 10 10 isfc PCA 40 laplace
-intact 100 10 10 isfc PCA 45 laplace
-intact 100 10 10 isfc PCA 50 laplace
-intact 100 10 10 isfc FactorAnalysis 5 gaussian
-intact 100 10 10 isfc FactorAnalysis 10 gaussian
-intact 100 10 10 isfc FactorAnalysis 15 gaussian
-intact 100 10 10 isfc FactorAnalysis 20 gaussian
-intact 100 10 10 isfc FactorAnalysis 25 gaussian
-intact 100 10 10 isfc FactorAnalysis 30 gaussian
-intact 100 10 10 isfc FactorAnalysis 35 gaussian
-intact 100 10 10 isfc FactorAnalysis 40 gaussian
-intact 100 10 10 isfc FactorAnalysis 45 gaussian
-intact 100 10 10 isfc FactorAnalysis 50 gaussian
-intact 100 10 10 isfc FactorAnalysis 5 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 10 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 15 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 20 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 25 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 30 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 35 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 40 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 45 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 50 mexican_hat
-intact 100 10 10 isfc FactorAnalysis 5 laplace
-intact 100 10 10 isfc FactorAnalysis 10 laplace
-intact 100 10 10 isfc FactorAnalysis 15 laplace
-intact 100 10 10 isfc FactorAnalysis 20 laplace
-intact 100 10 10 isfc FactorAnalysis 25 laplace
-intact 100 10 10 isfc FactorAnalysis 30 laplace
-intact 100 10 10 isfc FactorAnalysis 35 laplace
-intact 100 10 10 isfc FactorAnalysis 40 laplace
-intact 100 10 10 isfc FactorAnalysis 45 laplace
-intact 100 10 10 isfc FactorAnalysis 50 laplace
-intact 100 10 10 isfc IncrementalPCA 5 gaussian
-intact 100 10 10 isfc IncrementalPCA 10 gaussian
-intact 100 10 10 isfc IncrementalPCA 15 gaussian
-intact 100 10 10 isfc IncrementalPCA 20 gaussian
-intact 100 10 10 isfc IncrementalPCA 25 gaussian
-intact 100 10 10 isfc IncrementalPCA 30 gaussian
-intact 100 10 10 isfc IncrementalPCA 35 gaussian
-intact 100 10 10 isfc IncrementalPCA 40 gaussian
-intact 100 10 10 isfc IncrementalPCA 45 gaussian
-intact 100 10 10 isfc IncrementalPCA 50 gaussian
-intact 100 10 10 isfc IncrementalPCA 5 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 10 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 15 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 20 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 25 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 30 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 35 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 40 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 45 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 50 mexican_hat
-intact 100 10 10 isfc IncrementalPCA 5 laplace
-intact 100 10 10 isfc IncrementalPCA 10 laplace
-intact 100 10 10 isfc IncrementalPCA 15 laplace
-intact 100 10 10 isfc IncrementalPCA 20 laplace
-intact 100 10 10 isfc IncrementalPCA 25 laplace
-intact 100 10 10 isfc IncrementalPCA 30 laplace
-intact 100 10 10 isfc IncrementalPCA 35 laplace
-intact 100 10 10 isfc IncrementalPCA 40 laplace
-intact 100 10 10 isfc IncrementalPCA 45 laplace
-intact 100 10 10 isfc IncrementalPCA 50 laplace
-intact 100 10 10 isfc TruncatedSVD 5 gaussian
-intact 100 10 10 isfc TruncatedSVD 10 gaussian
-intact 100 10 10 isfc TruncatedSVD 15 gaussian
-intact 100 10 10 isfc TruncatedSVD 20 gaussian
-intact 100 10 10 isfc TruncatedSVD 25 gaussian
-intact 100 10 10 isfc TruncatedSVD 30 gaussian
-intact 100 10 10 isfc TruncatedSVD 35 gaussian
-intact 100 10 10 isfc TruncatedSVD 40 gaussian
-intact 100 10 10 isfc TruncatedSVD 45 gaussian
-intact 100 10 10 isfc TruncatedSVD 50 gaussian
-intact 100 10 10 isfc TruncatedSVD 5 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 10 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 15 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 20 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 25 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 30 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 35 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 40 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 45 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 50 mexican_hat
-intact 100 10 10 isfc TruncatedSVD 5 laplace
-intact 100 10 10 isfc TruncatedSVD 10 laplace
-intact 100 10 10 isfc TruncatedSVD 15 laplace
-intact 100 10 10 isfc TruncatedSVD 20 laplace
-intact 100 10 10 isfc TruncatedSVD 25 laplace
-intact 100 10 10 isfc TruncatedSVD 30 laplace
-intact 100 10 10 isfc TruncatedSVD 35 laplace
-intact 100 10 10 isfc TruncatedSVD 40 laplace
-intact 100 10 10 isfc TruncatedSVD 45 laplace
-intact 100 10 10 isfc TruncatedSVD 50 laplace
-intact 700 10 10 isfc PCA 5 gaussian
-intact 700 10 10 isfc PCA 10 gaussian
-intact 700 10 10 isfc PCA 15 gaussian
-intact 700 10 10 isfc PCA 20 gaussian
-intact 700 10 10 isfc PCA 25 gaussian
-intact 700 10 10 isfc PCA 30 gaussian
-intact 700 10 10 isfc PCA 35 gaussian
-intact 700 10 10 isfc PCA 40 gaussian
-intact 700 10 10 isfc PCA 45 gaussian
-intact 700 10 10 isfc PCA 50 gaussian
-intact 700 10 10 isfc PCA 5 mexican_hat
-intact 700 10 10 isfc PCA 10 mexican_hat
-intact 700 10 10 isfc PCA 15 mexican_hat
-intact 700 10 10 isfc PCA 20 mexican_hat
-intact 700 10 10 isfc PCA 25 mexican_hat
-intact 700 10 10 isfc PCA 30 mexican_hat
-intact 700 10 10 isfc PCA 35 mexican_hat
-intact 700 10 10 isfc PCA 40 mexican_hat
-intact 700 10 10 isfc PCA 45 mexican_hat
-intact 700 10 10 isfc PCA 50 mexican_hat
-intact 700 10 10 isfc PCA 5 laplace
-intact 700 10 10 isfc PCA 10 laplace
-intact 700 10 10 isfc PCA 15 laplace
-intact 700 10 10 isfc PCA 20 laplace
-intact 700 10 10 isfc PCA 25 laplace
-intact 700 10 10 isfc PCA 30 laplace
-intact 700 10 10 isfc PCA 35 laplace
-intact 700 10 10 isfc PCA 40 laplace
-intact 700 10 10 isfc PCA 45 laplace
-intact 700 10 10 isfc PCA 50 laplace
-intact 700 10 10 isfc FactorAnalysis 5 gaussian
-intact 700 10 10 isfc FactorAnalysis 10 gaussian
-intact 700 10 10 isfc FactorAnalysis 15 gaussian
-intact 700 10 10 isfc FactorAnalysis 20 gaussian
-intact 700 10 10 isfc FactorAnalysis 25 gaussian
-intact 700 10 10 isfc FactorAnalysis 30 gaussian
-intact 700 10 10 isfc FactorAnalysis 35 gaussian
-intact 700 10 10 isfc FactorAnalysis 40 gaussian
-intact 700 10 10 isfc FactorAnalysis 45 gaussian
-intact 700 10 10 isfc FactorAnalysis 50 gaussian
-intact 700 10 10 isfc FactorAnalysis 5 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 10 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 15 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 20 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 25 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 30 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 35 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 40 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 45 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 50 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 5 laplace
-intact 700 10 10 isfc FactorAnalysis 10 laplace
-intact 700 10 10 isfc FactorAnalysis 15 laplace
-intact 700 10 10 isfc FactorAnalysis 20 laplace
-intact 700 10 10 isfc FactorAnalysis 25 laplace
-intact 700 10 10 isfc FactorAnalysis 30 laplace
-intact 700 10 10 isfc FactorAnalysis 35 laplace
-intact 700 10 10 isfc FactorAnalysis 40 laplace
-intact 700 10 10 isfc FactorAnalysis 45 laplace
-intact 700 10 10 isfc FactorAnalysis 50 laplace
-intact 700 10 10 isfc IncrementalPCA 5 gaussian
-intact 700 10 10 isfc IncrementalPCA 10 gaussian
-intact 700 10 10 isfc IncrementalPCA 15 gaussian
-intact 700 10 10 isfc IncrementalPCA 20 gaussian
-intact 700 10 10 isfc IncrementalPCA 25 gaussian
-intact 700 10 10 isfc IncrementalPCA 30 gaussian
-intact 700 10 10 isfc IncrementalPCA 35 gaussian
-intact 700 10 10 isfc IncrementalPCA 40 gaussian
-intact 700 10 10 isfc IncrementalPCA 45 gaussian
-intact 700 10 10 isfc IncrementalPCA 50 gaussian
-intact 700 10 10 isfc IncrementalPCA 5 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 10 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 15 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 20 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 25 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 30 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 35 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 40 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 45 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 50 mexican_hat
-intact 700 10 10 isfc IncrementalPCA 5 laplace
-intact 700 10 10 isfc IncrementalPCA 10 laplace
-intact 700 10 10 isfc IncrementalPCA 15 laplace
-intact 700 10 10 isfc IncrementalPCA 20 laplace
-intact 700 10 10 isfc IncrementalPCA 25 laplace
-intact 700 10 10 isfc IncrementalPCA 30 laplace
-intact 700 10 10 isfc IncrementalPCA 35 laplace
-intact 700 10 10 isfc IncrementalPCA 40 laplace
-intact 700 10 10 isfc IncrementalPCA 45 laplace
-intact 700 10 10 isfc IncrementalPCA 50 laplace
-intact 700 10 10 isfc TruncatedSVD 5 gaussian
-intact 700 10 10 isfc TruncatedSVD 10 gaussian
-intact 700 10 10 isfc TruncatedSVD 15 gaussian
-intact 700 10 10 isfc TruncatedSVD 20 gaussian
-intact 700 10 10 isfc TruncatedSVD 25 gaussian
-intact 700 10 10 isfc TruncatedSVD 30 gaussian
-intact 700 10 10 isfc TruncatedSVD 35 gaussian
-intact 700 10 10 isfc TruncatedSVD 40 gaussian
-intact 700 10 10 isfc TruncatedSVD 45 gaussian
-intact 700 10 10 isfc TruncatedSVD 50 gaussian
-intact 700 10 10 isfc TruncatedSVD 5 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 10 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 15 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 20 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 25 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 30 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 35 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 40 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 45 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 50 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 5 laplace
-intact 700 10 10 isfc TruncatedSVD 10 laplace
-intact 700 10 10 isfc TruncatedSVD 15 laplace
-intact 700 10 10 isfc TruncatedSVD 20 laplace
-intact 700 10 10 isfc TruncatedSVD 25 laplace
-intact 700 10 10 isfc TruncatedSVD 30 laplace
-intact 700 10 10 isfc TruncatedSVD 35 laplace
-intact 700 10 10 isfc TruncatedSVD 40 laplace
-intact 700 10 10 isfc TruncatedSVD 45 laplace
-intact 700 10 10 isfc TruncatedSVD 50 laplace
-paragraph 100 10 10 isfc PCA 5 gaussian
-paragraph 100 10 10 isfc PCA 10 gaussian
-paragraph 100 10 10 isfc PCA 15 gaussian
-paragraph 100 10 10 isfc PCA 20 gaussian
-paragraph 100 10 10 isfc PCA 25 gaussian
-paragraph 100 10 10 isfc PCA 30 gaussian
-paragraph 100 10 10 isfc PCA 35 gaussian
-paragraph 100 10 10 isfc PCA 40 gaussian
-paragraph 100 10 10 isfc PCA 45 gaussian
-paragraph 100 10 10 isfc PCA 50 gaussian
-paragraph 100 10 10 isfc PCA 5 mexican_hat
-paragraph 100 10 10 isfc PCA 10 mexican_hat
-paragraph 100 10 10 isfc PCA 15 mexican_hat
-paragraph 100 10 10 isfc PCA 20 mexican_hat
-paragraph 100 10 10 isfc PCA 25 mexican_hat
-paragraph 100 10 10 isfc PCA 30 mexican_hat
-paragraph 100 10 10 isfc PCA 35 mexican_hat
-paragraph 100 10 10 isfc PCA 40 mexican_hat
-paragraph 100 10 10 isfc PCA 45 mexican_hat
-paragraph 100 10 10 isfc PCA 50 mexican_hat
-paragraph 100 10 10 isfc PCA 5 laplace
-paragraph 100 10 10 isfc PCA 10 laplace
-paragraph 100 10 10 isfc PCA 15 laplace
-paragraph 100 10 10 isfc PCA 20 laplace
-paragraph 100 10 10 isfc PCA 25 laplace
-paragraph 100 10 10 isfc PCA 30 laplace
-paragraph 100 10 10 isfc PCA 35 laplace
-paragraph 100 10 10 isfc PCA 40 laplace
-paragraph 100 10 10 isfc PCA 45 laplace
-paragraph 100 10 10 isfc PCA 50 laplace
-paragraph 100 10 10 isfc FactorAnalysis 5 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 10 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 15 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 20 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 25 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 30 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 35 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 40 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 45 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 50 gaussian
-paragraph 100 10 10 isfc FactorAnalysis 5 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 10 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 15 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 20 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 25 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 30 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 35 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 40 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 45 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 50 mexican_hat
-paragraph 100 10 10 isfc FactorAnalysis 5 laplace
-paragraph 100 10 10 isfc FactorAnalysis 10 laplace
-paragraph 100 10 10 isfc FactorAnalysis 15 laplace
-paragraph 100 10 10 isfc FactorAnalysis 20 laplace
-paragraph 100 10 10 isfc FactorAnalysis 25 laplace
-paragraph 100 10 10 isfc FactorAnalysis 30 laplace
-paragraph 100 10 10 isfc FactorAnalysis 35 laplace
-paragraph 100 10 10 isfc FactorAnalysis 40 laplace
-paragraph 100 10 10 isfc FactorAnalysis 45 laplace
-paragraph 100 10 10 isfc FactorAnalysis 50 laplace
-paragraph 100 10 10 isfc IncrementalPCA 5 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 10 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 15 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 20 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 25 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 30 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 35 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 40 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 45 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 50 gaussian
-paragraph 100 10 10 isfc IncrementalPCA 5 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 10 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 15 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 20 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 25 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 30 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 35 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 40 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 45 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 50 mexican_hat
-paragraph 100 10 10 isfc IncrementalPCA 5 laplace
-paragraph 100 10 10 isfc IncrementalPCA 10 laplace
-paragraph 100 10 10 isfc IncrementalPCA 15 laplace
-paragraph 100 10 10 isfc IncrementalPCA 20 laplace
-paragraph 100 10 10 isfc IncrementalPCA 25 laplace
-paragraph 100 10 10 isfc IncrementalPCA 30 laplace
-paragraph 100 10 10 isfc IncrementalPCA 35 laplace
-paragraph 100 10 10 isfc IncrementalPCA 40 laplace
-paragraph 100 10 10 isfc IncrementalPCA 45 laplace
-paragraph 100 10 10 isfc IncrementalPCA 50 laplace
-paragraph 100 10 10 isfc TruncatedSVD 5 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 10 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 15 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 20 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 25 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 30 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 35 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 40 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 45 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 50 gaussian
-paragraph 100 10 10 isfc TruncatedSVD 5 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 10 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 15 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 20 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 25 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 30 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 35 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 40 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 45 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 50 mexican_hat
-paragraph 100 10 10 isfc TruncatedSVD 5 laplace
-paragraph 100 10 10 isfc TruncatedSVD 10 laplace
-paragraph 100 10 10 isfc TruncatedSVD 15 laplace
-paragraph 100 10 10 isfc TruncatedSVD 20 laplace
-paragraph 100 10 10 isfc TruncatedSVD 25 laplace
-paragraph 100 10 10 isfc TruncatedSVD 30 laplace
-paragraph 100 10 10 isfc TruncatedSVD 35 laplace
-paragraph 100 10 10 isfc TruncatedSVD 40 laplace
-paragraph 100 10 10 isfc TruncatedSVD 45 laplace
-paragraph 100 10 10 isfc TruncatedSVD 50 laplace
-paragraph 700 10 10 isfc PCA 5 gaussian
-paragraph 700 10 10 isfc PCA 10 gaussian
-paragraph 700 10 10 isfc PCA 15 gaussian
-paragraph 700 10 10 isfc PCA 20 gaussian
-paragraph 700 10 10 isfc PCA 25 gaussian
-paragraph 700 10 10 isfc PCA 30 gaussian
-paragraph 700 10 10 isfc PCA 35 gaussian
-paragraph 700 10 10 isfc PCA 40 gaussian
-paragraph 700 10 10 isfc PCA 45 gaussian
-paragraph 700 10 10 isfc PCA 50 gaussian
-paragraph 700 10 10 isfc PCA 5 mexican_hat
-paragraph 700 10 10 isfc PCA 10 mexican_hat
-paragraph 700 10 10 isfc PCA 15 mexican_hat
-paragraph 700 10 10 isfc PCA 20 mexican_hat
-paragraph 700 10 10 isfc PCA 25 mexican_hat
-paragraph 700 10 10 isfc PCA 30 mexican_hat
-paragraph 700 10 10 isfc PCA 35 mexican_hat
-paragraph 700 10 10 isfc PCA 40 mexican_hat
-paragraph 700 10 10 isfc PCA 45 mexican_hat
-paragraph 700 10 10 isfc PCA 50 mexican_hat
-paragraph 700 10 10 isfc PCA 5 laplace
-paragraph 700 10 10 isfc PCA 10 laplace
-paragraph 700 10 10 isfc PCA 15 laplace
-paragraph 700 10 10 isfc PCA 20 laplace
-paragraph 700 10 10 isfc PCA 25 laplace
-paragraph 700 10 10 isfc PCA 30 laplace
-paragraph 700 10 10 isfc PCA 35 laplace
-paragraph 700 10 10 isfc PCA 40 laplace
-paragraph 700 10 10 isfc PCA 45 laplace
-paragraph 700 10 10 isfc PCA 50 laplace
-paragraph 700 10 10 isfc FactorAnalysis 5 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 10 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 15 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 20 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 25 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 30 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 35 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 40 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 45 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 50 gaussian
-paragraph 700 10 10 isfc FactorAnalysis 5 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 10 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 15 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 20 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 25 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 30 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 35 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 40 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 45 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 50 mexican_hat
-paragraph 700 10 10 isfc FactorAnalysis 5 laplace
-paragraph 700 10 10 isfc FactorAnalysis 10 laplace
-paragraph 700 10 10 isfc FactorAnalysis 15 laplace
-paragraph 700 10 10 isfc FactorAnalysis 20 laplace
-paragraph 700 10 10 isfc FactorAnalysis 25 laplace
-paragraph 700 10 10 isfc FactorAnalysis 30 laplace
-paragraph 700 10 10 isfc FactorAnalysis 35 laplace
-paragraph 700 10 10 isfc FactorAnalysis 40 laplace
-paragraph 700 10 10 isfc FactorAnalysis 45 laplace
-paragraph 700 10 10 isfc FactorAnalysis 50 laplace
-paragraph 700 10 10 isfc IncrementalPCA 5 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 10 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 15 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 20 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 25 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 30 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 35 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 40 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 45 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 50 gaussian
-paragraph 700 10 10 isfc IncrementalPCA 5 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 10 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 15 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 20 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 25 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 30 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 35 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 40 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 45 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 50 mexican_hat
-paragraph 700 10 10 isfc IncrementalPCA 5 laplace
-paragraph 700 10 10 isfc IncrementalPCA 10 laplace
-paragraph 700 10 10 isfc IncrementalPCA 15 laplace
-paragraph 700 10 10 isfc IncrementalPCA 20 laplace
-paragraph 700 10 10 isfc IncrementalPCA 25 laplace
-paragraph 700 10 10 isfc IncrementalPCA 30 laplace
-paragraph 700 10 10 isfc IncrementalPCA 35 laplace
-paragraph 700 10 10 isfc IncrementalPCA 40 laplace
-paragraph 700 10 10 isfc IncrementalPCA 45 laplace
-paragraph 700 10 10 isfc IncrementalPCA 50 laplace
-paragraph 700 10 10 isfc TruncatedSVD 5 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 10 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 15 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 20 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 25 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 30 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 35 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 40 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 45 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 50 gaussian
-paragraph 700 10 10 isfc TruncatedSVD 5 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 10 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 15 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 20 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 25 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 30 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 35 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 40 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 45 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 50 mexican_hat
-paragraph 700 10 10 isfc TruncatedSVD 5 laplace
-paragraph 700 10 10 isfc TruncatedSVD 10 laplace
-paragraph 700 10 10 isfc TruncatedSVD 15 laplace
-paragraph 700 10 10 isfc TruncatedSVD 20 laplace
-paragraph 700 10 10 isfc TruncatedSVD 25 laplace
-paragraph 700 10 10 isfc TruncatedSVD 30 laplace
-paragraph 700 10 10 isfc TruncatedSVD 35 laplace
-paragraph 700 10 10 isfc TruncatedSVD 40 laplace
-paragraph 700 10 10 isfc TruncatedSVD 45 laplace
-paragraph 700 10 10 isfc TruncatedSVD 50 laplace
-word 100 10 10 isfc PCA 5 gaussian
-word 100 10 10 isfc PCA 10 gaussian
-word 100 10 10 isfc PCA 15 gaussian
-word 100 10 10 isfc PCA 20 gaussian
-word 100 10 10 isfc PCA 25 gaussian
-word 100 10 10 isfc PCA 30 gaussian
-word 100 10 10 isfc PCA 35 gaussian
-word 100 10 10 isfc PCA 40 gaussian
-word 100 10 10 isfc PCA 45 gaussian
-word 100 10 10 isfc PCA 50 gaussian
-word 100 10 10 isfc PCA 5 mexican_hat
-word 100 10 10 isfc PCA 10 mexican_hat
-word 100 10 10 isfc PCA 15 mexican_hat
-word 100 10 10 isfc PCA 20 mexican_hat
-word 100 10 10 isfc PCA 25 mexican_hat
-word 100 10 10 isfc PCA 30 mexican_hat
-word 100 10 10 isfc PCA 35 mexican_hat
-word 100 10 10 isfc PCA 40 mexican_hat
-word 100 10 10 isfc PCA 45 mexican_hat
-word 100 10 10 isfc PCA 50 mexican_hat
-word 100 10 10 isfc PCA 5 laplace
-word 100 10 10 isfc PCA 10 laplace
-word 100 10 10 isfc PCA 15 laplace
-word 100 10 10 isfc PCA 20 laplace
-word 100 10 10 isfc PCA 25 laplace
-word 100 10 10 isfc PCA 30 laplace
-word 100 10 10 isfc PCA 35 laplace
-word 100 10 10 isfc PCA 40 laplace
-word 100 10 10 isfc PCA 45 laplace
-word 100 10 10 isfc PCA 50 laplace
-word 100 10 10 isfc FactorAnalysis 5 gaussian
-word 100 10 10 isfc FactorAnalysis 10 gaussian
-word 100 10 10 isfc FactorAnalysis 15 gaussian
-word 100 10 10 isfc FactorAnalysis 20 gaussian
-word 100 10 10 isfc FactorAnalysis 25 gaussian
-word 100 10 10 isfc FactorAnalysis 30 gaussian
-word 100 10 10 isfc FactorAnalysis 35 gaussian
-word 100 10 10 isfc FactorAnalysis 40 gaussian
-word 100 10 10 isfc FactorAnalysis 45 gaussian
-word 100 10 10 isfc FactorAnalysis 50 gaussian
-word 100 10 10 isfc FactorAnalysis 5 mexican_hat
-word 100 10 10 isfc FactorAnalysis 10 mexican_hat
-word 100 10 10 isfc FactorAnalysis 15 mexican_hat
-word 100 10 10 isfc FactorAnalysis 20 mexican_hat
-word 100 10 10 isfc FactorAnalysis 25 mexican_hat
-word 100 10 10 isfc FactorAnalysis 30 mexican_hat
-word 100 10 10 isfc FactorAnalysis 35 mexican_hat
-word 100 10 10 isfc FactorAnalysis 40 mexican_hat
-word 100 10 10 isfc FactorAnalysis 45 mexican_hat
-word 100 10 10 isfc FactorAnalysis 50 mexican_hat
-word 100 10 10 isfc FactorAnalysis 5 laplace
-word 100 10 10 isfc FactorAnalysis 10 laplace
-word 100 10 10 isfc FactorAnalysis 15 laplace
-word 100 10 10 isfc FactorAnalysis 20 laplace
-word 100 10 10 isfc FactorAnalysis 25 laplace
-word 100 10 10 isfc FactorAnalysis 30 laplace
-word 100 10 10 isfc FactorAnalysis 35 laplace
-word 100 10 10 isfc FactorAnalysis 40 laplace
-word 100 10 10 isfc FactorAnalysis 45 laplace
-word 100 10 10 isfc FactorAnalysis 50 laplace
-word 100 10 10 isfc IncrementalPCA 5 gaussian
-word 100 10 10 isfc IncrementalPCA 10 gaussian
-word 100 10 10 isfc IncrementalPCA 15 gaussian
-word 100 10 10 isfc IncrementalPCA 20 gaussian
-word 100 10 10 isfc IncrementalPCA 25 gaussian
-word 100 10 10 isfc IncrementalPCA 30 gaussian
-word 100 10 10 isfc IncrementalPCA 35 gaussian
-word 100 10 10 isfc IncrementalPCA 40 gaussian
-word 100 10 10 isfc IncrementalPCA 45 gaussian
-word 100 10 10 isfc IncrementalPCA 50 gaussian
-word 100 10 10 isfc IncrementalPCA 5 mexican_hat
-word 100 10 10 isfc IncrementalPCA 10 mexican_hat
-word 100 10 10 isfc IncrementalPCA 15 mexican_hat
-word 100 10 10 isfc IncrementalPCA 20 mexican_hat
-word 100 10 10 isfc IncrementalPCA 25 mexican_hat
-word 100 10 10 isfc IncrementalPCA 30 mexican_hat
-word 100 10 10 isfc IncrementalPCA 35 mexican_hat
-word 100 10 10 isfc IncrementalPCA 40 mexican_hat
-word 100 10 10 isfc IncrementalPCA 45 mexican_hat
-word 100 10 10 isfc IncrementalPCA 50 mexican_hat
-word 100 10 10 isfc IncrementalPCA 5 laplace
-word 100 10 10 isfc IncrementalPCA 10 laplace
-word 100 10 10 isfc IncrementalPCA 15 laplace
-word 100 10 10 isfc IncrementalPCA 20 laplace
-word 100 10 10 isfc IncrementalPCA 25 laplace
-word 100 10 10 isfc IncrementalPCA 30 laplace
-word 100 10 10 isfc IncrementalPCA 35 laplace
-word 100 10 10 isfc IncrementalPCA 40 laplace
-word 100 10 10 isfc IncrementalPCA 45 laplace
-word 100 10 10 isfc IncrementalPCA 50 laplace
-word 100 10 10 isfc TruncatedSVD 5 gaussian
-word 100 10 10 isfc TruncatedSVD 10 gaussian
-word 100 10 10 isfc TruncatedSVD 15 gaussian
-word 100 10 10 isfc TruncatedSVD 20 gaussian
-word 100 10 10 isfc TruncatedSVD 25 gaussian
-word 100 10 10 isfc TruncatedSVD 30 gaussian
-word 100 10 10 isfc TruncatedSVD 35 gaussian
-word 100 10 10 isfc TruncatedSVD 40 gaussian
-word 100 10 10 isfc TruncatedSVD 45 gaussian
-word 100 10 10 isfc TruncatedSVD 50 gaussian
-word 100 10 10 isfc TruncatedSVD 5 mexican_hat
-word 100 10 10 isfc TruncatedSVD 10 mexican_hat
-word 100 10 10 isfc TruncatedSVD 15 mexican_hat
-word 100 10 10 isfc TruncatedSVD 20 mexican_hat
-word 100 10 10 isfc TruncatedSVD 25 mexican_hat
-word 100 10 10 isfc TruncatedSVD 30 mexican_hat
-word 100 10 10 isfc TruncatedSVD 35 mexican_hat
-word 100 10 10 isfc TruncatedSVD 40 mexican_hat
-word 100 10 10 isfc TruncatedSVD 45 mexican_hat
-word 100 10 10 isfc TruncatedSVD 50 mexican_hat
-word 100 10 10 isfc TruncatedSVD 5 laplace
-word 100 10 10 isfc TruncatedSVD 10 laplace
-word 100 10 10 isfc TruncatedSVD 15 laplace
-word 100 10 10 isfc TruncatedSVD 20 laplace
-word 100 10 10 isfc TruncatedSVD 25 laplace
-word 100 10 10 isfc TruncatedSVD 30 laplace
-word 100 10 10 isfc TruncatedSVD 35 laplace
-word 100 10 10 isfc TruncatedSVD 40 laplace
-word 100 10 10 isfc TruncatedSVD 45 laplace
-word 100 10 10 isfc TruncatedSVD 50 laplace
-word 700 10 10 isfc PCA 5 gaussian
-word 700 10 10 isfc PCA 10 gaussian
-word 700 10 10 isfc PCA 15 gaussian
-word 700 10 10 isfc PCA 20 gaussian
-word 700 10 10 isfc PCA 25 gaussian
-word 700 10 10 isfc PCA 30 gaussian
-word 700 10 10 isfc PCA 35 gaussian
-word 700 10 10 isfc PCA 40 gaussian
-word 700 10 10 isfc PCA 45 gaussian
-word 700 10 10 isfc PCA 50 gaussian
-word 700 10 10 isfc PCA 5 mexican_hat
-word 700 10 10 isfc PCA 10 mexican_hat
-word 700 10 10 isfc PCA 15 mexican_hat
-word 700 10 10 isfc PCA 20 mexican_hat
-word 700 10 10 isfc PCA 25 mexican_hat
-word 700 10 10 isfc PCA 30 mexican_hat
-word 700 10 10 isfc PCA 35 mexican_hat
-word 700 10 10 isfc PCA 40 mexican_hat
-word 700 10 10 isfc PCA 45 mexican_hat
-word 700 10 10 isfc PCA 50 mexican_hat
-word 700 10 10 isfc PCA 5 laplace
-word 700 10 10 isfc PCA 10 laplace
-word 700 10 10 isfc PCA 15 laplace
-word 700 10 10 isfc PCA 20 laplace
-word 700 10 10 isfc PCA 25 laplace
-word 700 10 10 isfc PCA 30 laplace
-word 700 10 10 isfc PCA 35 laplace
-word 700 10 10 isfc PCA 40 laplace
-word 700 10 10 isfc PCA 45 laplace
-word 700 10 10 isfc PCA 50 laplace
-word 700 10 10 isfc FactorAnalysis 5 gaussian
-word 700 10 10 isfc FactorAnalysis 10 gaussian
-word 700 10 10 isfc FactorAnalysis 15 gaussian
-word 700 10 10 isfc FactorAnalysis 20 gaussian
-word 700 10 10 isfc FactorAnalysis 25 gaussian
-word 700 10 10 isfc FactorAnalysis 30 gaussian
-word 700 10 10 isfc FactorAnalysis 35 gaussian
-word 700 10 10 isfc FactorAnalysis 40 gaussian
-word 700 10 10 isfc FactorAnalysis 45 gaussian
-word 700 10 10 isfc FactorAnalysis 50 gaussian
-word 700 10 10 isfc FactorAnalysis 5 mexican_hat
-word 700 10 10 isfc FactorAnalysis 10 mexican_hat
-word 700 10 10 isfc FactorAnalysis 15 mexican_hat
-word 700 10 10 isfc FactorAnalysis 20 mexican_hat
-word 700 10 10 isfc FactorAnalysis 25 mexican_hat
-word 700 10 10 isfc FactorAnalysis 30 mexican_hat
-word 700 10 10 isfc FactorAnalysis 35 mexican_hat
-word 700 10 10 isfc FactorAnalysis 40 mexican_hat
-word 700 10 10 isfc FactorAnalysis 45 mexican_hat
-word 700 10 10 isfc FactorAnalysis 50 mexican_hat
-word 700 10 10 isfc FactorAnalysis 5 laplace
-word 700 10 10 isfc FactorAnalysis 10 laplace
-word 700 10 10 isfc FactorAnalysis 15 laplace
-word 700 10 10 isfc FactorAnalysis 20 laplace
-word 700 10 10 isfc FactorAnalysis 25 laplace
-word 700 10 10 isfc FactorAnalysis 30 laplace
-word 700 10 10 isfc FactorAnalysis 35 laplace
-word 700 10 10 isfc FactorAnalysis 40 laplace
-word 700 10 10 isfc FactorAnalysis 45 laplace
-word 700 10 10 isfc FactorAnalysis 50 laplace
-word 700 10 10 isfc IncrementalPCA 5 gaussian
-word 700 10 10 isfc IncrementalPCA 10 gaussian
-word 700 10 10 isfc IncrementalPCA 15 gaussian
-word 700 10 10 isfc IncrementalPCA 20 gaussian
-word 700 10 10 isfc IncrementalPCA 25 gaussian
-word 700 10 10 isfc IncrementalPCA 30 gaussian
-word 700 10 10 isfc IncrementalPCA 35 gaussian
-word 700 10 10 isfc IncrementalPCA 40 gaussian
-word 700 10 10 isfc IncrementalPCA 45 gaussian
-word 700 10 10 isfc IncrementalPCA 50 gaussian
-word 700 10 10 isfc IncrementalPCA 5 mexican_hat
-word 700 10 10 isfc IncrementalPCA 10 mexican_hat
-word 700 10 10 isfc IncrementalPCA 15 mexican_hat
-word 700 10 10 isfc IncrementalPCA 20 mexican_hat
-word 700 10 10 isfc IncrementalPCA 25 mexican_hat
-word 700 10 10 isfc IncrementalPCA 30 mexican_hat
-word 700 10 10 isfc IncrementalPCA 35 mexican_hat
-word 700 10 10 isfc IncrementalPCA 40 mexican_hat
-word 700 10 10 isfc IncrementalPCA 45 mexican_hat
-word 700 10 10 isfc IncrementalPCA 50 mexican_hat
-word 700 10 10 isfc IncrementalPCA 5 laplace
-word 700 10 10 isfc IncrementalPCA 10 laplace
-word 700 10 10 isfc IncrementalPCA 15 laplace
-word 700 10 10 isfc IncrementalPCA 20 laplace
-word 700 10 10 isfc IncrementalPCA 25 laplace
-word 700 10 10 isfc IncrementalPCA 30 laplace
-word 700 10 10 isfc IncrementalPCA 35 laplace
-word 700 10 10 isfc IncrementalPCA 40 laplace
-word 700 10 10 isfc IncrementalPCA 45 laplace
-word 700 10 10 isfc IncrementalPCA 50 laplace
-word 700 10 10 isfc TruncatedSVD 5 gaussian
-word 700 10 10 isfc TruncatedSVD 10 gaussian
-word 700 10 10 isfc TruncatedSVD 15 gaussian
-word 700 10 10 isfc TruncatedSVD 20 gaussian
-word 700 10 10 isfc TruncatedSVD 25 gaussian
-word 700 10 10 isfc TruncatedSVD 30 gaussian
-word 700 10 10 isfc TruncatedSVD 35 gaussian
-word 700 10 10 isfc TruncatedSVD 40 gaussian
-word 700 10 10 isfc TruncatedSVD 45 gaussian
-word 700 10 10 isfc TruncatedSVD 50 gaussian
-word 700 10 10 isfc TruncatedSVD 5 mexican_hat
-word 700 10 10 isfc TruncatedSVD 10 mexican_hat
-word 700 10 10 isfc TruncatedSVD 15 mexican_hat
-word 700 10 10 isfc TruncatedSVD 20 mexican_hat
-word 700 10 10 isfc TruncatedSVD 25 mexican_hat
-word 700 10 10 isfc TruncatedSVD 30 mexican_hat
-word 700 10 10 isfc TruncatedSVD 35 mexican_hat
-word 700 10 10 isfc TruncatedSVD 40 mexican_hat
-word 700 10 10 isfc TruncatedSVD 45 mexican_hat
-word 700 10 10 isfc TruncatedSVD 50 mexican_hat
-word 700 10 10 isfc TruncatedSVD 5 laplace
-word 700 10 10 isfc TruncatedSVD 10 laplace
-word 700 10 10 isfc TruncatedSVD 15 laplace
-word 700 10 10 isfc TruncatedSVD 20 laplace
-word 700 10 10 isfc TruncatedSVD 25 laplace
-word 700 10 10 isfc TruncatedSVD 30 laplace
-word 700 10 10 isfc TruncatedSVD 35 laplace
-word 700 10 10 isfc TruncatedSVD 40 laplace
-word 700 10 10 isfc TruncatedSVD 45 laplace
-word 700 10 10 isfc TruncatedSVD 50 laplace
-rest 100 10 10 isfc PCA 5 gaussian
-rest 100 10 10 isfc PCA 10 gaussian
-rest 100 10 10 isfc PCA 15 gaussian
-rest 100 10 10 isfc PCA 20 gaussian
-rest 100 10 10 isfc PCA 25 gaussian
-rest 100 10 10 isfc PCA 30 gaussian
-rest 100 10 10 isfc PCA 35 gaussian
-rest 100 10 10 isfc PCA 40 gaussian
-rest 100 10 10 isfc PCA 45 gaussian
-rest 100 10 10 isfc PCA 50 gaussian
-rest 100 10 10 isfc PCA 5 mexican_hat
-rest 100 10 10 isfc PCA 10 mexican_hat
-rest 100 10 10 isfc PCA 15 mexican_hat
-rest 100 10 10 isfc PCA 20 mexican_hat
-rest 100 10 10 isfc PCA 25 mexican_hat
-rest 100 10 10 isfc PCA 30 mexican_hat
-rest 100 10 10 isfc PCA 35 mexican_hat
-rest 100 10 10 isfc PCA 40 mexican_hat
-rest 100 10 10 isfc PCA 45 mexican_hat
-rest 100 10 10 isfc PCA 50 mexican_hat
-rest 100 10 10 isfc PCA 5 laplace
-rest 100 10 10 isfc PCA 10 laplace
-rest 100 10 10 isfc PCA 15 laplace
-rest 100 10 10 isfc PCA 20 laplace
-rest 100 10 10 isfc PCA 25 laplace
-rest 100 10 10 isfc PCA 30 laplace
-rest 100 10 10 isfc PCA 35 laplace
-rest 100 10 10 isfc PCA 40 laplace
-rest 100 10 10 isfc PCA 45 laplace
-rest 100 10 10 isfc PCA 50 laplace
-rest 100 10 10 isfc FactorAnalysis 5 gaussian
-rest 100 10 10 isfc FactorAnalysis 10 gaussian
-rest 100 10 10 isfc FactorAnalysis 15 gaussian
-rest 100 10 10 isfc FactorAnalysis 20 gaussian
-rest 100 10 10 isfc FactorAnalysis 25 gaussian
-rest 100 10 10 isfc FactorAnalysis 30 gaussian
-rest 100 10 10 isfc FactorAnalysis 35 gaussian
-rest 100 10 10 isfc FactorAnalysis 40 gaussian
-rest 100 10 10 isfc FactorAnalysis 45 gaussian
-rest 100 10 10 isfc FactorAnalysis 50 gaussian
-rest 100 10 10 isfc FactorAnalysis 5 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 10 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 15 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 20 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 25 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 30 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 35 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 40 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 45 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 50 mexican_hat
-rest 100 10 10 isfc FactorAnalysis 5 laplace
-rest 100 10 10 isfc FactorAnalysis 10 laplace
-rest 100 10 10 isfc FactorAnalysis 15 laplace
-rest 100 10 10 isfc FactorAnalysis 20 laplace
-rest 100 10 10 isfc FactorAnalysis 25 laplace
-rest 100 10 10 isfc FactorAnalysis 30 laplace
-rest 100 10 10 isfc FactorAnalysis 35 laplace
-rest 100 10 10 isfc FactorAnalysis 40 laplace
-rest 100 10 10 isfc FactorAnalysis 45 laplace
-rest 100 10 10 isfc FactorAnalysis 50 laplace
-rest 100 10 10 isfc IncrementalPCA 5 gaussian
-rest 100 10 10 isfc IncrementalPCA 10 gaussian
-rest 100 10 10 isfc IncrementalPCA 15 gaussian
-rest 100 10 10 isfc IncrementalPCA 20 gaussian
-rest 100 10 10 isfc IncrementalPCA 25 gaussian
-rest 100 10 10 isfc IncrementalPCA 30 gaussian
-rest 100 10 10 isfc IncrementalPCA 35 gaussian
-rest 100 10 10 isfc IncrementalPCA 40 gaussian
-rest 100 10 10 isfc IncrementalPCA 45 gaussian
-rest 100 10 10 isfc IncrementalPCA 50 gaussian
-rest 100 10 10 isfc IncrementalPCA 5 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 10 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 15 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 20 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 25 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 30 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 35 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 40 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 45 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 50 mexican_hat
-rest 100 10 10 isfc IncrementalPCA 5 laplace
-rest 100 10 10 isfc IncrementalPCA 10 laplace
-rest 100 10 10 isfc IncrementalPCA 15 laplace
-rest 100 10 10 isfc IncrementalPCA 20 laplace
-rest 100 10 10 isfc IncrementalPCA 25 laplace
-rest 100 10 10 isfc IncrementalPCA 30 laplace
-rest 100 10 10 isfc IncrementalPCA 35 laplace
-rest 100 10 10 isfc IncrementalPCA 40 laplace
-rest 100 10 10 isfc IncrementalPCA 45 laplace
-rest 100 10 10 isfc IncrementalPCA 50 laplace
-rest 100 10 10 isfc TruncatedSVD 5 gaussian
-rest 100 10 10 isfc TruncatedSVD 10 gaussian
-rest 100 10 10 isfc TruncatedSVD 15 gaussian
-rest 100 10 10 isfc TruncatedSVD 20 gaussian
-rest 100 10 10 isfc TruncatedSVD 25 gaussian
-rest 100 10 10 isfc TruncatedSVD 30 gaussian
-rest 100 10 10 isfc TruncatedSVD 35 gaussian
-rest 100 10 10 isfc TruncatedSVD 40 gaussian
-rest 100 10 10 isfc TruncatedSVD 45 gaussian
-rest 100 10 10 isfc TruncatedSVD 50 gaussian
-rest 100 10 10 isfc TruncatedSVD 5 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 10 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 15 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 20 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 25 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 30 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 35 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 40 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 45 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 50 mexican_hat
-rest 100 10 10 isfc TruncatedSVD 5 laplace
-rest 100 10 10 isfc TruncatedSVD 10 laplace
-rest 100 10 10 isfc TruncatedSVD 15 laplace
-rest 100 10 10 isfc TruncatedSVD 20 laplace
-rest 100 10 10 isfc TruncatedSVD 25 laplace
-rest 100 10 10 isfc TruncatedSVD 30 laplace
-rest 100 10 10 isfc TruncatedSVD 35 laplace
-rest 100 10 10 isfc TruncatedSVD 40 laplace
-rest 100 10 10 isfc TruncatedSVD 45 laplace
-rest 100 10 10 isfc TruncatedSVD 50 laplace
-rest 700 10 10 isfc PCA 5 gaussian
-rest 700 10 10 isfc PCA 10 gaussian
-rest 700 10 10 isfc PCA 15 gaussian
-rest 700 10 10 isfc PCA 20 gaussian
-rest 700 10 10 isfc PCA 25 gaussian
-rest 700 10 10 isfc PCA 30 gaussian
-rest 700 10 10 isfc PCA 35 gaussian
-rest 700 10 10 isfc PCA 40 gaussian
-rest 700 10 10 isfc PCA 45 gaussian
-rest 700 10 10 isfc PCA 50 gaussian
-rest 700 10 10 isfc PCA 5 mexican_hat
-rest 700 10 10 isfc PCA 10 mexican_hat
-rest 700 10 10 isfc PCA 15 mexican_hat
-rest 700 10 10 isfc PCA 20 mexican_hat
-rest 700 10 10 isfc PCA 25 mexican_hat
-rest 700 10 10 isfc PCA 30 mexican_hat
-rest 700 10 10 isfc PCA 35 mexican_hat
-rest 700 10 10 isfc PCA 40 mexican_hat
-rest 700 10 10 isfc PCA 45 mexican_hat
-rest 700 10 10 isfc PCA 50 mexican_hat
-rest 700 10 10 isfc PCA 5 laplace
-rest 700 10 10 isfc PCA 10 laplace
-rest 700 10 10 isfc PCA 15 laplace
-rest 700 10 10 isfc PCA 20 laplace
-rest 700 10 10 isfc PCA 25 laplace
-rest 700 10 10 isfc PCA 30 laplace
-rest 700 10 10 isfc PCA 35 laplace
-rest 700 10 10 isfc PCA 40 laplace
-rest 700 10 10 isfc PCA 45 laplace
-rest 700 10 10 isfc PCA 50 laplace
-rest 700 10 10 isfc FactorAnalysis 5 gaussian
-rest 700 10 10 isfc FactorAnalysis 10 gaussian
-rest 700 10 10 isfc FactorAnalysis 15 gaussian
-rest 700 10 10 isfc FactorAnalysis 20 gaussian
-rest 700 10 10 isfc FactorAnalysis 25 gaussian
-rest 700 10 10 isfc FactorAnalysis 30 gaussian
-rest 700 10 10 isfc FactorAnalysis 35 gaussian
-rest 700 10 10 isfc FactorAnalysis 40 gaussian
-rest 700 10 10 isfc FactorAnalysis 45 gaussian
-rest 700 10 10 isfc FactorAnalysis 50 gaussian
-rest 700 10 10 isfc FactorAnalysis 5 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 10 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 15 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 20 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 25 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 30 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 35 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 40 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 45 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 50 mexican_hat
-rest 700 10 10 isfc FactorAnalysis 5 laplace
-rest 700 10 10 isfc FactorAnalysis 10 laplace
-rest 700 10 10 isfc FactorAnalysis 15 laplace
-rest 700 10 10 isfc FactorAnalysis 20 laplace
-rest 700 10 10 isfc FactorAnalysis 25 laplace
-rest 700 10 10 isfc FactorAnalysis 30 laplace
-rest 700 10 10 isfc FactorAnalysis 35 laplace
-rest 700 10 10 isfc FactorAnalysis 40 laplace
-rest 700 10 10 isfc FactorAnalysis 45 laplace
-rest 700 10 10 isfc FactorAnalysis 50 laplace
-rest 700 10 10 isfc IncrementalPCA 5 gaussian
-rest 700 10 10 isfc IncrementalPCA 10 gaussian
-rest 700 10 10 isfc IncrementalPCA 15 gaussian
-rest 700 10 10 isfc IncrementalPCA 20 gaussian
-rest 700 10 10 isfc IncrementalPCA 25 gaussian
-rest 700 10 10 isfc IncrementalPCA 30 gaussian
-rest 700 10 10 isfc IncrementalPCA 35 gaussian
-rest 700 10 10 isfc IncrementalPCA 40 gaussian
-rest 700 10 10 isfc IncrementalPCA 45 gaussian
-rest 700 10 10 isfc IncrementalPCA 50 gaussian
-rest 700 10 10 isfc IncrementalPCA 5 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 10 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 15 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 20 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 25 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 30 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 35 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 40 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 45 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 50 mexican_hat
-rest 700 10 10 isfc IncrementalPCA 5 laplace
-rest 700 10 10 isfc IncrementalPCA 10 laplace
-rest 700 10 10 isfc IncrementalPCA 15 laplace
-rest 700 10 10 isfc IncrementalPCA 20 laplace
-rest 700 10 10 isfc IncrementalPCA 25 laplace
-rest 700 10 10 isfc IncrementalPCA 30 laplace
-rest 700 10 10 isfc IncrementalPCA 35 laplace
-rest 700 10 10 isfc IncrementalPCA 40 laplace
-rest 700 10 10 isfc IncrementalPCA 45 laplace
-rest 700 10 10 isfc IncrementalPCA 50 laplace
-rest 700 10 10 isfc TruncatedSVD 5 gaussian
-rest 700 10 10 isfc TruncatedSVD 10 gaussian
-rest 700 10 10 isfc TruncatedSVD 15 gaussian
-rest 700 10 10 isfc TruncatedSVD 20 gaussian
-rest 700 10 10 isfc TruncatedSVD 25 gaussian
-rest 700 10 10 isfc TruncatedSVD 30 gaussian
-rest 700 10 10 isfc TruncatedSVD 35 gaussian
-rest 700 10 10 isfc TruncatedSVD 40 gaussian
-rest 700 10 10 isfc TruncatedSVD 45 gaussian
-rest 700 10 10 isfc TruncatedSVD 50 gaussian
-rest 700 10 10 isfc TruncatedSVD 5 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 10 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 15 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 20 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 25 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 30 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 35 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 40 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 45 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 50 mexican_hat
-rest 700 10 10 isfc TruncatedSVD 5 laplace
-rest 700 10 10 isfc TruncatedSVD 10 laplace
-rest 700 10 10 isfc TruncatedSVD 15 laplace
-rest 700 10 10 isfc TruncatedSVD 20 laplace
-rest 700 10 10 isfc TruncatedSVD 25 laplace
-rest 700 10 10 isfc TruncatedSVD 30 laplace
-rest 700 10 10 isfc TruncatedSVD 35 laplace
-rest 700 10 10 isfc TruncatedSVD 40 laplace
-rest 700 10 10 isfc TruncatedSVD 45 laplace
-rest 700 10 10 isfc TruncatedSVD 50 laplace
+intact 100 10 10 isfc PCA 5 gaussian 1
+intact 100 10 10 isfc PCA 10 gaussian 1
+intact 100 10 10 isfc PCA 15 gaussian 1
+intact 100 10 10 isfc PCA 20 gaussian 1
+intact 100 10 10 isfc PCA 25 gaussian 1
+intact 100 10 10 isfc PCA 30 gaussian 1
+intact 100 10 10 isfc PCA 35 gaussian 1
+intact 100 10 10 isfc PCA 40 gaussian 1
+intact 100 10 10 isfc PCA 45 gaussian 1
+intact 100 10 10 isfc PCA 50 gaussian 1
+intact 100 10 10 isfc PCA 5 mexican_hat 1
+intact 100 10 10 isfc PCA 10 mexican_hat 1
+intact 100 10 10 isfc PCA 15 mexican_hat 1
+intact 100 10 10 isfc PCA 20 mexican_hat 1
+intact 100 10 10 isfc PCA 25 mexican_hat 1
+intact 100 10 10 isfc PCA 30 mexican_hat 1
+intact 100 10 10 isfc PCA 35 mexican_hat 1
+intact 100 10 10 isfc PCA 40 mexican_hat 1
+intact 100 10 10 isfc PCA 45 mexican_hat 1
+intact 100 10 10 isfc PCA 50 mexican_hat 1
+intact 100 10 10 isfc PCA 5 laplace 1
+intact 100 10 10 isfc PCA 10 laplace 1
+intact 100 10 10 isfc PCA 15 laplace 1
+intact 100 10 10 isfc PCA 20 laplace 1
+intact 100 10 10 isfc PCA 25 laplace 1
+intact 100 10 10 isfc PCA 30 laplace 1
+intact 100 10 10 isfc PCA 35 laplace 1
+intact 100 10 10 isfc PCA 40 laplace 1
+intact 100 10 10 isfc PCA 45 laplace 1
+intact 100 10 10 isfc PCA 50 laplace 1
+intact 100 10 10 isfc FactorAnalysis 5 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 10 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 15 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 20 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 25 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 30 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 35 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 40 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 45 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 50 gaussian 1
+intact 100 10 10 isfc FactorAnalysis 5 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 10 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 15 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 20 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 25 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 30 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 35 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 40 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 45 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 50 mexican_hat 1
+intact 100 10 10 isfc FactorAnalysis 5 laplace 1
+intact 100 10 10 isfc FactorAnalysis 10 laplace 1
+intact 100 10 10 isfc FactorAnalysis 15 laplace 1
+intact 100 10 10 isfc FactorAnalysis 20 laplace 1
+intact 100 10 10 isfc FactorAnalysis 25 laplace 1
+intact 100 10 10 isfc FactorAnalysis 30 laplace 1
+intact 100 10 10 isfc FactorAnalysis 35 laplace 1
+intact 100 10 10 isfc FactorAnalysis 40 laplace 1
+intact 100 10 10 isfc FactorAnalysis 45 laplace 1
+intact 100 10 10 isfc FactorAnalysis 50 laplace 1
+intact 100 10 10 isfc IncrementalPCA 5 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 10 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 15 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 20 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 25 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 30 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 35 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 40 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 45 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 50 gaussian 1
+intact 100 10 10 isfc IncrementalPCA 5 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 10 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 15 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 20 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 25 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 30 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 35 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 40 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 45 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 50 mexican_hat 1
+intact 100 10 10 isfc IncrementalPCA 5 laplace 1
+intact 100 10 10 isfc IncrementalPCA 10 laplace 1
+intact 100 10 10 isfc IncrementalPCA 15 laplace 1
+intact 100 10 10 isfc IncrementalPCA 20 laplace 1
+intact 100 10 10 isfc IncrementalPCA 25 laplace 1
+intact 100 10 10 isfc IncrementalPCA 30 laplace 1
+intact 100 10 10 isfc IncrementalPCA 35 laplace 1
+intact 100 10 10 isfc IncrementalPCA 40 laplace 1
+intact 100 10 10 isfc IncrementalPCA 45 laplace 1
+intact 100 10 10 isfc IncrementalPCA 50 laplace 1
+intact 100 10 10 isfc TruncatedSVD 5 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 10 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 15 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 20 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 25 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 30 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 35 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 40 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 45 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 50 gaussian 1
+intact 100 10 10 isfc TruncatedSVD 5 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 10 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 15 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 20 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 25 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 30 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 35 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 40 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 45 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 50 mexican_hat 1
+intact 100 10 10 isfc TruncatedSVD 5 laplace 1
+intact 100 10 10 isfc TruncatedSVD 10 laplace 1
+intact 100 10 10 isfc TruncatedSVD 15 laplace 1
+intact 100 10 10 isfc TruncatedSVD 20 laplace 1
+intact 100 10 10 isfc TruncatedSVD 25 laplace 1
+intact 100 10 10 isfc TruncatedSVD 30 laplace 1
+intact 100 10 10 isfc TruncatedSVD 35 laplace 1
+intact 100 10 10 isfc TruncatedSVD 40 laplace 1
+intact 100 10 10 isfc TruncatedSVD 45 laplace 1
+intact 100 10 10 isfc TruncatedSVD 50 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 5 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 10 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 15 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 20 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 25 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 30 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 35 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 40 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 45 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 50 gaussian 1
+intact 100 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+intact 100 10 10 isfc eigenvector_centrality 5 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 10 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 15 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 20 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 25 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 30 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 35 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 40 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 45 laplace 1
+intact 100 10 10 isfc eigenvector_centrality 50 laplace 1
+intact 100 10 10 isfc pagerank_centrality 5 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 10 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 15 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 20 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 25 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 30 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 35 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 40 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 45 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 50 gaussian 1
+intact 100 10 10 isfc pagerank_centrality 5 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 10 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 15 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 20 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 25 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 30 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 35 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 40 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 45 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 50 mexican_hat 1
+intact 100 10 10 isfc pagerank_centrality 5 laplace 1
+intact 100 10 10 isfc pagerank_centrality 10 laplace 1
+intact 100 10 10 isfc pagerank_centrality 15 laplace 1
+intact 100 10 10 isfc pagerank_centrality 20 laplace 1
+intact 100 10 10 isfc pagerank_centrality 25 laplace 1
+intact 100 10 10 isfc pagerank_centrality 30 laplace 1
+intact 100 10 10 isfc pagerank_centrality 35 laplace 1
+intact 100 10 10 isfc pagerank_centrality 40 laplace 1
+intact 100 10 10 isfc pagerank_centrality 45 laplace 1
+intact 100 10 10 isfc pagerank_centrality 50 laplace 1
+intact 100 10 10 isfc strength 5 gaussian 1
+intact 100 10 10 isfc strength 10 gaussian 1
+intact 100 10 10 isfc strength 15 gaussian 1
+intact 100 10 10 isfc strength 20 gaussian 1
+intact 100 10 10 isfc strength 25 gaussian 1
+intact 100 10 10 isfc strength 30 gaussian 1
+intact 100 10 10 isfc strength 35 gaussian 1
+intact 100 10 10 isfc strength 40 gaussian 1
+intact 100 10 10 isfc strength 45 gaussian 1
+intact 100 10 10 isfc strength 50 gaussian 1
+intact 100 10 10 isfc strength 5 mexican_hat 1
+intact 100 10 10 isfc strength 10 mexican_hat 1
+intact 100 10 10 isfc strength 15 mexican_hat 1
+intact 100 10 10 isfc strength 20 mexican_hat 1
+intact 100 10 10 isfc strength 25 mexican_hat 1
+intact 100 10 10 isfc strength 30 mexican_hat 1
+intact 100 10 10 isfc strength 35 mexican_hat 1
+intact 100 10 10 isfc strength 40 mexican_hat 1
+intact 100 10 10 isfc strength 45 mexican_hat 1
+intact 100 10 10 isfc strength 50 mexican_hat 1
+intact 100 10 10 isfc strength 5 laplace 1
+intact 100 10 10 isfc strength 10 laplace 1
+intact 100 10 10 isfc strength 15 laplace 1
+intact 100 10 10 isfc strength 20 laplace 1
+intact 100 10 10 isfc strength 25 laplace 1
+intact 100 10 10 isfc strength 30 laplace 1
+intact 100 10 10 isfc strength 35 laplace 1
+intact 100 10 10 isfc strength 40 laplace 1
+intact 100 10 10 isfc strength 45 laplace 1
+intact 100 10 10 isfc strength 50 laplace 1
+intact 700 10 10 isfc PCA 5 gaussian 1
+intact 700 10 10 isfc PCA 10 gaussian 1
+intact 700 10 10 isfc PCA 15 gaussian 1
+intact 700 10 10 isfc PCA 20 gaussian 1
+intact 700 10 10 isfc PCA 25 gaussian 1
+intact 700 10 10 isfc PCA 30 gaussian 1
+intact 700 10 10 isfc PCA 35 gaussian 1
+intact 700 10 10 isfc PCA 40 gaussian 1
+intact 700 10 10 isfc PCA 45 gaussian 1
+intact 700 10 10 isfc PCA 50 gaussian 1
+intact 700 10 10 isfc PCA 5 mexican_hat 1
+intact 700 10 10 isfc PCA 10 mexican_hat 1
+intact 700 10 10 isfc PCA 15 mexican_hat 1
+intact 700 10 10 isfc PCA 20 mexican_hat 1
+intact 700 10 10 isfc PCA 25 mexican_hat 1
+intact 700 10 10 isfc PCA 30 mexican_hat 1
+intact 700 10 10 isfc PCA 35 mexican_hat 1
+intact 700 10 10 isfc PCA 40 mexican_hat 1
+intact 700 10 10 isfc PCA 45 mexican_hat 1
+intact 700 10 10 isfc PCA 50 mexican_hat 1
+intact 700 10 10 isfc PCA 5 laplace 1
+intact 700 10 10 isfc PCA 10 laplace 1
+intact 700 10 10 isfc PCA 15 laplace 1
+intact 700 10 10 isfc PCA 20 laplace 1
+intact 700 10 10 isfc PCA 25 laplace 1
+intact 700 10 10 isfc PCA 30 laplace 1
+intact 700 10 10 isfc PCA 35 laplace 1
+intact 700 10 10 isfc PCA 40 laplace 1
+intact 700 10 10 isfc PCA 45 laplace 1
+intact 700 10 10 isfc PCA 50 laplace 1
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 5 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 10 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 15 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 20 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 25 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 35 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 40 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 45 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 5 laplace 1
+intact 700 10 10 isfc FactorAnalysis 10 laplace 1
+intact 700 10 10 isfc FactorAnalysis 15 laplace 1
+intact 700 10 10 isfc FactorAnalysis 20 laplace 1
+intact 700 10 10 isfc FactorAnalysis 25 laplace 1
+intact 700 10 10 isfc FactorAnalysis 30 laplace 1
+intact 700 10 10 isfc FactorAnalysis 35 laplace 1
+intact 700 10 10 isfc FactorAnalysis 40 laplace 1
+intact 700 10 10 isfc FactorAnalysis 45 laplace 1
+intact 700 10 10 isfc FactorAnalysis 50 laplace 1
+intact 700 10 10 isfc IncrementalPCA 5 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 10 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 15 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 20 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 25 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 30 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 35 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 40 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 45 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 50 gaussian 1
+intact 700 10 10 isfc IncrementalPCA 5 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 10 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 15 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 20 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 25 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 30 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 35 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 40 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 45 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 50 mexican_hat 1
+intact 700 10 10 isfc IncrementalPCA 5 laplace 1
+intact 700 10 10 isfc IncrementalPCA 10 laplace 1
+intact 700 10 10 isfc IncrementalPCA 15 laplace 1
+intact 700 10 10 isfc IncrementalPCA 20 laplace 1
+intact 700 10 10 isfc IncrementalPCA 25 laplace 1
+intact 700 10 10 isfc IncrementalPCA 30 laplace 1
+intact 700 10 10 isfc IncrementalPCA 35 laplace 1
+intact 700 10 10 isfc IncrementalPCA 40 laplace 1
+intact 700 10 10 isfc IncrementalPCA 45 laplace 1
+intact 700 10 10 isfc IncrementalPCA 50 laplace 1
+intact 700 10 10 isfc TruncatedSVD 5 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 10 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 15 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 20 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 25 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 30 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 35 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 40 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 45 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 50 gaussian 1
+intact 700 10 10 isfc TruncatedSVD 5 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 10 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 15 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 20 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 25 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 30 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 35 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 45 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 50 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 5 laplace 1
+intact 700 10 10 isfc TruncatedSVD 10 laplace 1
+intact 700 10 10 isfc TruncatedSVD 15 laplace 1
+intact 700 10 10 isfc TruncatedSVD 20 laplace 1
+intact 700 10 10 isfc TruncatedSVD 25 laplace 1
+intact 700 10 10 isfc TruncatedSVD 30 laplace 1
+intact 700 10 10 isfc TruncatedSVD 35 laplace 1
+intact 700 10 10 isfc TruncatedSVD 40 laplace 1
+intact 700 10 10 isfc TruncatedSVD 45 laplace 1
+intact 700 10 10 isfc TruncatedSVD 50 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 5 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 10 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 15 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 20 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 25 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 30 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 35 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 40 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 45 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 50 gaussian 1
+intact 700 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+intact 700 10 10 isfc eigenvector_centrality 5 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 10 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 15 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 20 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 25 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 30 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 35 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 40 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 45 laplace 1
+intact 700 10 10 isfc eigenvector_centrality 50 laplace 1
+intact 700 10 10 isfc pagerank_centrality 5 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 10 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 15 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 20 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 25 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 30 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 35 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 40 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 45 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 50 gaussian 1
+intact 700 10 10 isfc pagerank_centrality 5 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 10 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 15 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 20 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 25 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 30 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 35 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 40 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 45 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 50 mexican_hat 1
+intact 700 10 10 isfc pagerank_centrality 5 laplace 1
+intact 700 10 10 isfc pagerank_centrality 10 laplace 1
+intact 700 10 10 isfc pagerank_centrality 15 laplace 1
+intact 700 10 10 isfc pagerank_centrality 20 laplace 1
+intact 700 10 10 isfc pagerank_centrality 25 laplace 1
+intact 700 10 10 isfc pagerank_centrality 30 laplace 1
+intact 700 10 10 isfc pagerank_centrality 35 laplace 1
+intact 700 10 10 isfc pagerank_centrality 40 laplace 1
+intact 700 10 10 isfc pagerank_centrality 45 laplace 1
+intact 700 10 10 isfc pagerank_centrality 50 laplace 1
+intact 700 10 10 isfc strength 5 gaussian 1
+intact 700 10 10 isfc strength 10 gaussian 1
+intact 700 10 10 isfc strength 15 gaussian 1
+intact 700 10 10 isfc strength 20 gaussian 1
+intact 700 10 10 isfc strength 25 gaussian 1
+intact 700 10 10 isfc strength 30 gaussian 1
+intact 700 10 10 isfc strength 35 gaussian 1
+intact 700 10 10 isfc strength 40 gaussian 1
+intact 700 10 10 isfc strength 45 gaussian 1
+intact 700 10 10 isfc strength 50 gaussian 1
+intact 700 10 10 isfc strength 5 mexican_hat 1
+intact 700 10 10 isfc strength 10 mexican_hat 1
+intact 700 10 10 isfc strength 15 mexican_hat 1
+intact 700 10 10 isfc strength 20 mexican_hat 1
+intact 700 10 10 isfc strength 25 mexican_hat 1
+intact 700 10 10 isfc strength 30 mexican_hat 1
+intact 700 10 10 isfc strength 35 mexican_hat 1
+intact 700 10 10 isfc strength 40 mexican_hat 1
+intact 700 10 10 isfc strength 45 mexican_hat 1
+intact 700 10 10 isfc strength 50 mexican_hat 1
+intact 700 10 10 isfc strength 5 laplace 1
+intact 700 10 10 isfc strength 10 laplace 1
+intact 700 10 10 isfc strength 15 laplace 1
+intact 700 10 10 isfc strength 20 laplace 1
+intact 700 10 10 isfc strength 25 laplace 1
+intact 700 10 10 isfc strength 30 laplace 1
+intact 700 10 10 isfc strength 35 laplace 1
+intact 700 10 10 isfc strength 40 laplace 1
+intact 700 10 10 isfc strength 45 laplace 1
+intact 700 10 10 isfc strength 50 laplace 1
+paragraph 100 10 10 isfc PCA 5 gaussian 1
+paragraph 100 10 10 isfc PCA 10 gaussian 1
+paragraph 100 10 10 isfc PCA 15 gaussian 1
+paragraph 100 10 10 isfc PCA 20 gaussian 1
+paragraph 100 10 10 isfc PCA 25 gaussian 1
+paragraph 100 10 10 isfc PCA 30 gaussian 1
+paragraph 100 10 10 isfc PCA 35 gaussian 1
+paragraph 100 10 10 isfc PCA 40 gaussian 1
+paragraph 100 10 10 isfc PCA 45 gaussian 1
+paragraph 100 10 10 isfc PCA 50 gaussian 1
+paragraph 100 10 10 isfc PCA 5 mexican_hat 1
+paragraph 100 10 10 isfc PCA 10 mexican_hat 1
+paragraph 100 10 10 isfc PCA 15 mexican_hat 1
+paragraph 100 10 10 isfc PCA 20 mexican_hat 1
+paragraph 100 10 10 isfc PCA 25 mexican_hat 1
+paragraph 100 10 10 isfc PCA 30 mexican_hat 1
+paragraph 100 10 10 isfc PCA 35 mexican_hat 1
+paragraph 100 10 10 isfc PCA 40 mexican_hat 1
+paragraph 100 10 10 isfc PCA 45 mexican_hat 1
+paragraph 100 10 10 isfc PCA 50 mexican_hat 1
+paragraph 100 10 10 isfc PCA 5 laplace 1
+paragraph 100 10 10 isfc PCA 10 laplace 1
+paragraph 100 10 10 isfc PCA 15 laplace 1
+paragraph 100 10 10 isfc PCA 20 laplace 1
+paragraph 100 10 10 isfc PCA 25 laplace 1
+paragraph 100 10 10 isfc PCA 30 laplace 1
+paragraph 100 10 10 isfc PCA 35 laplace 1
+paragraph 100 10 10 isfc PCA 40 laplace 1
+paragraph 100 10 10 isfc PCA 45 laplace 1
+paragraph 100 10 10 isfc PCA 50 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 5 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 10 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 15 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 20 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 25 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 30 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 35 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 40 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 45 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 50 gaussian 1
+paragraph 100 10 10 isfc FactorAnalysis 5 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 10 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 15 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 20 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 25 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 30 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 35 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 40 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 45 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 50 mexican_hat 1
+paragraph 100 10 10 isfc FactorAnalysis 5 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 10 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 15 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 20 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 25 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 30 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 35 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 40 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 45 laplace 1
+paragraph 100 10 10 isfc FactorAnalysis 50 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 5 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 10 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 15 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 20 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 25 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 30 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 35 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 40 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 45 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 50 gaussian 1
+paragraph 100 10 10 isfc IncrementalPCA 5 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 10 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 15 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 20 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 25 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 30 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 35 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 40 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 45 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 50 mexican_hat 1
+paragraph 100 10 10 isfc IncrementalPCA 5 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 10 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 15 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 20 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 25 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 30 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 35 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 40 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 45 laplace 1
+paragraph 100 10 10 isfc IncrementalPCA 50 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 5 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 10 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 15 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 20 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 25 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 30 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 35 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 40 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 45 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 50 gaussian 1
+paragraph 100 10 10 isfc TruncatedSVD 5 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 10 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 15 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 20 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 25 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 30 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 35 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 40 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 45 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 50 mexican_hat 1
+paragraph 100 10 10 isfc TruncatedSVD 5 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 10 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 15 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 20 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 25 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 30 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 35 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 40 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 45 laplace 1
+paragraph 100 10 10 isfc TruncatedSVD 50 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 5 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 10 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 15 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 20 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 25 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 30 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 35 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 40 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 45 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 50 gaussian 1
+paragraph 100 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+paragraph 100 10 10 isfc eigenvector_centrality 5 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 10 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 15 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 20 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 25 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 30 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 35 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 40 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 45 laplace 1
+paragraph 100 10 10 isfc eigenvector_centrality 50 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 5 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 10 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 15 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 20 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 25 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 30 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 35 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 40 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 45 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 50 gaussian 1
+paragraph 100 10 10 isfc pagerank_centrality 5 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 10 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 15 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 20 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 25 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 30 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 35 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 40 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 45 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 50 mexican_hat 1
+paragraph 100 10 10 isfc pagerank_centrality 5 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 10 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 15 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 20 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 25 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 30 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 35 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 40 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 45 laplace 1
+paragraph 100 10 10 isfc pagerank_centrality 50 laplace 1
+paragraph 100 10 10 isfc strength 5 gaussian 1
+paragraph 100 10 10 isfc strength 10 gaussian 1
+paragraph 100 10 10 isfc strength 15 gaussian 1
+paragraph 100 10 10 isfc strength 20 gaussian 1
+paragraph 100 10 10 isfc strength 25 gaussian 1
+paragraph 100 10 10 isfc strength 30 gaussian 1
+paragraph 100 10 10 isfc strength 35 gaussian 1
+paragraph 100 10 10 isfc strength 40 gaussian 1
+paragraph 100 10 10 isfc strength 45 gaussian 1
+paragraph 100 10 10 isfc strength 50 gaussian 1
+paragraph 100 10 10 isfc strength 5 mexican_hat 1
+paragraph 100 10 10 isfc strength 10 mexican_hat 1
+paragraph 100 10 10 isfc strength 15 mexican_hat 1
+paragraph 100 10 10 isfc strength 20 mexican_hat 1
+paragraph 100 10 10 isfc strength 25 mexican_hat 1
+paragraph 100 10 10 isfc strength 30 mexican_hat 1
+paragraph 100 10 10 isfc strength 35 mexican_hat 1
+paragraph 100 10 10 isfc strength 40 mexican_hat 1
+paragraph 100 10 10 isfc strength 45 mexican_hat 1
+paragraph 100 10 10 isfc strength 50 mexican_hat 1
+paragraph 100 10 10 isfc strength 5 laplace 1
+paragraph 100 10 10 isfc strength 10 laplace 1
+paragraph 100 10 10 isfc strength 15 laplace 1
+paragraph 100 10 10 isfc strength 20 laplace 1
+paragraph 100 10 10 isfc strength 25 laplace 1
+paragraph 100 10 10 isfc strength 30 laplace 1
+paragraph 100 10 10 isfc strength 35 laplace 1
+paragraph 100 10 10 isfc strength 40 laplace 1
+paragraph 100 10 10 isfc strength 45 laplace 1
+paragraph 100 10 10 isfc strength 50 laplace 1
+paragraph 700 10 10 isfc PCA 5 gaussian 1
+paragraph 700 10 10 isfc PCA 10 gaussian 1
+paragraph 700 10 10 isfc PCA 15 gaussian 1
+paragraph 700 10 10 isfc PCA 20 gaussian 1
+paragraph 700 10 10 isfc PCA 25 gaussian 1
+paragraph 700 10 10 isfc PCA 30 gaussian 1
+paragraph 700 10 10 isfc PCA 35 gaussian 1
+paragraph 700 10 10 isfc PCA 40 gaussian 1
+paragraph 700 10 10 isfc PCA 45 gaussian 1
+paragraph 700 10 10 isfc PCA 50 gaussian 1
+paragraph 700 10 10 isfc PCA 5 mexican_hat 1
+paragraph 700 10 10 isfc PCA 10 mexican_hat 1
+paragraph 700 10 10 isfc PCA 15 mexican_hat 1
+paragraph 700 10 10 isfc PCA 20 mexican_hat 1
+paragraph 700 10 10 isfc PCA 25 mexican_hat 1
+paragraph 700 10 10 isfc PCA 30 mexican_hat 1
+paragraph 700 10 10 isfc PCA 35 mexican_hat 1
+paragraph 700 10 10 isfc PCA 40 mexican_hat 1
+paragraph 700 10 10 isfc PCA 45 mexican_hat 1
+paragraph 700 10 10 isfc PCA 50 mexican_hat 1
+paragraph 700 10 10 isfc PCA 5 laplace 1
+paragraph 700 10 10 isfc PCA 10 laplace 1
+paragraph 700 10 10 isfc PCA 15 laplace 1
+paragraph 700 10 10 isfc PCA 20 laplace 1
+paragraph 700 10 10 isfc PCA 25 laplace 1
+paragraph 700 10 10 isfc PCA 30 laplace 1
+paragraph 700 10 10 isfc PCA 35 laplace 1
+paragraph 700 10 10 isfc PCA 40 laplace 1
+paragraph 700 10 10 isfc PCA 45 laplace 1
+paragraph 700 10 10 isfc PCA 50 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 5 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 10 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 15 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 20 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 25 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 30 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 35 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 40 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 45 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 50 gaussian 1
+paragraph 700 10 10 isfc FactorAnalysis 5 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 10 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 15 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 20 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 25 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 30 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 35 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 40 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 45 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 50 mexican_hat 1
+paragraph 700 10 10 isfc FactorAnalysis 5 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 10 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 15 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 20 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 25 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 30 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 35 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 40 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 45 laplace 1
+paragraph 700 10 10 isfc FactorAnalysis 50 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 5 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 10 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 15 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 20 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 25 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 30 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 35 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 40 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 45 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 50 gaussian 1
+paragraph 700 10 10 isfc IncrementalPCA 5 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 10 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 15 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 20 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 25 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 30 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 35 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 40 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 45 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 50 mexican_hat 1
+paragraph 700 10 10 isfc IncrementalPCA 5 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 10 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 15 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 20 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 25 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 30 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 35 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 40 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 45 laplace 1
+paragraph 700 10 10 isfc IncrementalPCA 50 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 5 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 10 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 15 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 20 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 25 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 30 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 35 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 40 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 45 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 50 gaussian 1
+paragraph 700 10 10 isfc TruncatedSVD 5 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 10 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 15 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 20 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 25 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 30 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 35 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 40 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 45 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 50 mexican_hat 1
+paragraph 700 10 10 isfc TruncatedSVD 5 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 10 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 15 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 20 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 25 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 30 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 35 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 40 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 45 laplace 1
+paragraph 700 10 10 isfc TruncatedSVD 50 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 5 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 10 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 15 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 20 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 25 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 30 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 35 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 40 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 45 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 50 gaussian 1
+paragraph 700 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+paragraph 700 10 10 isfc eigenvector_centrality 5 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 10 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 15 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 20 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 25 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 30 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 35 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 40 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 45 laplace 1
+paragraph 700 10 10 isfc eigenvector_centrality 50 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 5 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 10 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 15 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 20 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 25 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 30 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 35 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 40 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 45 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 50 gaussian 1
+paragraph 700 10 10 isfc pagerank_centrality 5 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 10 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 15 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 20 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 25 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 30 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 35 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 40 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 45 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 50 mexican_hat 1
+paragraph 700 10 10 isfc pagerank_centrality 5 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 10 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 15 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 20 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 25 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 30 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 35 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 40 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 45 laplace 1
+paragraph 700 10 10 isfc pagerank_centrality 50 laplace 1
+paragraph 700 10 10 isfc strength 5 gaussian 1
+paragraph 700 10 10 isfc strength 10 gaussian 1
+paragraph 700 10 10 isfc strength 15 gaussian 1
+paragraph 700 10 10 isfc strength 20 gaussian 1
+paragraph 700 10 10 isfc strength 25 gaussian 1
+paragraph 700 10 10 isfc strength 30 gaussian 1
+paragraph 700 10 10 isfc strength 35 gaussian 1
+paragraph 700 10 10 isfc strength 40 gaussian 1
+paragraph 700 10 10 isfc strength 45 gaussian 1
+paragraph 700 10 10 isfc strength 50 gaussian 1
+paragraph 700 10 10 isfc strength 5 mexican_hat 1
+paragraph 700 10 10 isfc strength 10 mexican_hat 1
+paragraph 700 10 10 isfc strength 15 mexican_hat 1
+paragraph 700 10 10 isfc strength 20 mexican_hat 1
+paragraph 700 10 10 isfc strength 25 mexican_hat 1
+paragraph 700 10 10 isfc strength 30 mexican_hat 1
+paragraph 700 10 10 isfc strength 35 mexican_hat 1
+paragraph 700 10 10 isfc strength 40 mexican_hat 1
+paragraph 700 10 10 isfc strength 45 mexican_hat 1
+paragraph 700 10 10 isfc strength 50 mexican_hat 1
+paragraph 700 10 10 isfc strength 5 laplace 1
+paragraph 700 10 10 isfc strength 10 laplace 1
+paragraph 700 10 10 isfc strength 15 laplace 1
+paragraph 700 10 10 isfc strength 20 laplace 1
+paragraph 700 10 10 isfc strength 25 laplace 1
+paragraph 700 10 10 isfc strength 30 laplace 1
+paragraph 700 10 10 isfc strength 35 laplace 1
+paragraph 700 10 10 isfc strength 40 laplace 1
+paragraph 700 10 10 isfc strength 45 laplace 1
+paragraph 700 10 10 isfc strength 50 laplace 1
+word 100 10 10 isfc PCA 5 gaussian 1
+word 100 10 10 isfc PCA 10 gaussian 1
+word 100 10 10 isfc PCA 15 gaussian 1
+word 100 10 10 isfc PCA 20 gaussian 1
+word 100 10 10 isfc PCA 25 gaussian 1
+word 100 10 10 isfc PCA 30 gaussian 1
+word 100 10 10 isfc PCA 35 gaussian 1
+word 100 10 10 isfc PCA 40 gaussian 1
+word 100 10 10 isfc PCA 45 gaussian 1
+word 100 10 10 isfc PCA 50 gaussian 1
+word 100 10 10 isfc PCA 5 mexican_hat 1
+word 100 10 10 isfc PCA 10 mexican_hat 1
+word 100 10 10 isfc PCA 15 mexican_hat 1
+word 100 10 10 isfc PCA 20 mexican_hat 1
+word 100 10 10 isfc PCA 25 mexican_hat 1
+word 100 10 10 isfc PCA 30 mexican_hat 1
+word 100 10 10 isfc PCA 35 mexican_hat 1
+word 100 10 10 isfc PCA 40 mexican_hat 1
+word 100 10 10 isfc PCA 45 mexican_hat 1
+word 100 10 10 isfc PCA 50 mexican_hat 1
+word 100 10 10 isfc PCA 5 laplace 1
+word 100 10 10 isfc PCA 10 laplace 1
+word 100 10 10 isfc PCA 15 laplace 1
+word 100 10 10 isfc PCA 20 laplace 1
+word 100 10 10 isfc PCA 25 laplace 1
+word 100 10 10 isfc PCA 30 laplace 1
+word 100 10 10 isfc PCA 35 laplace 1
+word 100 10 10 isfc PCA 40 laplace 1
+word 100 10 10 isfc PCA 45 laplace 1
+word 100 10 10 isfc PCA 50 laplace 1
+word 100 10 10 isfc FactorAnalysis 5 gaussian 1
+word 100 10 10 isfc FactorAnalysis 10 gaussian 1
+word 100 10 10 isfc FactorAnalysis 15 gaussian 1
+word 100 10 10 isfc FactorAnalysis 20 gaussian 1
+word 100 10 10 isfc FactorAnalysis 25 gaussian 1
+word 100 10 10 isfc FactorAnalysis 30 gaussian 1
+word 100 10 10 isfc FactorAnalysis 35 gaussian 1
+word 100 10 10 isfc FactorAnalysis 40 gaussian 1
+word 100 10 10 isfc FactorAnalysis 45 gaussian 1
+word 100 10 10 isfc FactorAnalysis 50 gaussian 1
+word 100 10 10 isfc FactorAnalysis 5 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 10 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 15 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 20 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 25 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 30 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 35 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 40 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 45 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 50 mexican_hat 1
+word 100 10 10 isfc FactorAnalysis 5 laplace 1
+word 100 10 10 isfc FactorAnalysis 10 laplace 1
+word 100 10 10 isfc FactorAnalysis 15 laplace 1
+word 100 10 10 isfc FactorAnalysis 20 laplace 1
+word 100 10 10 isfc FactorAnalysis 25 laplace 1
+word 100 10 10 isfc FactorAnalysis 30 laplace 1
+word 100 10 10 isfc FactorAnalysis 35 laplace 1
+word 100 10 10 isfc FactorAnalysis 40 laplace 1
+word 100 10 10 isfc FactorAnalysis 45 laplace 1
+word 100 10 10 isfc FactorAnalysis 50 laplace 1
+word 100 10 10 isfc IncrementalPCA 5 gaussian 1
+word 100 10 10 isfc IncrementalPCA 10 gaussian 1
+word 100 10 10 isfc IncrementalPCA 15 gaussian 1
+word 100 10 10 isfc IncrementalPCA 20 gaussian 1
+word 100 10 10 isfc IncrementalPCA 25 gaussian 1
+word 100 10 10 isfc IncrementalPCA 30 gaussian 1
+word 100 10 10 isfc IncrementalPCA 35 gaussian 1
+word 100 10 10 isfc IncrementalPCA 40 gaussian 1
+word 100 10 10 isfc IncrementalPCA 45 gaussian 1
+word 100 10 10 isfc IncrementalPCA 50 gaussian 1
+word 100 10 10 isfc IncrementalPCA 5 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 10 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 15 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 20 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 25 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 30 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 35 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 40 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 45 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 50 mexican_hat 1
+word 100 10 10 isfc IncrementalPCA 5 laplace 1
+word 100 10 10 isfc IncrementalPCA 10 laplace 1
+word 100 10 10 isfc IncrementalPCA 15 laplace 1
+word 100 10 10 isfc IncrementalPCA 20 laplace 1
+word 100 10 10 isfc IncrementalPCA 25 laplace 1
+word 100 10 10 isfc IncrementalPCA 30 laplace 1
+word 100 10 10 isfc IncrementalPCA 35 laplace 1
+word 100 10 10 isfc IncrementalPCA 40 laplace 1
+word 100 10 10 isfc IncrementalPCA 45 laplace 1
+word 100 10 10 isfc IncrementalPCA 50 laplace 1
+word 100 10 10 isfc TruncatedSVD 5 gaussian 1
+word 100 10 10 isfc TruncatedSVD 10 gaussian 1
+word 100 10 10 isfc TruncatedSVD 15 gaussian 1
+word 100 10 10 isfc TruncatedSVD 20 gaussian 1
+word 100 10 10 isfc TruncatedSVD 25 gaussian 1
+word 100 10 10 isfc TruncatedSVD 30 gaussian 1
+word 100 10 10 isfc TruncatedSVD 35 gaussian 1
+word 100 10 10 isfc TruncatedSVD 40 gaussian 1
+word 100 10 10 isfc TruncatedSVD 45 gaussian 1
+word 100 10 10 isfc TruncatedSVD 50 gaussian 1
+word 100 10 10 isfc TruncatedSVD 5 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 10 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 15 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 20 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 25 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 30 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 35 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 40 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 45 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 50 mexican_hat 1
+word 100 10 10 isfc TruncatedSVD 5 laplace 1
+word 100 10 10 isfc TruncatedSVD 10 laplace 1
+word 100 10 10 isfc TruncatedSVD 15 laplace 1
+word 100 10 10 isfc TruncatedSVD 20 laplace 1
+word 100 10 10 isfc TruncatedSVD 25 laplace 1
+word 100 10 10 isfc TruncatedSVD 30 laplace 1
+word 100 10 10 isfc TruncatedSVD 35 laplace 1
+word 100 10 10 isfc TruncatedSVD 40 laplace 1
+word 100 10 10 isfc TruncatedSVD 45 laplace 1
+word 100 10 10 isfc TruncatedSVD 50 laplace 1
+word 100 10 10 isfc eigenvector_centrality 5 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 10 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 15 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 20 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 25 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 30 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 35 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 40 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 45 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 50 gaussian 1
+word 100 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+word 100 10 10 isfc eigenvector_centrality 5 laplace 1
+word 100 10 10 isfc eigenvector_centrality 10 laplace 1
+word 100 10 10 isfc eigenvector_centrality 15 laplace 1
+word 100 10 10 isfc eigenvector_centrality 20 laplace 1
+word 100 10 10 isfc eigenvector_centrality 25 laplace 1
+word 100 10 10 isfc eigenvector_centrality 30 laplace 1
+word 100 10 10 isfc eigenvector_centrality 35 laplace 1
+word 100 10 10 isfc eigenvector_centrality 40 laplace 1
+word 100 10 10 isfc eigenvector_centrality 45 laplace 1
+word 100 10 10 isfc eigenvector_centrality 50 laplace 1
+word 100 10 10 isfc pagerank_centrality 5 gaussian 1
+word 100 10 10 isfc pagerank_centrality 10 gaussian 1
+word 100 10 10 isfc pagerank_centrality 15 gaussian 1
+word 100 10 10 isfc pagerank_centrality 20 gaussian 1
+word 100 10 10 isfc pagerank_centrality 25 gaussian 1
+word 100 10 10 isfc pagerank_centrality 30 gaussian 1
+word 100 10 10 isfc pagerank_centrality 35 gaussian 1
+word 100 10 10 isfc pagerank_centrality 40 gaussian 1
+word 100 10 10 isfc pagerank_centrality 45 gaussian 1
+word 100 10 10 isfc pagerank_centrality 50 gaussian 1
+word 100 10 10 isfc pagerank_centrality 5 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 10 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 15 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 20 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 25 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 30 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 35 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 40 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 45 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 50 mexican_hat 1
+word 100 10 10 isfc pagerank_centrality 5 laplace 1
+word 100 10 10 isfc pagerank_centrality 10 laplace 1
+word 100 10 10 isfc pagerank_centrality 15 laplace 1
+word 100 10 10 isfc pagerank_centrality 20 laplace 1
+word 100 10 10 isfc pagerank_centrality 25 laplace 1
+word 100 10 10 isfc pagerank_centrality 30 laplace 1
+word 100 10 10 isfc pagerank_centrality 35 laplace 1
+word 100 10 10 isfc pagerank_centrality 40 laplace 1
+word 100 10 10 isfc pagerank_centrality 45 laplace 1
+word 100 10 10 isfc pagerank_centrality 50 laplace 1
+word 100 10 10 isfc strength 5 gaussian 1
+word 100 10 10 isfc strength 10 gaussian 1
+word 100 10 10 isfc strength 15 gaussian 1
+word 100 10 10 isfc strength 20 gaussian 1
+word 100 10 10 isfc strength 25 gaussian 1
+word 100 10 10 isfc strength 30 gaussian 1
+word 100 10 10 isfc strength 35 gaussian 1
+word 100 10 10 isfc strength 40 gaussian 1
+word 100 10 10 isfc strength 45 gaussian 1
+word 100 10 10 isfc strength 50 gaussian 1
+word 100 10 10 isfc strength 5 mexican_hat 1
+word 100 10 10 isfc strength 10 mexican_hat 1
+word 100 10 10 isfc strength 15 mexican_hat 1
+word 100 10 10 isfc strength 20 mexican_hat 1
+word 100 10 10 isfc strength 25 mexican_hat 1
+word 100 10 10 isfc strength 30 mexican_hat 1
+word 100 10 10 isfc strength 35 mexican_hat 1
+word 100 10 10 isfc strength 40 mexican_hat 1
+word 100 10 10 isfc strength 45 mexican_hat 1
+word 100 10 10 isfc strength 50 mexican_hat 1
+word 100 10 10 isfc strength 5 laplace 1
+word 100 10 10 isfc strength 10 laplace 1
+word 100 10 10 isfc strength 15 laplace 1
+word 100 10 10 isfc strength 20 laplace 1
+word 100 10 10 isfc strength 25 laplace 1
+word 100 10 10 isfc strength 30 laplace 1
+word 100 10 10 isfc strength 35 laplace 1
+word 100 10 10 isfc strength 40 laplace 1
+word 100 10 10 isfc strength 45 laplace 1
+word 100 10 10 isfc strength 50 laplace 1
+word 700 10 10 isfc PCA 5 gaussian 1
+word 700 10 10 isfc PCA 10 gaussian 1
+word 700 10 10 isfc PCA 15 gaussian 1
+word 700 10 10 isfc PCA 20 gaussian 1
+word 700 10 10 isfc PCA 25 gaussian 1
+word 700 10 10 isfc PCA 30 gaussian 1
+word 700 10 10 isfc PCA 35 gaussian 1
+word 700 10 10 isfc PCA 40 gaussian 1
+word 700 10 10 isfc PCA 45 gaussian 1
+word 700 10 10 isfc PCA 50 gaussian 1
+word 700 10 10 isfc PCA 5 mexican_hat 1
+word 700 10 10 isfc PCA 10 mexican_hat 1
+word 700 10 10 isfc PCA 15 mexican_hat 1
+word 700 10 10 isfc PCA 20 mexican_hat 1
+word 700 10 10 isfc PCA 25 mexican_hat 1
+word 700 10 10 isfc PCA 30 mexican_hat 1
+word 700 10 10 isfc PCA 35 mexican_hat 1
+word 700 10 10 isfc PCA 40 mexican_hat 1
+word 700 10 10 isfc PCA 45 mexican_hat 1
+word 700 10 10 isfc PCA 50 mexican_hat 1
+word 700 10 10 isfc PCA 5 laplace 1
+word 700 10 10 isfc PCA 10 laplace 1
+word 700 10 10 isfc PCA 15 laplace 1
+word 700 10 10 isfc PCA 20 laplace 1
+word 700 10 10 isfc PCA 25 laplace 1
+word 700 10 10 isfc PCA 30 laplace 1
+word 700 10 10 isfc PCA 35 laplace 1
+word 700 10 10 isfc PCA 40 laplace 1
+word 700 10 10 isfc PCA 45 laplace 1
+word 700 10 10 isfc PCA 50 laplace 1
+word 700 10 10 isfc FactorAnalysis 5 gaussian 1
+word 700 10 10 isfc FactorAnalysis 10 gaussian 1
+word 700 10 10 isfc FactorAnalysis 15 gaussian 1
+word 700 10 10 isfc FactorAnalysis 20 gaussian 1
+word 700 10 10 isfc FactorAnalysis 25 gaussian 1
+word 700 10 10 isfc FactorAnalysis 30 gaussian 1
+word 700 10 10 isfc FactorAnalysis 35 gaussian 1
+word 700 10 10 isfc FactorAnalysis 40 gaussian 1
+word 700 10 10 isfc FactorAnalysis 45 gaussian 1
+word 700 10 10 isfc FactorAnalysis 50 gaussian 1
+word 700 10 10 isfc FactorAnalysis 5 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 10 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 15 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 20 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 25 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 30 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 35 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 40 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 45 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 50 mexican_hat 1
+word 700 10 10 isfc FactorAnalysis 5 laplace 1
+word 700 10 10 isfc FactorAnalysis 10 laplace 1
+word 700 10 10 isfc FactorAnalysis 15 laplace 1
+word 700 10 10 isfc FactorAnalysis 20 laplace 1
+word 700 10 10 isfc FactorAnalysis 25 laplace 1
+word 700 10 10 isfc FactorAnalysis 30 laplace 1
+word 700 10 10 isfc FactorAnalysis 35 laplace 1
+word 700 10 10 isfc FactorAnalysis 40 laplace 1
+word 700 10 10 isfc FactorAnalysis 45 laplace 1
+word 700 10 10 isfc FactorAnalysis 50 laplace 1
+word 700 10 10 isfc IncrementalPCA 5 gaussian 1
+word 700 10 10 isfc IncrementalPCA 10 gaussian 1
+word 700 10 10 isfc IncrementalPCA 15 gaussian 1
+word 700 10 10 isfc IncrementalPCA 20 gaussian 1
+word 700 10 10 isfc IncrementalPCA 25 gaussian 1
+word 700 10 10 isfc IncrementalPCA 30 gaussian 1
+word 700 10 10 isfc IncrementalPCA 35 gaussian 1
+word 700 10 10 isfc IncrementalPCA 40 gaussian 1
+word 700 10 10 isfc IncrementalPCA 45 gaussian 1
+word 700 10 10 isfc IncrementalPCA 50 gaussian 1
+word 700 10 10 isfc IncrementalPCA 5 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 10 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 15 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 20 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 25 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 30 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 35 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 40 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 45 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 50 mexican_hat 1
+word 700 10 10 isfc IncrementalPCA 5 laplace 1
+word 700 10 10 isfc IncrementalPCA 10 laplace 1
+word 700 10 10 isfc IncrementalPCA 15 laplace 1
+word 700 10 10 isfc IncrementalPCA 20 laplace 1
+word 700 10 10 isfc IncrementalPCA 25 laplace 1
+word 700 10 10 isfc IncrementalPCA 30 laplace 1
+word 700 10 10 isfc IncrementalPCA 35 laplace 1
+word 700 10 10 isfc IncrementalPCA 40 laplace 1
+word 700 10 10 isfc IncrementalPCA 45 laplace 1
+word 700 10 10 isfc IncrementalPCA 50 laplace 1
+word 700 10 10 isfc TruncatedSVD 5 gaussian 1
+word 700 10 10 isfc TruncatedSVD 10 gaussian 1
+word 700 10 10 isfc TruncatedSVD 15 gaussian 1
+word 700 10 10 isfc TruncatedSVD 20 gaussian 1
+word 700 10 10 isfc TruncatedSVD 25 gaussian 1
+word 700 10 10 isfc TruncatedSVD 30 gaussian 1
+word 700 10 10 isfc TruncatedSVD 35 gaussian 1
+word 700 10 10 isfc TruncatedSVD 40 gaussian 1
+word 700 10 10 isfc TruncatedSVD 45 gaussian 1
+word 700 10 10 isfc TruncatedSVD 50 gaussian 1
+word 700 10 10 isfc TruncatedSVD 5 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 10 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 15 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 20 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 25 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 30 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 35 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 40 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 45 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 50 mexican_hat 1
+word 700 10 10 isfc TruncatedSVD 5 laplace 1
+word 700 10 10 isfc TruncatedSVD 10 laplace 1
+word 700 10 10 isfc TruncatedSVD 15 laplace 1
+word 700 10 10 isfc TruncatedSVD 20 laplace 1
+word 700 10 10 isfc TruncatedSVD 25 laplace 1
+word 700 10 10 isfc TruncatedSVD 30 laplace 1
+word 700 10 10 isfc TruncatedSVD 35 laplace 1
+word 700 10 10 isfc TruncatedSVD 40 laplace 1
+word 700 10 10 isfc TruncatedSVD 45 laplace 1
+word 700 10 10 isfc TruncatedSVD 50 laplace 1
+word 700 10 10 isfc eigenvector_centrality 5 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 10 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 15 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 20 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 25 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 30 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 35 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 40 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 45 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 50 gaussian 1
+word 700 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+word 700 10 10 isfc eigenvector_centrality 5 laplace 1
+word 700 10 10 isfc eigenvector_centrality 10 laplace 1
+word 700 10 10 isfc eigenvector_centrality 15 laplace 1
+word 700 10 10 isfc eigenvector_centrality 20 laplace 1
+word 700 10 10 isfc eigenvector_centrality 25 laplace 1
+word 700 10 10 isfc eigenvector_centrality 30 laplace 1
+word 700 10 10 isfc eigenvector_centrality 35 laplace 1
+word 700 10 10 isfc eigenvector_centrality 40 laplace 1
+word 700 10 10 isfc eigenvector_centrality 45 laplace 1
+word 700 10 10 isfc eigenvector_centrality 50 laplace 1
+word 700 10 10 isfc pagerank_centrality 5 gaussian 1
+word 700 10 10 isfc pagerank_centrality 10 gaussian 1
+word 700 10 10 isfc pagerank_centrality 15 gaussian 1
+word 700 10 10 isfc pagerank_centrality 20 gaussian 1
+word 700 10 10 isfc pagerank_centrality 25 gaussian 1
+word 700 10 10 isfc pagerank_centrality 30 gaussian 1
+word 700 10 10 isfc pagerank_centrality 35 gaussian 1
+word 700 10 10 isfc pagerank_centrality 40 gaussian 1
+word 700 10 10 isfc pagerank_centrality 45 gaussian 1
+word 700 10 10 isfc pagerank_centrality 50 gaussian 1
+word 700 10 10 isfc pagerank_centrality 5 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 10 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 15 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 20 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 25 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 30 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 35 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 40 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 45 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 50 mexican_hat 1
+word 700 10 10 isfc pagerank_centrality 5 laplace 1
+word 700 10 10 isfc pagerank_centrality 10 laplace 1
+word 700 10 10 isfc pagerank_centrality 15 laplace 1
+word 700 10 10 isfc pagerank_centrality 20 laplace 1
+word 700 10 10 isfc pagerank_centrality 25 laplace 1
+word 700 10 10 isfc pagerank_centrality 30 laplace 1
+word 700 10 10 isfc pagerank_centrality 35 laplace 1
+word 700 10 10 isfc pagerank_centrality 40 laplace 1
+word 700 10 10 isfc pagerank_centrality 45 laplace 1
+word 700 10 10 isfc pagerank_centrality 50 laplace 1
+word 700 10 10 isfc strength 5 gaussian 1
+word 700 10 10 isfc strength 10 gaussian 1
+word 700 10 10 isfc strength 15 gaussian 1
+word 700 10 10 isfc strength 20 gaussian 1
+word 700 10 10 isfc strength 25 gaussian 1
+word 700 10 10 isfc strength 30 gaussian 1
+word 700 10 10 isfc strength 35 gaussian 1
+word 700 10 10 isfc strength 40 gaussian 1
+word 700 10 10 isfc strength 45 gaussian 1
+word 700 10 10 isfc strength 50 gaussian 1
+word 700 10 10 isfc strength 5 mexican_hat 1
+word 700 10 10 isfc strength 10 mexican_hat 1
+word 700 10 10 isfc strength 15 mexican_hat 1
+word 700 10 10 isfc strength 20 mexican_hat 1
+word 700 10 10 isfc strength 25 mexican_hat 1
+word 700 10 10 isfc strength 30 mexican_hat 1
+word 700 10 10 isfc strength 35 mexican_hat 1
+word 700 10 10 isfc strength 40 mexican_hat 1
+word 700 10 10 isfc strength 45 mexican_hat 1
+word 700 10 10 isfc strength 50 mexican_hat 1
+word 700 10 10 isfc strength 5 laplace 1
+word 700 10 10 isfc strength 10 laplace 1
+word 700 10 10 isfc strength 15 laplace 1
+word 700 10 10 isfc strength 20 laplace 1
+word 700 10 10 isfc strength 25 laplace 1
+word 700 10 10 isfc strength 30 laplace 1
+word 700 10 10 isfc strength 35 laplace 1
+word 700 10 10 isfc strength 40 laplace 1
+word 700 10 10 isfc strength 45 laplace 1
+word 700 10 10 isfc strength 50 laplace 1
+rest 100 10 10 isfc PCA 5 gaussian 1
+rest 100 10 10 isfc PCA 10 gaussian 1
+rest 100 10 10 isfc PCA 15 gaussian 1
+rest 100 10 10 isfc PCA 20 gaussian 1
+rest 100 10 10 isfc PCA 25 gaussian 1
+rest 100 10 10 isfc PCA 30 gaussian 1
+rest 100 10 10 isfc PCA 35 gaussian 1
+rest 100 10 10 isfc PCA 40 gaussian 1
+rest 100 10 10 isfc PCA 45 gaussian 1
+rest 100 10 10 isfc PCA 50 gaussian 1
+rest 100 10 10 isfc PCA 5 mexican_hat 1
+rest 100 10 10 isfc PCA 10 mexican_hat 1
+rest 100 10 10 isfc PCA 15 mexican_hat 1
+rest 100 10 10 isfc PCA 20 mexican_hat 1
+rest 100 10 10 isfc PCA 25 mexican_hat 1
+rest 100 10 10 isfc PCA 30 mexican_hat 1
+rest 100 10 10 isfc PCA 35 mexican_hat 1
+rest 100 10 10 isfc PCA 40 mexican_hat 1
+rest 100 10 10 isfc PCA 45 mexican_hat 1
+rest 100 10 10 isfc PCA 50 mexican_hat 1
+rest 100 10 10 isfc PCA 5 laplace 1
+rest 100 10 10 isfc PCA 10 laplace 1
+rest 100 10 10 isfc PCA 15 laplace 1
+rest 100 10 10 isfc PCA 20 laplace 1
+rest 100 10 10 isfc PCA 25 laplace 1
+rest 100 10 10 isfc PCA 30 laplace 1
+rest 100 10 10 isfc PCA 35 laplace 1
+rest 100 10 10 isfc PCA 40 laplace 1
+rest 100 10 10 isfc PCA 45 laplace 1
+rest 100 10 10 isfc PCA 50 laplace 1
+rest 100 10 10 isfc FactorAnalysis 5 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 10 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 15 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 20 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 25 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 30 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 35 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 40 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 45 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 50 gaussian 1
+rest 100 10 10 isfc FactorAnalysis 5 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 10 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 15 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 20 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 25 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 30 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 35 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 40 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 45 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 50 mexican_hat 1
+rest 100 10 10 isfc FactorAnalysis 5 laplace 1
+rest 100 10 10 isfc FactorAnalysis 10 laplace 1
+rest 100 10 10 isfc FactorAnalysis 15 laplace 1
+rest 100 10 10 isfc FactorAnalysis 20 laplace 1
+rest 100 10 10 isfc FactorAnalysis 25 laplace 1
+rest 100 10 10 isfc FactorAnalysis 30 laplace 1
+rest 100 10 10 isfc FactorAnalysis 35 laplace 1
+rest 100 10 10 isfc FactorAnalysis 40 laplace 1
+rest 100 10 10 isfc FactorAnalysis 45 laplace 1
+rest 100 10 10 isfc FactorAnalysis 50 laplace 1
+rest 100 10 10 isfc IncrementalPCA 5 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 10 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 15 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 20 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 25 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 30 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 35 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 40 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 45 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 50 gaussian 1
+rest 100 10 10 isfc IncrementalPCA 5 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 10 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 15 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 20 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 25 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 30 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 35 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 40 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 45 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 50 mexican_hat 1
+rest 100 10 10 isfc IncrementalPCA 5 laplace 1
+rest 100 10 10 isfc IncrementalPCA 10 laplace 1
+rest 100 10 10 isfc IncrementalPCA 15 laplace 1
+rest 100 10 10 isfc IncrementalPCA 20 laplace 1
+rest 100 10 10 isfc IncrementalPCA 25 laplace 1
+rest 100 10 10 isfc IncrementalPCA 30 laplace 1
+rest 100 10 10 isfc IncrementalPCA 35 laplace 1
+rest 100 10 10 isfc IncrementalPCA 40 laplace 1
+rest 100 10 10 isfc IncrementalPCA 45 laplace 1
+rest 100 10 10 isfc IncrementalPCA 50 laplace 1
+rest 100 10 10 isfc TruncatedSVD 5 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 10 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 15 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 20 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 25 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 30 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 35 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 40 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 45 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 50 gaussian 1
+rest 100 10 10 isfc TruncatedSVD 5 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 10 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 15 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 20 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 25 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 30 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 35 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 40 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 45 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 50 mexican_hat 1
+rest 100 10 10 isfc TruncatedSVD 5 laplace 1
+rest 100 10 10 isfc TruncatedSVD 10 laplace 1
+rest 100 10 10 isfc TruncatedSVD 15 laplace 1
+rest 100 10 10 isfc TruncatedSVD 20 laplace 1
+rest 100 10 10 isfc TruncatedSVD 25 laplace 1
+rest 100 10 10 isfc TruncatedSVD 30 laplace 1
+rest 100 10 10 isfc TruncatedSVD 35 laplace 1
+rest 100 10 10 isfc TruncatedSVD 40 laplace 1
+rest 100 10 10 isfc TruncatedSVD 45 laplace 1
+rest 100 10 10 isfc TruncatedSVD 50 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 5 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 10 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 15 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 20 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 25 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 30 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 35 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 40 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 45 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 50 gaussian 1
+rest 100 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+rest 100 10 10 isfc eigenvector_centrality 5 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 10 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 15 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 20 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 25 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 30 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 35 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 40 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 45 laplace 1
+rest 100 10 10 isfc eigenvector_centrality 50 laplace 1
+rest 100 10 10 isfc pagerank_centrality 5 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 10 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 15 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 20 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 25 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 30 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 35 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 40 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 45 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 50 gaussian 1
+rest 100 10 10 isfc pagerank_centrality 5 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 10 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 15 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 20 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 25 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 30 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 35 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 40 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 45 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 50 mexican_hat 1
+rest 100 10 10 isfc pagerank_centrality 5 laplace 1
+rest 100 10 10 isfc pagerank_centrality 10 laplace 1
+rest 100 10 10 isfc pagerank_centrality 15 laplace 1
+rest 100 10 10 isfc pagerank_centrality 20 laplace 1
+rest 100 10 10 isfc pagerank_centrality 25 laplace 1
+rest 100 10 10 isfc pagerank_centrality 30 laplace 1
+rest 100 10 10 isfc pagerank_centrality 35 laplace 1
+rest 100 10 10 isfc pagerank_centrality 40 laplace 1
+rest 100 10 10 isfc pagerank_centrality 45 laplace 1
+rest 100 10 10 isfc pagerank_centrality 50 laplace 1
+rest 100 10 10 isfc strength 5 gaussian 1
+rest 100 10 10 isfc strength 10 gaussian 1
+rest 100 10 10 isfc strength 15 gaussian 1
+rest 100 10 10 isfc strength 20 gaussian 1
+rest 100 10 10 isfc strength 25 gaussian 1
+rest 100 10 10 isfc strength 30 gaussian 1
+rest 100 10 10 isfc strength 35 gaussian 1
+rest 100 10 10 isfc strength 40 gaussian 1
+rest 100 10 10 isfc strength 45 gaussian 1
+rest 100 10 10 isfc strength 50 gaussian 1
+rest 100 10 10 isfc strength 5 mexican_hat 1
+rest 100 10 10 isfc strength 10 mexican_hat 1
+rest 100 10 10 isfc strength 15 mexican_hat 1
+rest 100 10 10 isfc strength 20 mexican_hat 1
+rest 100 10 10 isfc strength 25 mexican_hat 1
+rest 100 10 10 isfc strength 30 mexican_hat 1
+rest 100 10 10 isfc strength 35 mexican_hat 1
+rest 100 10 10 isfc strength 40 mexican_hat 1
+rest 100 10 10 isfc strength 45 mexican_hat 1
+rest 100 10 10 isfc strength 50 mexican_hat 1
+rest 100 10 10 isfc strength 5 laplace 1
+rest 100 10 10 isfc strength 10 laplace 1
+rest 100 10 10 isfc strength 15 laplace 1
+rest 100 10 10 isfc strength 20 laplace 1
+rest 100 10 10 isfc strength 25 laplace 1
+rest 100 10 10 isfc strength 30 laplace 1
+rest 100 10 10 isfc strength 35 laplace 1
+rest 100 10 10 isfc strength 40 laplace 1
+rest 100 10 10 isfc strength 45 laplace 1
+rest 100 10 10 isfc strength 50 laplace 1
+rest 700 10 10 isfc PCA 5 gaussian 1
+rest 700 10 10 isfc PCA 10 gaussian 1
+rest 700 10 10 isfc PCA 15 gaussian 1
+rest 700 10 10 isfc PCA 20 gaussian 1
+rest 700 10 10 isfc PCA 25 gaussian 1
+rest 700 10 10 isfc PCA 30 gaussian 1
+rest 700 10 10 isfc PCA 35 gaussian 1
+rest 700 10 10 isfc PCA 40 gaussian 1
+rest 700 10 10 isfc PCA 45 gaussian 1
+rest 700 10 10 isfc PCA 50 gaussian 1
+rest 700 10 10 isfc PCA 5 mexican_hat 1
+rest 700 10 10 isfc PCA 10 mexican_hat 1
+rest 700 10 10 isfc PCA 15 mexican_hat 1
+rest 700 10 10 isfc PCA 20 mexican_hat 1
+rest 700 10 10 isfc PCA 25 mexican_hat 1
+rest 700 10 10 isfc PCA 30 mexican_hat 1
+rest 700 10 10 isfc PCA 35 mexican_hat 1
+rest 700 10 10 isfc PCA 40 mexican_hat 1
+rest 700 10 10 isfc PCA 45 mexican_hat 1
+rest 700 10 10 isfc PCA 50 mexican_hat 1
+rest 700 10 10 isfc PCA 5 laplace 1
+rest 700 10 10 isfc PCA 10 laplace 1
+rest 700 10 10 isfc PCA 15 laplace 1
+rest 700 10 10 isfc PCA 20 laplace 1
+rest 700 10 10 isfc PCA 25 laplace 1
+rest 700 10 10 isfc PCA 30 laplace 1
+rest 700 10 10 isfc PCA 35 laplace 1
+rest 700 10 10 isfc PCA 40 laplace 1
+rest 700 10 10 isfc PCA 45 laplace 1
+rest 700 10 10 isfc PCA 50 laplace 1
+rest 700 10 10 isfc FactorAnalysis 5 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 10 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 15 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 20 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 25 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 30 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 35 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 40 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 45 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 50 gaussian 1
+rest 700 10 10 isfc FactorAnalysis 5 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 10 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 15 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 20 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 25 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 30 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 35 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 40 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 45 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 50 mexican_hat 1
+rest 700 10 10 isfc FactorAnalysis 5 laplace 1
+rest 700 10 10 isfc FactorAnalysis 10 laplace 1
+rest 700 10 10 isfc FactorAnalysis 15 laplace 1
+rest 700 10 10 isfc FactorAnalysis 20 laplace 1
+rest 700 10 10 isfc FactorAnalysis 25 laplace 1
+rest 700 10 10 isfc FactorAnalysis 30 laplace 1
+rest 700 10 10 isfc FactorAnalysis 35 laplace 1
+rest 700 10 10 isfc FactorAnalysis 40 laplace 1
+rest 700 10 10 isfc FactorAnalysis 45 laplace 1
+rest 700 10 10 isfc FactorAnalysis 50 laplace 1
+rest 700 10 10 isfc IncrementalPCA 5 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 10 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 15 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 20 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 25 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 30 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 35 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 40 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 45 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 50 gaussian 1
+rest 700 10 10 isfc IncrementalPCA 5 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 10 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 15 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 20 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 25 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 30 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 35 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 40 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 45 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 50 mexican_hat 1
+rest 700 10 10 isfc IncrementalPCA 5 laplace 1
+rest 700 10 10 isfc IncrementalPCA 10 laplace 1
+rest 700 10 10 isfc IncrementalPCA 15 laplace 1
+rest 700 10 10 isfc IncrementalPCA 20 laplace 1
+rest 700 10 10 isfc IncrementalPCA 25 laplace 1
+rest 700 10 10 isfc IncrementalPCA 30 laplace 1
+rest 700 10 10 isfc IncrementalPCA 35 laplace 1
+rest 700 10 10 isfc IncrementalPCA 40 laplace 1
+rest 700 10 10 isfc IncrementalPCA 45 laplace 1
+rest 700 10 10 isfc IncrementalPCA 50 laplace 1
+rest 700 10 10 isfc TruncatedSVD 5 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 10 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 15 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 20 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 25 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 30 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 35 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 40 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 45 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 50 gaussian 1
+rest 700 10 10 isfc TruncatedSVD 5 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 10 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 15 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 20 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 25 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 30 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 35 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 40 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 45 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 50 mexican_hat 1
+rest 700 10 10 isfc TruncatedSVD 5 laplace 1
+rest 700 10 10 isfc TruncatedSVD 10 laplace 1
+rest 700 10 10 isfc TruncatedSVD 15 laplace 1
+rest 700 10 10 isfc TruncatedSVD 20 laplace 1
+rest 700 10 10 isfc TruncatedSVD 25 laplace 1
+rest 700 10 10 isfc TruncatedSVD 30 laplace 1
+rest 700 10 10 isfc TruncatedSVD 35 laplace 1
+rest 700 10 10 isfc TruncatedSVD 40 laplace 1
+rest 700 10 10 isfc TruncatedSVD 45 laplace 1
+rest 700 10 10 isfc TruncatedSVD 50 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 5 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 10 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 15 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 20 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 25 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 30 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 35 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 40 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 45 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 50 gaussian 1
+rest 700 10 10 isfc eigenvector_centrality 5 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 10 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 15 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 20 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 25 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 30 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 35 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 40 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 45 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 50 mexican_hat 1
+rest 700 10 10 isfc eigenvector_centrality 5 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 10 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 15 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 20 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 25 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 30 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 35 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 40 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 45 laplace 1
+rest 700 10 10 isfc eigenvector_centrality 50 laplace 1
+rest 700 10 10 isfc pagerank_centrality 5 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 10 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 15 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 20 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 25 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 30 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 35 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 40 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 45 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 50 gaussian 1
+rest 700 10 10 isfc pagerank_centrality 5 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 10 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 15 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 20 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 25 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 30 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 35 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 40 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 45 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 50 mexican_hat 1
+rest 700 10 10 isfc pagerank_centrality 5 laplace 1
+rest 700 10 10 isfc pagerank_centrality 10 laplace 1
+rest 700 10 10 isfc pagerank_centrality 15 laplace 1
+rest 700 10 10 isfc pagerank_centrality 20 laplace 1
+rest 700 10 10 isfc pagerank_centrality 25 laplace 1
+rest 700 10 10 isfc pagerank_centrality 30 laplace 1
+rest 700 10 10 isfc pagerank_centrality 35 laplace 1
+rest 700 10 10 isfc pagerank_centrality 40 laplace 1
+rest 700 10 10 isfc pagerank_centrality 45 laplace 1
+rest 700 10 10 isfc pagerank_centrality 50 laplace 1
+rest 700 10 10 isfc strength 5 gaussian 1
+rest 700 10 10 isfc strength 10 gaussian 1
+rest 700 10 10 isfc strength 15 gaussian 1
+rest 700 10 10 isfc strength 20 gaussian 1
+rest 700 10 10 isfc strength 25 gaussian 1
+rest 700 10 10 isfc strength 30 gaussian 1
+rest 700 10 10 isfc strength 35 gaussian 1
+rest 700 10 10 isfc strength 40 gaussian 1
+rest 700 10 10 isfc strength 45 gaussian 1
+rest 700 10 10 isfc strength 50 gaussian 1
+rest 700 10 10 isfc strength 5 mexican_hat 1
+rest 700 10 10 isfc strength 10 mexican_hat 1
+rest 700 10 10 isfc strength 15 mexican_hat 1
+rest 700 10 10 isfc strength 20 mexican_hat 1
+rest 700 10 10 isfc strength 25 mexican_hat 1
+rest 700 10 10 isfc strength 30 mexican_hat 1
+rest 700 10 10 isfc strength 35 mexican_hat 1
+rest 700 10 10 isfc strength 40 mexican_hat 1
+rest 700 10 10 isfc strength 45 mexican_hat 1
+rest 700 10 10 isfc strength 50 mexican_hat 1
+rest 700 10 10 isfc strength 5 laplace 1
+rest 700 10 10 isfc strength 10 laplace 1
+rest 700 10 10 isfc strength 15 laplace 1
+rest 700 10 10 isfc strength 20 laplace 1
+rest 700 10 10 isfc strength 25 laplace 1
+rest 700 10 10 isfc strength 30 laplace 1
+rest 700 10 10 isfc strength 35 laplace 1
+rest 700 10 10 isfc strength 40 laplace 1
+rest 700 10 10 isfc strength 45 laplace 1
+rest 700 10 10 isfc strength 50 laplace 1

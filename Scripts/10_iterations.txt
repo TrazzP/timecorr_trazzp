@@ -1,14 +1,130 @@
-intact 100 10 10 isfc PCA 5 gaussian
-intact 700 10 10 isfc FactorAnalysis 5 gaussian
-intact 700 10 10 isfc FactorAnalysis 10 gaussian
-intact 700 10 10 isfc FactorAnalysis 15 gaussian
-intact 700 10 10 isfc FactorAnalysis 20 gaussian
-intact 700 10 10 isfc FactorAnalysis 25 gaussian
-intact 700 10 10 isfc FactorAnalysis 30 gaussian
-intact 700 10 10 isfc FactorAnalysis 35 gaussian
-intact 700 10 10 isfc FactorAnalysis 40 gaussian
-intact 700 10 10 isfc FactorAnalysis 45 gaussian
-intact 700 10 10 isfc FactorAnalysis 50 gaussian
-intact 700 10 10 isfc FactorAnalysis 30 mexican_hat
-intact 700 10 10 isfc FactorAnalysis 50 mexican_hat
-intact 700 10 10 isfc TruncatedSVD 40 mexican_hat
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 5 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 10 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 15 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 20 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 25 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 30 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 35 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 40 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 45 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 1
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 2
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 3
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 4
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 5
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 6
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 7
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 8
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 9
+intact 700 10 10 isfc FactorAnalysis 50 gaussian 10
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 2
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 3
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 4
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 5
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 6
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 7
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 8
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 9
+intact 700 10 10 isfc FactorAnalysis 30 mexican_hat 10
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 1
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 2
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 3
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 4
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 5
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 6
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 7
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 8
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 9
+intact 700 10 10 isfc FactorAnalysis 50 mexican_hat 10
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 1
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 2
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 3
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 4
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 5
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 6
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 7
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 8
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 9
+intact 700 10 10 isfc TruncatedSVD 40 mexican_hat 10

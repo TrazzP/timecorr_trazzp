@@ -14,7 +14,7 @@ LIVELOG=/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Cluster_Data/submit_g
 USER=$(whoami)
 MAXJ=16
 #This is changed for the top 10 runs with higher fold count
-COMBOS=10_iterations.txt
+COMBOS=combos.txt
 TOTAL=$(wc -l < "$COMBOS")
 i=1
 
