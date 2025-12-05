@@ -292,7 +292,6 @@ def null_combine(corrs):
     """
     return corrs
 
-
 def reduce(corrs, rfun=None):
     """
     :param corrs: a matrix of vectorized correlation matrices (output of mat2vec), or a list
@@ -312,22 +311,40 @@ def reduce(corrs, rfun=None):
         for each model.
 
         Another option is to use graph theoretic measures computed for each node.
-        The following measures are supported (via the brainconn toolbox):
-        eigenvector_centrality, pagerank_centrality, and strength.  (Each
-        of these must be specified as a string; dictionaries not supported.)
+        The following measures are supported: eigenvector_centrality,
+        pagerank_centrality, and strength.  (Each of these must be specified as
+        a string; dictionaries not supported.)
 
         Default: None (no dimensionality reduction)
 
     :return: dimensionality-reduced (or original) correlation matrices
     """
+    # ------------------------------------------------------------------
+    # Graph metrics setup (ONLY THIS PART IS CHANGED)
+    # ------------------------------------------------------------------
     try:
         import networkx as nx
-
         _has_networkx = True
+
+        # here x is a 2D adjacency matrix, because apply_by_row squeezes
         graph_measures = {
-            "eigenvector_centrality": lambda x: nx.eigenvector_centrality(nx.from_numpy_array(x), tol=1e-8),
-            "pagerank_centrality": lambda x: nx.pagerank_numpy(nx.from_numpy_array(x), alpha=0.85),
-            "strength": lambda x: np.array([deg[1] for deg in nx.from_numpy_array(x).degree(weight='weight')]),
+            "eigenvector_centrality": lambda x: np.array(
+                list(
+                    nx.eigenvector_centrality(
+                        nx.from_numpy_array(x), tol=1e-8
+                    ).values()
+                )
+            ),
+            "pagerank_centrality": lambda x: np.array(
+                list(
+                    nx.pagerank(
+                        nx.from_numpy_array(x), alpha=0.85, max_iter=1000, tol=1e-6
+                    ).values()
+                )
+            ),
+            "strength": lambda x: np.array(
+                [deg for _, deg in nx.from_numpy_array(x).degree(weight="weight")]
+            ),
         }
     except ImportError:
         _has_networkx = False
@@ -337,6 +354,9 @@ def reduce(corrs, rfun=None):
             "strength": None,
         }
 
+    # ------------------------------------------------------------------
+    # Early exit: no dimensionality reduction
+    # ------------------------------------------------------------------
     if rfun is None:
         return corrs
 
@@ -347,14 +367,23 @@ def reduce(corrs, rfun=None):
     else:
         V = get_V(corrs.shape[1])
 
+    # ------------------------------------------------------------------
+    # GRAPH-METRIC BRANCH
+    # ------------------------------------------------------------------
     if _has_networkx and rfun in graph_measures.keys():
+        # apply_by_row will:
+        #  - handle list vs ndarray
+        #  - split along the last axis
+        #  - squeeze to 2D matrices
+        #  - apply the lambda to each matrix
         return apply_by_row(corrs, graph_measures[rfun])
 
     elif not _has_networkx and rfun in graph_measures.keys():
-        raise ImportError(
-            'networkx is not installed.'
-        )
+        raise ImportError("networkx is not installed.")
 
+    # ------------------------------------------------------------------
+    # NON-GRAPH DIMENSIONALITY REDUCTION BRANCH (UNCHANGED)
+    # ------------------------------------------------------------------
     else:
         red_corrs = brain_reduce.reduce(corrs, reduce=rfun, ndims=V)
 

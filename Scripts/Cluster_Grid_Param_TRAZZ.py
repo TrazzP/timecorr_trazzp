@@ -22,7 +22,7 @@ cond, factors, level, reps, cfun, rfun, width, wp, iteration = (
 # ----------------------------------------------------------------------------------
 # Execution Context Detection (Local vs. Cluster) and Directory Setup
 # ----------------------------------------------------------------------------------
-cluster = True
+cluster = False
 if cluster:
     sys.path.append('/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp')
     #Change this to True if want to put files into the 10 iteration file

@@ -25,10 +25,10 @@ for cond in "${PARAM1[@]}"; do
     for alg in "${PARAM3_Filtered[@]}" "${PARAM3_GraphMeasures[@]}"; do
       for ker in "${KERNELS[@]}"; do
         for w in "${WIDTHS[@]}"; do
-	  for i in "${ITERATIONS[@]}"; do
+	        for i in "${ITERATIONS[@]}"; do
             # keep “10 10 isfc” constant as before
             echo "$cond $fac 10 10 isfc $alg $w $ker $i"
-    	  done
+    	    done
         done
       done
     done
