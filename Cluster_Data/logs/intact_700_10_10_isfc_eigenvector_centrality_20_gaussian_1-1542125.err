@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/Scripts/Cluster_Grid_Param_TRAZZ.py", line 81, in <module>
+    iter_results = tc.helpers.weighted_timepoint_decoder(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 812, in weighted_timepoint_decoder
+    in_smooth, out_smooth, in_raw, out_raw = folding_levels(
+                                             ^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 1020, in folding_levels
+    timecorr(
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/timecorr.py", line 144, in timecorr
+    corrs = reduce(combine(cfun(data, weights)), rfun=rfun)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 379, in reduce
+    return apply_by_row(corrs, graph_measures[rfun])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 222, in apply_by_row
+    list(map(lambda x: f(np.squeeze(x)), np.split(corrs, corrs.shape[2], axis=2))),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 222, in <lambda>
+    list(map(lambda x: f(np.squeeze(x)), np.split(corrs, corrs.shape[2], axis=2))),
+                       ^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr/helpers.py", line 333, in <lambda>
+    nx.eigenvector_centrality(
+  File "<class 'networkx.utils.decorators.argmap'> compilation 17", line 4, in argmap_eigenvector_centrality_13
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/networkx/utils/backends.py", line 967, in __call__
+    return self.orig_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/beegfs/hellgate/home/tp183485/timecorr_trazzp/timecorr_venv/lib/python3.12/site-packages/networkx/algorithms/centrality/eigenvector.py", line 194, in eigenvector_centrality
+    raise nx.PowerIterationFailedConvergence(max_iter)
+networkx.exception.PowerIterationFailedConvergence: (PowerIterationFailedConvergence(...), 'power iteration failed to converge within 100 iterations')

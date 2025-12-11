@@ -14,7 +14,7 @@ PARAM3_Filtered=(\
 PCA FactorAnalysis IncrementalPCA TruncatedSVD
 )
 PARAM3_GraphMeasures=(\
-eigenvector_centrality pagerank_centrality strength
+eigenvector_centrality strength
 )
 KERNELS=(gaussian mexican_hat laplace)
 WIDTHS=($(seq 5 5 50))
